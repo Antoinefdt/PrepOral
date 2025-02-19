@@ -148,9 +148,9 @@ button:hover {
     .sec1 header {
         height: 100%;
         width: 100%;
-        top: 50px;
-        left: 50px;
-        position: relative;
+        top: 0;
+        left: 0;
+        position: absolute;
     }
     
     .sec1 header .container {
