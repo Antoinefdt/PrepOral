@@ -156,7 +156,7 @@ button:hover {
     .sec1 header .container {
         width: 100%;
         margin: 0 auto;
-        margin-left: 2%;
+        margin-left: 80px;
         height: 100%;
         display: flex;
         align-items: center;
