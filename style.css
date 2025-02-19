@@ -150,7 +150,7 @@ button:hover {
         width: 100%;
         top: 0;
         left: 0;
-        position: absolute;
+        position: static;
     }
     
     .sec1 header .container {
@@ -217,8 +217,8 @@ button:hover {
         flex: 1;
         background-image: url(Fond.png);
         background-repeat: no-repeat;
-        background-position: 800px 20px;
-        background-size: 1000px;
+        background-position: 800px 50px;
+        background-size: 60%;
     }
 
     .sec1 h1 {
