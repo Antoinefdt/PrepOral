@@ -149,14 +149,14 @@ button:hover {
         height: 100%;
         width: 100%;
         top: 0;
-        left: 5%;
+        left: 0;
         position: absolute;
     }
     
     .sec1 header .container {
         width: 100%;
         margin: 0 auto;
-        margin-left: 80px;
+        margin-left: 10%;
         height: 100%;
         display: flex;
         align-items: center;
