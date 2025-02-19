@@ -250,6 +250,8 @@ button:hover {
 .sec1 .container {
     width: 100%;
     margin: 0 auto;
+    margin-left: 10%;
+    margin-top: 15%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
