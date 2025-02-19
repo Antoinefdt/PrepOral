@@ -178,7 +178,7 @@ button:hover {
 
 @media (max-width: 900px) {
     .sec1 header {
-        height: 125px;
+        height: 100%;
         width: 100%;
         top: 0;
         left: 0;
@@ -188,6 +188,7 @@ button:hover {
     .sec1 header .container {
         width: 100%;
         margin: 0 auto;
+        margin-left: 20px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -196,6 +197,7 @@ button:hover {
     }
 
     .sec1 header .container ul {
+        display: flex;
         align-items: center;
         width: 100%;
     }
@@ -233,7 +235,7 @@ button:hover {
         height: 100vh;
         width: 100%;
         flex: 1;
-        background-image: url(fond.png);
+        background-image: url(Fond.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
