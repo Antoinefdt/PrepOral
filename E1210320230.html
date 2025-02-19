@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Mines-Ponts] [2023] </h2><br><br>
+            <u><h3>Transfert thermique sur les disques d'une Formule 1</h3></u><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Une formule $1$ de masse $m=500$ kg utilise un système plaquette-disque de surface $S_F=50$ cm$^2$ pour freiner. Elle freine à partir de la vitesse $v_1=330$ km.h$^{-1}$ jusqu'à $v_2=150$ km.h$^{-1}$ sur une distance $D=100$ m. On suppose que la décélération est constante, notée $a$. <br><br>
+
+                    <em>1.</em> Calculer $a$ et le temps de freinage $\tau_F$. En déduire $\phi_F$ la puissance par unité de surface dissipée lors du freinage. <br><br>
+
+                    L'objectif de cet exercice est d'étudier le système de freinage de la formule $1$. <br>
+                    On considère une milieu homogène de section $S_F$ constante à la température initiale uniforme $T_i$. Une densité de flux thermique est imposée à sa surface en $x=0$ à partir de l'instant $t=0$ : $\overrightarrow{j}_{th}(0+,t)=\phi_0 \overrightarrow{e_x}$. <br><br>
+
+                    <em>2.</em> Etablir l'équation vérifiée par la température $T(x,t)$ au sein du milieu. On posera $K=\frac{\lambda}{\mu c}$ en précisant la signification et l'unité de chacun de ces paramètres. <br><br>
+
+                    On donne la solution de cette équation pour le cas particulier étudié ici : 
+
+                    $$T(x,t)= T_i+\frac{\phi_0}{\lambda} \sqrt{\frac{4Kt}{\pi}} \left( e^{-u^2}-\sqrt{\pi}uF(u) \right)$$
+                    avec : 
+
+                    $$F(u)=1-\frac{2}{\sqrt{\pi}}\int_0^u e^{-y^2}dy,$$
+
+                    et $u=\frac{x}{\sqrt{4Kt}}$. On donne $\int_0^{+\infty}e^{-y^2}dy=\frac{\sqrt{\pi}}{2}$. <br><br>
+
+                    <em>3.</em> Vérifier que cette fonction satisfait à la condition initiale à $t=0$ et aux conditions aux limites en $x=0$ et $x=+\infty$ pour $t>0$. <br>
+                    <em>4.</em> Donner la température à la surface du matériau pour tout temps $t$. <br><br>
+
+                    On considère alors le système plaquette-disque, que l'on modélise comme deux cylindres semi-infinis de même section $S_F$ en positionnant l'interface en $x=0$. Le milieu $1$ du domaine $x\leq 0$ est ainsi en contact avec le milieu $2$ du domaine $x>0$. La puissance surfacique $\phi_F$ créée par le freinage à l'interface engendre pour $t>0$ les densités de flux thermiques $\overrightarrow{j}_{th}(0^-,t)=-\phi_1\overrightarrow{e_x}$ et $\overrightarrow{j}_{th}(0^+,t)=\phi_2\overrightarrow{e_x}$. <br><br>
+
+
+                    <em>5.</em> Etablir une relation entre $\phi_F$, $\phi_1$ et $\phi_2$. <br>
+                    <em>6.</em> Montrer que l'on a :
+                    $$\frac{\phi_1}{\phi_2}=\frac{E_1}{E_2}$$
+                    où $E_i$ est l'effusivité du matériau $i$ que l'on exprimera en fonction de ses caractéristiques. <br>
+                    <em>7.</em> En déduire la température $T_F$ à l'interface plaquette-disque. <br>
+                    <em>8.</em> En considérant une température initiale $T_i=300$ K et $\phi_F=2,7.10^7$ W.m$^{-2}$, calculer $T_F$ pour un système de freinage acier-carbone et un système carbone-carbone. Commenter. <br>
+                </p>
+
+                <img src="images/1210320230.png" alt="Schéma illustratif"> <br><br>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP* Chaptal 2024]</em> L'exercice commençait par un petit calcul de temps d'arrêt (MRU classique, vitesses et distance données) qui n'a pas été mené correctement car probablement trop vite (problème de signe). Cela n'a pas alerté Zeineb de trouver que le temps d'arrêt était d'autant plus long que la différence entre les vitesses initiale et finale était faible... Mais tout durant l'exercice est resté homogène. La démonstration de l'équation de la chaleur dans le cas 1D sans termes source/puits est maîtrisée, l'apprentissage de ton cours était flagrante dans la démarche et la restitution. Une petite question à titre personnel cependant : j'ai compris la raison pour laquelle tu as noté (d'après Zeineb) $\delta U$ l'énergie interne de la petite tranche de fluide étudiée. Mais dans ce cas, j'ai l'impression que cela introduit une confusion entre $\delta Q$ la chaleur échangée au cours de dt, qui est donc un infiniment petit du premier ordre, et $d(\delta U)$, qui est la différentielle de $\delta U$ et donc en apparence un infiniment petit du second ordre ? Je suis peut-être confus, j'en suis navré.
+                    Pour revenir à Zeineb, l'avancement dans l'exercice a été plus que limité. Pour je ne sais quelle raison, la loi de FOURIER a été rebaptisée "loi de LAPLACE" sur son tableau : visiblement, Zeineb ne savait cependant pas ce que stipulait la loi de LAPLACE lorsque je lui ai demandé à cette occasion.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

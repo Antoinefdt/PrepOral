@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [X] [2016] </h2><br><br>
+            <h3>Décomposition du carbonate de calcium</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On s'intéresse à la réaction de décomposition du carbonate de calcium en oxyde de calcium et en gaz carbonique donnée ci-après : 
+                    
+                    $$CaCO_{3(s)} = CaO_{(s)}+CO_{2(g)}$$
+                    
+
+                    On introduit du carbonate de calcium dans une enceinte vidée à la température de $T_0=300$ K. Le système est alors chauffé à $T_1=1100$ K et évolue vers un état d'équilibre pour lequel la pression dans l'enceinte vaut $P_1=0.24$
+                    bar. <br><br>
+
+                    <em>1.</em> Sachant que le numéro atomique du calcium est $Z=20$, déterminer : <br>
+                        - sa configuration électronique dans l'état fondamental, <br>
+                        - sa place dans le tableau périodique, <br>
+                        - le nom de la colonne à laquelle il appartient, <br>
+                        - son nombre d'oxydation le plus probable. <br><br>
+
+                    <em>2.</em> Comment vérifier que l'équilibre est atteint ? (On peut introduire du gaz carbonique dans l'enceinte). <br>
+
+                    <em>3.</em> Calculer l'enthalpie standard de la réaction $\Delta_r H^\circ$ à la température $T_1$. <br>
+
+                    <em>4.</em> Exprimer le logarithme du rapport de la pression à l'équilibre par la pression standard $\ln{\frac{P_{eq}}{P^\circ}}$ en fonction de la température $T$. <br>
+
+                    <em>5.</em> Calculer la pression à l'équilibre $P_{eq}$ à la température $T_2=1000$ K. <br>
+
+                    <em>6.</em> Existe-t-il une température $T\in [300,1100] $ K telle que $P_{eq}=1$ bar ? <br>
+
+                    <em>7.</em> Exprimer l'entropie standard de la réaction $\Delta_r S^\circ$ en fonction de son l'enthalpie standard $\Delta_r H^\circ$ et de la température $T$. <br>
+
+                    <em>8.</em> En déduire l'entropie molaire standard du carbonate de calcium $S_m^\circ(CaCO_3)$. <br><br> 
+                    
+                    Données à $300$ K : <br><br>
+                </p>
+
+                <img src="images/2310120160.png" alt="Schéma illustratif"> <br><br>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP* Chaptal 2024]</em> Le cours est clairement su, les grandeurs standard de réaction sont correctement maniées, la chimie de sup semble globalement sue. Quelques réserves cependant sur la définition et le domaine d'application de la règle de l'octet et celle du duet, plus d'autres points discutés ensuite. Avancement légèrement limité dans l'exercice, puisqu'il semblerait que la configuration électronique et la place dans le tableau périodique ne soient plus au programme. J'ai eu la puce à l'oreille lorsque j'ai vu qu'aucun des deux n'a su m'écrire la configuration électronique avec le bon formalisme (des virgules entre les sous-couches pour Sacha, le nombre d'électrons des sous-couches en indice pour Simon).</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

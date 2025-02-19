@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Centrale] [2018] </h2><br><br>
+            <h3>Formation de l'oxyfluorure de bore</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    L'oxyfluorure de bore se forme par l'action du trifluorure de bore gazeux sur l'anhydride borique cristallisé selon l'équation de réaction suivante :
+
+                    $$B_2O_{3(s)}+BF_{3(g)} = (OBF)_{3(g)}$$ <br><br>
+
+                    On mène l'expérience pour différentes températures dans l'enceinte où se produit la réaction et l'on relève les pressions partielles des différents constituants à l'équilibre, présentées dans la Table ci-dessous : <br><br>
+
+                </p>
+
+                <img src="images/2310420180.png" alt="Schéma illustratif"> <br><br>
+
+                <p>
+                    <em>1.</em> Exprimer le quotient de réaction $Q_r$ en fonction des pressions partielles. Le calculer à l'équilibre à la température $T_2=401$ K. <br><br>
+
+                    On suppose que l'enthalpie standard de réaction est indépendante de la température. <br>
+                    <em>2.</em> Commenter cette approximation. <br>
+
+                    <em>3.</em> Montrer que le logarithme de la constante thermodynamique d'équilibre $ln(K^\circ)$ peut s'exprimer sous la forme $f(1/T)$, où $f$ est une fonction à expliciter. <br>
+
+                    <em>4.</em> Calculer l'enthalpie standard de réaction ainsi que l'entropie standard de réaction à l'aide des résultats de l'expérience. On s'appuiera pour cela sur une construction graphique. <br>
+
+                    <em>5.</em> Comment peut-on favoriser la réaction ? <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP* Chaptal 2024]</em> Manque de recul sur les questions de l'exercice, pourtant classiques. Semble penser que l'approximation d'ELLINGHAM est valable pour toute température quel que soit son écart à la température prise en référence. Ne connait pas l'expression de l'enthalpie libre en fonction de l'enthalpie et de l'entropie. Ne sait pas non plus la relier à la constante thermodynamique d'équilibre. Ecrit la relation de VAN'T HOFF en dérivant *partiellement* le logarithme de K° par rapport à la température, parce qu'il "ne voit pas pourquoi K° ne pourrait pas dépendre de la pression ou des concentrations". M'avoue carrément que "ça ne sert à rien de tourner autour du pot, [il] ne [connait] pas son cours".</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

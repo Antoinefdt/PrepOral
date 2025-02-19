@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Mines-Télécom] [2024] </h2><br><br>
+            <h3>Cycle moteur de CARNOT</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère un gaz parfait de masse molaire $M=18$ g.mol$^{-1}$ et de coefficient de LAPLACE $\gamma=7/5$, subissant un cycle ABCDA réversible à chaque étape tel que : <br>
+                        - AB et CD sont des isothermes, <br>
+                        - BC et DA sont des adiabatiques. <br><br>
+
+                    On donne la température au point D $T_D=300$ K et les pressions $P_D=1,5$ bar, $P_C=1$ bar, $P_B=3$ bar et $P_A=9$ bar. <br><br>
+
+                    <em>1.</em> Représenter ce cycle dans le diagramme de CLAPEYRON. <br>
+
+                    <em>2.</em> Exprimer les chaleurs massiques $q_1$ et $q_2$ des deux transformations isothermes. En déduire le travail massique $w$ du cycle. <br>
+                    <em>3.</em> Donner les expressions des variations d'entropie massique $s$ pour chacune des transformations ainsi que la variation globale d'entropie au cours d'un cycle. <br><br>
+
+                    On remarque qu'il s'agit d'un cycle moteur. <br>
+                    <em>4.</em> Justifier cette affirmation. <br>
+                    <em>5.</em> Définir le rendement de ce moteur puis calculer sa valeur. <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>
+                    <em>[MP Chaptal 2024]</em> Des difficultés à avancer. <br><br>
+                    <em>[PT Voltaire 2024]</em> Les variables associées au diagramme CLAPEYRON ne sont pas connues ! Penser également à exploiter toutes les hypothèses de l'énoncé. Des initiatives cependant dans la résolution de l'exercice. <br><br>
+                    <em>[PT Voltaire 2024]</em> Très bien pour le cours, les lois (LAPLACE, Gaz parfaits, Premier Principe en grandeurs massiques) sont connues. Besoin d'aide pour débloquer certaines situations, mais avancement très honorable et capacité à réagir aux indications. <br><br>
+                    <em>[PT Voltaire 2024]</em> Très bien pour le cours, les lois (LAPLACE, Gaz parfaits, Premier Principe en grandeurs massiques) sont connues et utilisées à bon escient le plus souvent sans indication. La représentation du cycle dans le diagramme de CLAPEYRON aurait pu davantage tenir compte des valeurs numériques fournies, quand bien même on demandait seulement l'allure. Avancement très honorable dans l'exercice et capacité à réagir aux indications.
+                </p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

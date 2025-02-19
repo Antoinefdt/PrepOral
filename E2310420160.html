@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Centrale] [2016] </h2><br><br>
+            <h3>Combustion de l'éthanol</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère la réaction de combustion de l'éthanol $C_2H_5OH$ liquide avec du dioxygène gazeux, formant du dioxyde de carbone gazeux et de la vapeur d'eau. <br><br>
+
+                    <em>1.</em> Ecrire l'équation de cette réaction de combustion. <br>
+
+                    <em>2.</em> Calculer l'enthalpie standard de cette réaction à $T=25^\circ$ C. <br>
+
+                    <em>3.</em> Calculer le PCI (Pouvoir Calorifique Inférieur) de l'éthanol, défini comme le transfert thermique massique de la réaction à $T=25^\circ$ C et $P^\circ=1$ bar. <br><br>
+
+                    On injecte dans un brûleur $4$ mol d'éthanol et $100$ mol d'air (soit donc $20$ mol de dioxygène et $80$ mol de diazote) à la pression $P=P^\circ$ et la température $T_0=25^\circ$ C. On suppose que la chaleur de la combustion est entièrement récupérée par les gaz. <br><br>
+
+                    <em>4.</em> Déterminer les quantités de matière des constituants à la fin de la réaction. <br>
+
+                    <em>5.</em> Calculer la pression partielle en dioxygène à la fin de la réaction. <br>
+
+                    <em>6.</em> Déterminer la température $T_1$ des gaz à la fin de la combustion, en précisant les hypothèses que vous pourrez être amené(e) à formuler. <br><br>
+
+                    Les gaz issus de la combustion circulent ensuite dans un échangeur thermique d'où ils sortent avec la température $T_2=110^\circ$ C. L'eau présente dans l'échangeur, initialement à la température $T_{eau}^{inf}=15^\circ$ C, s'échauffe alors jusqu'à la température $T_{eau}^{sup}=40^\circ$ C. <br><br>
+
+                    <em>7.</em> Déterminer le transfert thermique en jeu. <br>
+
+                    <em>8.</em> Calculer la masse d'eau chauffée dans l'échangeur. <br><br>
+
+                    Données à $298$ K:
+                </p>
+
+                <img src="images/2310420160.png" alt="Schéma illustratif"> <br><br>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>S.O.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

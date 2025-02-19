@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [CCP] [2024] </h2><br><br>
+            <h3>Induction dans un cylindre au centre d'un solénoïde</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Un cylindre conducteur plein de rayon $a$, de longueur $L$ et de conductivité $\sigma=5.10^7$ S.m$^{-1}$ est placé à l'intérieur d'un solénoïde de très grande longueur, tous deux alignés selon l'axe $(Oz)$. Ce dernier est parcouru par un champ magnétique uniforme de fréquence $f=50$ Hz :
+
+                    $$\overrightarrow{B_s}(t)=B_0\cos{(\omega t)} \overrightarrow{u_z}$$
+
+                    <em>1.</em> Pourquoi un champ électrique $\overrightarrow{E_m}$ apparaît-il à l'intérieur du solénoïde ? Comment s'appelle ce phénomène et quelle est l'équation de MAXWELL concernée ? <br>
+
+                    <em>2.</em> Justifier que $\overrightarrow{E_m}$ est orthoradial. <br>
+
+                    <em>3.</em> Représenter sur un schéma $\overrightarrow{B_s}(0)$ ; $\frac{\partial \overrightarrow{B_s}}{\partial t}(0)$, $\overrightarrow{rot} \overrightarrow{E_m}(0)$ et $\overrightarrow{E_m}(0)$. Commenter le schéma. <br>
+
+                    <em>4.</em> En utilisant le théorème de STOKES sur un contour à préciser, donner l'expression de $\overrightarrow{E_m}$. <br>
+
+                    <em>5.</em> Déterminer la densité volumique de courant induit $\overrightarrow{j}$ dans le conducteur, en négligeant devant $\overrightarrow{B_s}$ le champ induit par celle-ci. Calculer la puissance moyenne volumique dissipée par effet JOULE en un point situé à la distance $r$ de l'axe $(Oz)$. <br>
+
+                    <em>6.</em> Calculer la puissance moyenne dissipée par effet JOULE dans tout le cylindre. <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP Chaptal 2024]</em> Le cours est su de toute évidence, les bonnes équations de MAXWELL sont reliés avec les bons phénomènes. Quelques difficultés cependant à justifier le sens et la direction du champ électrique généré par le champ magnétique de la bobine, et de manière générale à raisonner sur les symétries et les invariances (bien que d'après Naomie, ces concepts soient clairs pour elles hormis pour le cas du solénoïde). Avancement limité dans l'exercice.
+                </p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Centrale] [2022] </h2><br><br>
+            <h3>Conductivité thermique et durée de fonte d'un glaçon</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère une poêle et une planche de bois sur lesquelles on pose un glaçon à la température de $0^\circ$ C. La table sur laquelle reposent la poêle et la planche est à la température $T_0$. On remarque que, après $5$ min, le glaçon de la poêle a pratiquement fondu alors que le glaçon sur la planche de bois n'a presque pas fondu. <br><br>
+
+                    1. Rappeler la définition d'une résistance thermique. Donner son expression dans le cas d'une plaque d'épaisseur $e$, de surface $S$ et de conductivité thermique $\lambda$. <br>
+
+                    2. Préciser les approximations nécessaires pour appliquer la notion de résistance thermique à la situation considérée. Déterminer le temps de fonte du glaçon. Que dire du rapport $\frac{\lambda_{bois}}{\lambda_{poêle}}$ ? <br><br>
+
+                    On s'intéresse désormais à la table en marbre, épaisse, à la température initiale $T_0$, occupant tout le demi-espace $z\leq 0$. A $t=0$, on pose un glaçon sur la table. <br><br>
+
+                    3. Etablir l'équation de la température $T(x,t)$ au sein de la plaque. <br><br>
+
+                    On admet que la solution de l'équation de diffusion établie peut prendre la forme :
+
+                    $$T(z,t)=f\left(\frac{z}{\sqrt{4Kt}}\right)$$
+
+                    4. En précisant les approximations faites, établir le rapport entre les durées de fonte de deux glaçons : l'un sur la table, l'autre sur une planche de bois similaire à la table dans la configuration du problème. <br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP* Chaptal 2024]</em> L'exercice commençait par demander de définir la résistancce thermique et de donner son expression. Charles m'a donné la bonne définition, mais une expression inhomogène. La khôlle a viré à l'analyse dimensionnelle, c'était très laborieux et surtout faux en première intention. J'ai fini par lui demander de sauter des questions de l'exercice pour simplement me remontrer l'équation de la chaleur en 1D sans termes sources, en espérant pouvoir arriver à tirer de la résolution pour le cas stationnaire une expression de $R_{th}$. Nous ne sommes pas allés jusque là, mais Charles avait les idées de la démonstration et l'avait correctement démarrée.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

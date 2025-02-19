@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Centrale] [2015] </h2><br><br>
+            <h3>Réaction du dichlore sur la zircone</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère la réaction du dichlore gazeux sur le dioxide de zirconium solide :
+
+                    $$ZrO_{2(s)} + 2Cl_{2(g)} = ZrCl_{4(s)}+O_{2(g)}$$
+
+                    effectuée à $T_0=1480$ K. <br><br>
+
+                    <em>1.</em> Prévoir le signe de l'entropie standard de cette réaction. <br>
+
+                    <em>2.</em> Calculer l'enthalpie standard de réaction, l'entropie standard de réaction ainsi que la constante thermodynamique d'équilibre. <br>
+
+                    <em>3.</em> Calculer l'avancement final et déterminer la composition à l'équilibre en supposant que l'on a introduit les réactifs en proportions stœchiométriques. <br>
+
+                    <em>4.</em> Étudier le déplacement de l'équilibre lorsque : <br>
+                    <em>a.</em> On augmente la température. Calculer ensuite la constante thermodynamique d'équilibre à $T_1=1980$ K. <br>
+                    <em>b.</em> On augmente la pression totale à température constante. <br><br>
+
+                    Données à $T=298$ K :
+                </p>
+
+                <img src="images/2310420150.png" alt="Schéma illustratif"> <br><br>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP* Chaptal 2024]</em> Reda saute les questions qui ne l'arrangent pas. La prévision du signe de l'entropie standard de réaction à partir des coefficients stoechiométriques des gaz n'est pas connue. Le caractère endo/exothermique de la réaction au travers du signe de l'enthalpie standard de réaction est à pile ou face. Même juste, l'interprétation de ce résultat pour conclure quant au choix d'une température favorisant la réaction n'est pas possible.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>Choisissez vos critères</h2><br><br>
+            <form id="selectionForm">
+                <div>
+                <label for="filiere">Filière :</label>
+                <select id="filiere" name="filiere" required>
+                    <option value="">---</option>
+                    <option value="MP">MP</option>
+                    <option value="PC">PC</option>
+                    <option value="PSI">PSI</option>
+                    <option value="PT">PT</option>
+                    <option value="TSI">TSI</option>
+                </select>
+                </div><br>
+                <div>
+                <label for="concours">Banque de Concours :</label>
+                <select id="concours" name="concours" required>
+                    <option value="">-------</option>
+                    <option value="X">X</option>
+                    <option value="ENS">ENS</option>
+                    <option value="Mines-Ponts">Mines-Ponts</option>
+                    <option value="Centrale">Centrale</option>
+                    <option value="Mines-Telecom">Mines-Télécom</option>
+                    <option value="CCP">CCP</option>
+                </select>
+                </div><br>
+                <div>
+                <label for="theme">Thème :</label>
+                <select id="theme" name="theme" required>
+                    <option value="">---------------</option>
+                    <option value="Mecanique">[P] Mécanique</option>
+                    <option value="Thermodynamique">[P] Thermodynamique</option>
+                    <option value="Electromagnetisme">[P] Électromagnétisme</option>
+                    <option value="Optique">[P] Optique</option>
+                    <option value="Electricite">[P] Electricité</option>
+                    <option value="MecaFlu">[P] Mécanique des fluides</option>
+                    <option value="MecaQ">[P] Mécanique Quantique</option>
+
+                    <option value="Structure">[C] Structure des entités</option>
+                    <option value="Cinetique">[C] Cinétique chimique</option>
+                    <option value="ThermoCh">[C] Thermochimie</option>
+                    <option value="AB">[C] Réactions acido-basiques</option>
+                    <option value="DP">[C] Réactions de dissolution et précipitation</option>
+                    <option value="RedOx">[C] Oxydo-réduction</option>
+                    <option value="Orga">[C] Chimie organique</option>
+                    
+                    <!-- Ajoutez d'autres thèmes si besoin -->
+                </select>
+                </div><br><br>
+                <button type="submit">Rechercher</button>
+            </form>
+            <script src="script.js"></script>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <div class="footer">
+            <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+            <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+                Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - resultats</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+    
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>Résultats de la recherche</h2><br><br>
+            <div id="exerciseList">
+                <!-- La liste des exercices sera insérée ici par JavaScript -->
+            </div> 
+        </div> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <script>
+            const exercises = [
+            {id: 1410620240, title: "[2024] Intensité dans un bras d'un interféromètre de Michelson", filiere: "MP", concours: "CCP", theme: "Optique"},
+            {id: 1310120240, title: "[2024] Bateau sur une mer de mercure", filiere: "MP", concours: "X", theme: "Electromagnetisme"},
+            {id: 1210620240, title: "[2024] Transferts thermiques dans une canette", filiere: "MP", concours: "CCP", theme: "Thermodynamique"},
+            {id: 1210620241, title: "[2024] Alimentation d'un dauphin", filiere: "MP", concours: "CCP", theme: "Thermodynamique"},
+            {id: 1210620242, title: "[2024] Transferts thermiques dans une barre", filiere: "MP", concours: "CCP", theme: "Thermodynamique"},
+            {id: 1210520240, title: "[2024] Dissipation thermique par une ailette de refroidissement", filiere: "MP", concours: "Mines-Telecom", theme: "Thermodynamique"},
+            {id: 1210520241, title: "[2024] Force de maintien d'un piston entre deux compartiments", filiere: "MP", concours: "Mines-Telecom", theme: "Thermodynamique"},
+            {id: 1210520242, title: "[2024] Cycle moteur de CARNOT", filiere: "MP", concours: "Mines-Telecom", theme: "Thermodynamique"},
+            {id: 1310520240, title: "[2024] Champ gravitationnel produit par une planète", filiere: "MP", concours: "Mines-Telecom", theme: "Electromagnetisme"},
+            {id: 1310520241, title: "[2024] Champ électrostatique généré par un demi-espace chargé", filiere: "MP", concours: "Mines-Telecom", theme: "Electromagnetisme"},
+            {id: 1310520242, title: "[2024] Champ électrostatique généré par une distribution de quatre particules", filiere: "MP", concours: "Mines-Telecom", theme: "Electromagnetisme"},
+            {id: 1310620240, title: "[2024] Induction dans un cylindre au centre d'un solénoïde", filiere: "MP", concours: "CCP", theme: "Electromagnetisme"},
+            {id: 1510120230, title: "[2023] Filtrage RLC", filiere: "MP", concours: "X", theme: "Electricite"},
+            {id: 1110120230, title: "[2023] Chute d'un stylo sur une table", filiere: "MP", concours: "X", theme: "Mecanique"},
+            {id: 1310620230, title: "[2023] Potentiel de YUKAWA", filiere: "MP", concours: "CCP", theme: "Electromagnetisme"},
+            {id: 1210320230, title: "[2023] Transfert thermique sur les disques d'une Formule 1", filiere: "MP", concours: "Mines-Ponts", theme: "Thermodynamique"},
+            {id: 1210120230, title: "[2023] Formation hivernale de la banquise en Antarctique", filiere: "MP", concours: "X", theme: "Thermodynamique"},
+            {id: 1210120231, title: "[2023] Refroidissement d'un café avec du lait", filiere: "MP", concours: "X", theme: "Thermodynamique"},
+            {id: 1310320230, title: "[2023] Champ magnétique créé par la foudre au sol", filiere: "MP", concours: "Mines-Ponts", theme: "Electromagnetisme"},
+            {id: 1310320231, title: "[2023] Energie électromagnétique rayonnée par un dipôle", filiere: "MP", concours: "Mines-Ponts", theme: "Electromagnetisme"},
+            {id: 1210420220, title: "[2022] Conductivité thermique et durée de fonte d'un glaçon", filiere: "MP", concours: "Centrale", theme: "Thermodynamique"},
+            {id: 1210620220, title: "[2022] Bilan entropique de la compression d'un gaz", filiere: "MP", concours: "CCP", theme: "Thermodynamique"},
+            {id: 1210320220, title: "[2022] Rendement d'un turbopropulseur d'avion", filiere: "MP", concours: "Mines-Ponts", theme: "Thermodynamique"},
+            {id: 1210520220, title: "[2022] Variation d'entropie d'un gaz au contact d'un thermostat", filiere: "MP", concours: "Mines-Telecom", theme: "Thermodynamique"},
+            {id: 1310520210, title: "[2021] Effet du champ magnétique d'un fil infini sur une spire rectangulaire", filiere: "MP", concours: "Mines-Telecom", theme: "Electromagnetisme"},
+            {id: 1410120190, title: "[2019] Courbure d'une fibre optique", filiere: "MP", concours: "X", theme: "Optique"},
+            {id: 1410320190, title: "[2019] Epaisseur de la lame d'air d'un interféromètre de Michelson", filiere: "MP", concours: "Mines-Ponts", theme: "Optique"},
+            {id: 1310420190, title: "[2019] Champ électrostatique généré par une nappe épaisse", filiere: "MP", concours: "Centrale", theme: "Electromagnetisme"},
+            {id: 1310620190, title: "[2019] Energie électromagnétique traversant un câble coaxial", filiere: "MP", concours: "CCP", theme: "Electromagnetisme"},
+            {id: 1210420180, title: "[2018] Détermination de l'indice adiabatique de l'air", filiere: "MP", concours: "Centrale", theme: "Thermodynamique"},
+            {id: 1210520180, title: "[2018] Equilibre entre un pressiostat et deux compartiments", filiere: "MP", concours: "Mines-Telecom", theme: "Thermodynamique"},
+            {id: 2310120180, title: "[2018] Dissociation du pentachlorure de phosphore", filiere: "MP", concours: "X", theme: "ThermoCh"},
+            {id: 2310420180, title: "[2018] Formation de l'oxyfluorure de bore", filiere: "MP", concours: "Centrale", theme: "ThermoCh"},
+            {id: 1310320180, title: "[2018] Champ électrostatique généré par une boule et un plan", filiere: "MP", concours: "Mines-Ponts", theme: "Electromagnetisme"},
+            {id: 1110120180, title: "[2018] Mécanique non galiléenne d'une bague sur un fil en rotation", filiere: "MP", concours: "X", theme: "Mecanique"},
+            {id: 2310620170, title: "[2017] Production de chaux", filiere: "MP", concours: "CCP", theme: "ThermoCh"},
+            {id: 1310320170, title: "[2017] Capacité d'un condensateur déformé", filiere: "MP", concours: "Mines-Ponts", theme: "Electromagnetisme"},
+            {id: 1310320171, title: "[2017] Modélisation de la Terre par un dipôle magnétique", filiere: "MP", concours: "Mines-Ponts", theme: "Electromagnetisme"},
+            {id: 2310420160, title: "[2016] Combustion de l'éthanol", filiere: "MP", concours: "Centrale", theme: "ThermoCh"},
+            {id: 2310120160, title: "[2016] Décomposition du carbonate de calcium", filiere: "MP", concours: "X", theme: "ThermoCh"},
+            {id: 1310320150, title: "[2015] Champ et énergie magnétiques d'un câble coaxial", filiere: "MP", concours: "Mines-Ponts", theme: "Electromagnetisme"},
+            {id: 2310420150, title: "[2015] Réaction du dichlore sur la zircone", filiere: "MP", concours: "Centrale", theme: "ThermoCh"},
+            {id: 1310520150, title: "[2015] Propagation dans un câble coaxial", filiere: "MP", concours: "Mines-Telecom", theme: "Electromagnetisme"},
+            {id: 1210120140, title: "[2014] Equation d'état d'un gaz de photons", filiere: "MP", concours: "X", theme: "Thermodynamique"},
+            {id: 1410420120, title: "[2012] Détermination de g avec un interféromètre de Michelson", filiere: "MP", concours: "Centrale", theme: "Optique"}
+            ];
+
+            // Fonction pour obtenir les paramètres de l'URL
+            function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                filiere: params.get('filiere'),
+                concours: params.get('concours'),
+                theme: params.get('theme')
+            };
+            }
+
+            const { filiere, concours, theme } = getQueryParams();
+            const filteredExercises = exercises.filter(ex =>
+            ex.filiere === filiere && ex.concours === concours && ex.theme === theme
+            );
+
+            const exerciseListDiv = document.getElementById('exerciseList');
+
+            if (filteredExercises.length > 0) {
+            filteredExercises.forEach(ex => {
+                const link = document.createElement('a');
+                link.href = `E${ex.id}.html`;
+                link.textContent = ex.title;
+                const container = document.createElement('p');
+                container.appendChild(link);
+                exerciseListDiv.appendChild(container);
+            });
+            } else {
+            exerciseListDiv.textContent = "Aucun exercice trouvé pour vos critères.";
+            }
+        </script>
+
+
+        <div class="footer">
+            <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+            <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+                Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+        </div>
+    </div>
+</body>
+</html>

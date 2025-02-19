@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Mines-Télécom] [2015] </h2><br><br>
+            <h3>Propagation dans un câble coaxial</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    <i>Remarque : sujet ENSEA/ENSIIE</i> <br><br>
+
+                    On considère la propagation d'une onde dans un câble coaxial. On modélise une portion de câble par le montage ci-dessous, où $dL=\Lambda dx$ est l'inductance élémentaire et $dC=\Gamma dx$ la capacité élémentaire.
+                </p>
+
+                <img src="images/1310520150.png" alt="Schéma illustratif"> <br><br>
+
+                <p>
+                    <em>1.</em> Trouver une relation entre $\frac{\partial u}{\partial x}$ et $\frac{\partial i}{\partial t}$. <br>
+
+                    <em>2.</em> Trouver une relation entre $\frac{\partial i}{\partial x}$ et $\frac{\partial u}{\partial t}$. <br>
+
+                    <em>3.</em> En déduire que $u$ et $i$ vérifient chacun une équation de d'ALEMBERT de la forme 
+                    $$\frac{\partial^2 X}{\partial x^2}=A\frac{\partial^2 X}{\partial t^2}$$
+                    où l'on exprimera $A$ en fonction de $\Gamma$ et $\Lambda$. <br><br>
+
+                    On suppose que $u(x,t)=f(x-vt)+g(x+vt)$. <br>
+                    <em>4.</em> Donner le sens physique de $f$ et $g$. Exprimer $i(x,t)$ en fonction de $f$, $g$, $\Gamma$ et $\Lambda$. <br><br>
+
+                    <em>5.</em> On branche un conducteur ohmique de résistance $R$ à l'extrémité $x=0$ du câble. Exprimer $g(x=0,t)$ en fonction de $f(x=0,t)$, $\Gamma$ et $\Lambda$. <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP Chaptal 2024]</em>  Une résolution honnête quoiqu'un peu lente, ce qui n'a pas permis un avancement suffisant pour atteindre les questions intéressantes dépassant le simple cours. La présentation de la démarche et des calculs gagnerait à être plus précise et rigoureuse (mentionner la loi de FARADAY ou la caractéristique de la bobine pour justifier l'expression entre tension et intensité, mentionner la loi des mailles et préciser ladite maille pour justifier la relation sur les tensions, etc.). Mis à part cela, tout était juste et rigoureux, sur un tableau très clair et propre.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

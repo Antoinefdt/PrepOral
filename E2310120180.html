@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [X] [2018] </h2><br><br>
+            <h3>Dissociation du pentachlorure de phosphore</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On s'intéresse à la dissociation du pentachlorure de phosphore selon l'équation : 
+
+                    $$PCl_{5(g)} \longrightarrow PCl_{3(g)} + Cl_{2(g)}$$ <br><br>
+
+                    <em>1.</em> Sachant que le numéro atomique du phosphore est $Z=15$, déterminer sa configuration électronique dans l'état fondamental. Préciser ses électrons de cœur et ceux de valence. <br>
+
+                    <em>2.</em> Représenter le schéma de \textsc{Lewis} du pentachlorure de phosphore et celui du trichlorure de phosphore. <br><br>
+
+                    On place du pentachlorure de phosphore dans une enceinte sous la pression $P=1$ bar. On obtient une densité de $4,8$. <br><br>
+
+                    <em>3.</em> Déterminer la constante d'équilibre $K^\circ$ de la réaction. <br>
+
+                    <em>4.</em> Calculer le coefficient de dissociation $\varepsilon = \frac{n_{PCl5}^{consomme}}{n_{PCl5}^{initial}}$ si $P=5$ bar. <br>
+
+                    <em>5.</em> Calculer l'enthalpie standard de réaction $\Delta_r H^\circ$. <br>
+
+                    <em>6.</em> Comment varie $K^\circ$ avec la température $T$ ? <br>
+
+                    <em>7.</em> Déterminer la température $T$ telle que, sous la pression $P=1$ bar, le coefficient de dissociation vaille $\varepsilon=1/4$. <br><br>
+                    
+                    Données à $298$ K : <br><br>
+                </p>
+
+                <img src="images/2310120180.png" alt="Schéma illustratif"> <br><br>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP* Chaptal 2024]</em> Très bien pour la représentation de LEWIS. Aucun problème niveau cours non plus, les lois sont clairement maîtrisées (conséquence de la loi de HESS, loi de VAN'T HOFF). Quelques difficultés à s'approprier l'exercice cependant, ce qui a nécessité de l'aide de ma part pour amorcer certaines questions bien qu'elles soient finalement résolues seul. Exercice légèrement plus avancé que Sacha (X2016 sur la décomposition du carbonate de calcium).
+                    Il semblerait que la configuration électronique et la place dans le tableau périodique ne soient plus au programme. J'ai eu la puce à l'oreille lorsque j'ai vu qu'aucun des deux n'a su m'écrire la configuration électronique avec le bon formalisme (des virgules entre les sous-couches pour Sacha, le nombre d'électrons des sous-couches en indice pour Simon).</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Mines-Ponts] [2019] </h2><br><br>
+            <h3>Epaisseur de la lame d'air d'un interféromètre de Michelson</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère un interféromètre de Michelson initialement placé à la teinte plate. La source utilisée est quasi-monochromatique, de longueur d'onde dominante $\lambda=589$ nm. <br><br>
+                    <em>1.</em> On désire se placer en configuration lame d'air. Décrire le montage associé et préciser brièvement le protocole suivi. On s'appuiera sur un/des schéma(s) clair(s). <br><br>
+
+                    On obtient la figure suivante.
+                </p><br><br>
+
+                <img src="images/1410320190.jpg" alt="Schéma illustratif"> <br><br>
+
+                <p>
+                    <em>2.</em> Déterminer l'épaisseur de la lame d'air correspondante, sachant que l'image est observée après projection par une lentille de focale $f'=1$m. <br><br>
+                    <em>3.</em> Déterminer l'incertitude associée. <br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP Chaptal 2024]</em> Le montage du Michelson est connu, bien que le schéma laisse à désirer dans le tracé des rayons et la cohérence de l'ensemble. L'expression de la ddm a été timidement énoncée. Nous ne sommes pas allés plus loin. <br><br>
+                <em>[MP* Chaptal 2024]</em> Le schéma du Michelson est connu et clair. L'expression de la ddm a été donnée par coeur sans en être certain, il a fallu consacrer un peu de temps pour la réétablir, mais Charles l'a fait seul. Doit globalement être poussé pour avancer à l'étape suivante (expression de l'intensité, convertir l'angle d'incidence en rayon des anneaux sur la Figure). Semblait initialement penser que l'approximation de GAUSS se résume uniquement aux petits angles, même si je ne lui en ai pas tenu rigueur : il  a ajouté l'hypothèse de rayons peu éloignés de l'AO après ma demande. L'exercice n'a pas été terminé, mais il était sur le point de l'être. </div>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

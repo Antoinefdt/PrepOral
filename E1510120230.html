@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [X] [2023] </h2><br><br>
+            <h3>Filtrage RLC</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère un circuit $RLC$ série constitué d'un résistor de résistance $R=5~\Omega$, d'une bobine d'inductance $L=100~\mu$H et d'un condensateur de capacité $C=1$ nF. L'ensemble est connecté à un générateur de tension de résistance interne $R_g=50~\Omega$, à l'origine d'un signal d'amplitude $10$V. <br><br>
+                    
+                    <em>1.</em> Tracer l'amplitude de la tension aux bornes du résistor en fonction de la fréquence du signal sinusoïdal d'entrée provenant du générateur. <br><br>
+
+                    On considère désormais un signal créneau de période $T$. <br><br>
+
+                    <em>2.</em> Tracer la tension aux bornes du résistor en fonction du temps. <br>
+                    <em>3.</em> Tracer l'amplitude de la tension aux bornes du résistor en fonction de $1/T$. <br><br>
+
+                    Données : <br>
+                    Pour une fonction $T$-périodique $\varphi$ telle que $\varphi(t)=1$ $\forall t \in [0,\frac{T}{2}[$ et $\varphi(t)=0$ $\forall t \in [\frac{T}{2},T[$, on a :
+                    $$\varphi(t)=\sum_{n=0}^{+\infty} a_n~\sin{\biggl(\frac{2\pi n}{T}t\biggr)}$$
+                    où $a_n=\frac{1-(-1)^n}{n\pi}$ $\forall n\geq 0$.                   
+                </p>
+
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>
+                    Encore jamais posé !
+                </p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

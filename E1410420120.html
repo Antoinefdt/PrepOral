@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Centrale] [2012] </h2><br><br>
+            <h3>Détermination de g avec un interféromètre de Michelson</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Un interféromètre de Michelson est éclairé par une source monochromatique de longueur d'onde $\lambda=632,8$ nm centrée sur l'axe \(OX\). On note \(\ell_i\) la longueur \(OO_i\) entre le centre $O$ et le miroir $i$, et $e=\ell_2-\ell_1$ la différence de ces longueurs. \((L)\) est enfin une lentille convergente de centre optique \(\Omega\) et de distance focale $f'=1,0$ m. <br><br>
+                    <em>1.</em> Quel type de configuration reconnaissez-vous pour l'interféromètre de Michelson ? A quelle distance \(\Omega C\) doit se trouver le détecteur \((D)\) pour observer correctement la figure d'interférences ? <br><br>
+                </p><br><br>
+
+                <img src="images/1410420120A.png" alt="Schéma illustratif"> <br><br>
+
+                <p>
+                    Le miroir $\mathcal{M}_2$ est solidaire d'un mobile astreint à se déplacer en translation selon \(OZ\). Ce mobile est lâché en chute libre, sans vitesse initiale, à $t=0$. On considère que le Michelson présente la position du contact optique à $t=0$. Le graphe suivant représente l'éclairement au point \(C\) en fonction du temps. <br><br>
+                    <em>2.</em> Estimer la valeur du champ de pesanteur terrestre $g$.<br><br>
+                </p>
+
+                <img src="images/1410420120B.png" alt="Schéma illustratif"> <br><br>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP Chaptal 2024]</em> Le cours est su. La configuration du Michelson et l'intérêt d'une lentille de projection sont maitrisés.
+                    Le temps n'a pas permis d'aller jusqu'à la résolution, mais une discussion informelle en fin de khôlle a permis de vérifier la méthode de résolution, au moins sur les étapes d'expression de la ddm et de l'éclairement à partir de la formule de FRESNEL. <br><br>
+                    <em>[MP* Chaptal 2024]</em> Le cours est su. Très bien mené, malgré une difficulté à appliquer les formules pour le cas précis de l'exercice : la ddm ne dépend pas de l'angle d'incidence du rayon par rapport à l'axe optique, puisqu'on considère uniquement l'éclairement sur l'axe optique. Lecture peut-être trop rapide de l'énoncé. Trouve une valeur aberrante pour g, puisqu'il a cherché à le déterminer à partir d'une seule valeur sur le graphe qui n'était même pas un extremum. N'a pas eu le réflexe d'une régression linéaire sur les maxima (ou minima), mais en a compris immédiatement l'intérêt et savait l'effectuer. L'exercice était sur le point d'être terminé.
+                </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+
+
+        
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

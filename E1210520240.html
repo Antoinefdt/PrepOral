@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Mines-Télécom] [2024] </h2><br><br>
+            <h3>Dissipation thermique par une ailette de refroidissement</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère une ailette de refroidissement en aluminium utilisée pour dissiper la chaleur d'un composant électronique. L'ailette a une longueur $L$ orientée selon l'axe $\overrightarrow{e_x}$, une largeur $w$ et une épaisseur $e$. La température à la base de l'ailette (en $x=0$) est $T_b$ et l'air ambiant est à $T_{\infty}$. On note $\lambda$ la conductivité thermique de l'aluminium, $\mu$ sa masse volumique, $c$ sa capacité calorifique et $h$ le coefficient conducto-convectif de Newton à l'interface entre air et l'aluminium. <br><br>
+
+                    <em>1.</em> Exprimer le flux de chaleur par conduction à travers une portion infinitésimale de longueur $dx$ de l'ailette. <br>
+
+                    <em>2.</em> Exprimer le flux de chaleur par convection à la surface de cette portion. <br>
+
+                    <em>3.</em> Etablir une équation différentielle décrivant la distribution de la température $T(x,t)$ le long de l'ailette. <br>
+
+                    <em>4.</em> Résoudre l'équation différentielle établie en supposant le régime stationnaire atteint. <br>
+
+                    <em>5.</em> Calculer la puissance totale dissipée par l'ailette. <br>
+
+                    <em>6.</em> Discuter de la forme et des dimensions de l'ailette permettant d'optimiser sa dissipation de chaleur. <br>    
+                </p>
+
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>
+                    <em>[MP* Chaptal 2024]</em> Le troisième membre du trinôme étant absent, Amory est arrivé avec ses deux camarades pour me demander s'il pouvait prendre la place de Louis afin de "faire une khôlle de plus pour s'entraîner". J'ai naturellement accepté, mais la planche que j'avais prévue pour Louis était adaptée au niveau que j'avais identifié compte tenu des notes que tu nous transmets. Factuellement : Exercice très bien mené, rapidité d'exécution, initiative de vérification de l'homogénéité pour les résultats plus élaborés, initiative sur certaines hypothèses à formuler, exercice terminé. Attention cependant à un oubli qui a laissé une ligne inhomogène (sans conséquence sur la suite), à deux erreurs de signe qui se sont compensées, et à un lapsus transformant "longueur caractéristique" en "longueur de cohérence" qui a montré une légère imprécision sur la définition de la longueur de cohérence dans le cadre de l'optique. Mais ces derniers points sont du pinaillage puisqu'il s'agissait davantage d'erreurs d'inattention qui traduisaient surtout une volonté de rapidité.
+                    Je lui ai dit que si j'avais dû le noter je lui aurais mis 17/20, mais que cette note n'avait pas grand sens car l'exercice n'était pas adapté à son niveau. <br><br>
+                    <em>[MP  Chaptal 2024]</em> Travail lent mais méthodique. A besoin d'aide pour formuler des hypothèses, mais le raisonnement est juste. Avancement relativement limité dans l'exercice. <br><br>
+                    <em>[MP  Chaptal 2024]</em> Ce qui a été fait est très bien fait. Aucune erreur d'homogénéité. Le sens physique est à aiguiser pour justifier certaines hypothèses, mais c'est un détail. La résolution de l'équation différentielle obtenue a été faite sur la base (cosh, sinh), ce qui n'était pas le plus malin. La khôlle reste, au bilan, très satisfaisante.
+                </p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

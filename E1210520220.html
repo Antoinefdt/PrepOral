@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Mines-Télécom] [2022] </h2><br><br>
+            <h3>Variation d'entropie d'un gaz au contact d'un thermostat</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    <i>Remarque : sujet ENSEA/ENSIIE</i> <br><br>
+
+                    Une quantité de $n$ moles d'un gaz supposé parfait est placée dans une enceinte aux parois rigides, étanches et diathermanes (<i>i.e.</i> perméables à la chaleur). La gaz est initialement à la température $T_1$. On refroidit l'enceinte en la plaçant dans un environnement thermostaté à la température $T_2 < T_1$. <br><br>
+
+                    <em>1.</em> Montrer, à partir de la première identité thermodynamique, que la variation élémentaire d'entropie lors d'une transformation infinitésimale d'un gaz parfait peut s'exprimer :
+                    $$dS = nR\biggl(\frac{1}{\gamma-1}\frac{dT}{T}+\frac{dV}{V} \biggr)$$
+                    où $R$ désigne la constante des gaz parfaits, et $\gamma$ désigne l'indice adiabatique du gaz considéré. <br>
+
+                    <em>2.</em> Exprimer la variation d'entropie lors de la transformation en question. Que vaut l'entropie échangée ? L'entropie créée ? <br><br>
+
+                    Le gaz est désormais à la température $T_2$. L'enceinte est plongée dans un environnement thermostaté à la température $T_1$. <br><br>
+
+                    <em>3.</em> Exprimer la variation d'entropie. Que vaut l'entropie échangée ? L'entropie créée ? <br>
+
+                    <em>4.</em> Commenter les résultats obtenus. <br><br>
+                </p>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>S.O.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
