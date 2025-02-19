@@ -103,7 +103,7 @@
             if (filteredExercises.length > 0) {
             filteredExercises.forEach(ex => {
                 const link = document.createElement('a');
-                link.href = `E${ex.id}.html`;
+                link.href = `./sujets/E${ex.id}.html`;
                 link.textContent = ex.title;
                 const container = document.createElement('p');
                 container.appendChild(link);
