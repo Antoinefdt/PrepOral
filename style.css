@@ -217,8 +217,8 @@ button:hover {
         flex: 1;
         background-image: url(Fond.png);
         background-repeat: no-repeat;
-        background-position: 800px 20px;
-        background-size: 1000px;
+        background-position: 700px 20px;
+        background-size: auto;
     }
 
     .sec1 h1 {
