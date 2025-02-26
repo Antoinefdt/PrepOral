@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [ENS] [2015] </h2><br><br>
+            <h3>Mouvement d'une charge dans un potentiel électrique</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère un espace vide de charges ($\rho(x,y,z)=0$) au sein duquel règne un potentiel électrostatique de la forme 
+                    $$V(x,y,z)=\alpha x^2 + \beta y^2 + \gamma z^2$$ <br><br>
+
+                    <em>1.</em> Forme du potentiel <br>
+                    <em>a.</em> Que peut-on dire sur les coefficients $\alpha$, $\beta$ et $\gamma$ ? <br>
+                    <em>b.</em> On suppose une symétrie de révolution autour de l'axe $(Oz)$. Que peut-on dire de plus ? <br><br>
+
+                    On suppose alors que le potentiel est de la forme
+                    $$V(x,y,z)=\alpha x^2 + \alpha y^2 - 2 \alpha z^2,$$
+                    et on ajoute un champ magnétique uniforme $\overrightarrow{B}=B_0 \overrightarrow{u_z}$. <br><br>
+
+                    <em>2.</em> On s'intéresse au mouvement d'une particule de charge $q$ et de masse $m$.
+                    <em>a.</em> Déterminer son équation horaire $z(t)$ selon l'axe $(Oz)$. Proposer une application numérique pour un électron si $\alpha=10^3$ V.cm$^{-2}$. <br>
+                    <em>b.</em> Déterminer son mouvement complet $(x(t),y(t),z(t))$. <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
