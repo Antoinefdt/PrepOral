@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [2000] </h2><br><br>
+            <h3>Oscillation d'un aimant suspendu</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    On considère un aimant de dipôle magnétique $M\vec{u_z}$ et de masse $m$ suspendu via un ressort de raideur $k$ au plafond. 
+                    Dans l’axe de ce dipôle, on place à une distance $D$, lorsque l’aimant est à l’équilibre, une spire de rayon $a$ et de centre $O$, 
+                    dont on négligera l’auto-inductance, et de résistance $R$. On met en mouvement l’aimant en l’écartant de sa position d’équilibre et 
+                    on note $z_0(t)$ sa position repérée par rapport à la situation d’équilibre. Les conditions initiales sont 
+                    : $z_0(0) = b > 0$ et $\dot{z_0}(0) = 0$. 
+                    On supposera, dans le but de simplifier les calculs au maximum que $|z_0(t)| \sim b \ll  D$ et que $a \ll D$.<br>
+                    
+                    On donne l'expression du champ magnétique dipolaire :
+                    $$\vec{B}=\frac{\mu_0 M}{4\pi r^3}(2\cos{\theta}\vec{u_r}+\sin{\theta}\vec{u_{\theta}})$$<br>
+
+                    Q. Étudier le mouvement de l’aimant.<br>
+
+                    [Etapes lors de la discussion : à remplir <br>
+
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
