@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Saponification de l'éthanoate d'éthyle</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    La saponification de l'éthanoate d'éthyle : <br><br>
+
+                    $$CH_3COOC_2H_5 + OH^- = CH_3COO^- + C_2H_5OH$$
+
+                    est d'ordre $1$ par rapport à chacun des réactifs. Dans un mélange stœchiométrique, où les réactifs ont chacun une concentration initiale égale à $20,0$ mmol.L$^{-1}$, on suit le déroulement de la réaction par titrage acido-basique. <br><br>
+
+                    Au bout de $20,0$ min, on prélève $10$ mL de la solution que l'on dilue dans l'eau froide et l'on titre les ions hydroxyde restant par une solution d'acide chlorhydrique ($H_3O^+ + Cl^-$) à $0,100$ mol.L$^{-1}$. La réaction de titrage est $H_3O^+ + HO^- = 2 H_2O$. <br>
+                    L'équivalence est obtenue pour un volume d'acide $v_e=6,15$ mL. <br><br>
+                    
+                    <em>1.</em> Calculer la constante de vitesse de la réaction. <br>
+
+                    <em>2.</em> Quel volume $v_e'$ faut-il verser pour doser un échantillon de $100$ mL prélevé $20,0$ min plus tard ? <br>
+
+                    <em>3.</em> Au bout de combien de temps la saponification est-elle totale  à $1,00\%$ près ? <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[MP Chaptal 2024]</em> Cours su. Ewen veut parfois aller trop vite, il saute des étapes de calcul et oublie la concentration à l'instant initial au moment de l'intégration de la loi de vitesse. Il suppose automatiquement une lacune de l'énoncé sur le coefficient de dilution de l'échantillon, sans réfléchir au fait que l'équivalence repose sur les quantités de matière et ne nécessite pas à ce titre d'information supplémentaire. Il oublie par inattention de préciser l'unité de la constante de réaction. Pour autant, les résultats fournis sont justes si l'on fait fi de ces étourderies, et l'ensemble est mené avec rapidité.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
