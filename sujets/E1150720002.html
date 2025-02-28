@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[TSI] [Maison]</h2><br><br>
+            <h3>Chute libre dans un tube à vide</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Une balle est lâchée, sans vitesse initiale, dans un tube où le vide a été fait, d'une altitude initiale de $1,5$ m. On se place dans le référentiel terrestre du laboratoire. <br>
+                    On étudie le mouvement de la balle dans le champ de pesanteur $\overrightarrow{g}$, de telle sorte que l'accélération de la balle est alors : $\overrightarrow{a}=\overrightarrow{g}$. <br><br>
+
+                    <em>1.</em> Justifier que le mouvement est uniquement selon l'axe $(Oz)$ vertical que l'on prendra ascendant, et qu'alors : $a_z(t)=-9.8$ m.s$^{-2}$.\\
+
+                    <em>2.</em> Déterminer l'expression de l'équation horaire de la vitesse $v_z(t)$ de la balle.\\
+
+                    <em>3.</em> En déduire l'équation horaire du mouvement de la balle $z(t)$.\\
+
+                    <em>4.</em> Comparer l'équation de $z(t)$ avec celle décrivant le même mouvement sur la Lune : 
+                    $$z(t)=-0,8t^2+1,5$$
+
+                    <em>5.</em> A quel instant $t_{sol}$ la balle touchera-t-elle le sol après avoir été lâchée à l'instant $t=0$s ? Quelle est sa vitesse à cet instant $v_z(t_{sol})$ ?
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[TSI0 Chaptal 2024]</em> L'accélération était donnée égale au vecteur intensité de la pesanteur. Des difficultés à retranscrire en terme de composantes des vecteurs cette information, et en particulier à justifier que l'accélération selon la composante x horizontale est nulle (d'ailleurs, l'énoncé ne parlait même pas de cette composante, mais Rabah semblait absolument vouloir raisonner dans le plan). L'intégration pose particulièrement problème à Rabah, il ajoute hasardeusement des constantes, parfois sans même que cela soit des constantes : ajout de la vitesse pour tout temps $t$ au lieu de la vitesse initiale lors de l'intégration de l'accélération, sans s'émouvoir du fait que le terme $v_z(t)$ puisse alors se simplifier de part et d'autre de l'équation. L'intégration d'une constante pose également problème.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>

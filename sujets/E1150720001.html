@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[TSI] [Maison]</h2><br><br>
+            <h3>Avion en vol horizontal</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Un avion de voltige, ayant une masse de $5$ tonnes, vole horizontalement, en ligne droite, avec une vitesse constante de $100$ m.s$^{-1}$. Le mouvement se fait selon un axe noté $(Ox)$, dans le référentiel terrestre. <br>
+                    A la date $t=0$, l'avion commence à accélérer, pendant $50$ s, avec une accélération constante $a_x=2,0$ m.s$^{-1}$. <br><br>
+
+                    <em>1.</em> Déterminer l'expression de la vitesse en fonction du temps $v_x(t)$ à partir de la valeur de l'accélération et de la vitesse initiale. <br>
+
+                    <em>2.</em> Calculer la valeur de sa vitesse après $50$ s d'accélération, puis sa quantité de mouvement. <br>
+
+                    <em>3.</em> Déterminer l'expression horaire du mouvement $x(t)$, en prenant $x(0)=0$ m. <br>
+
+                    <em>4.</em> Calculer la distance parcourue durant les $50$ s d'accélération. <br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p><em>[TSI0 Chaptal 2024]</em> Yann n'a pas le réflexe du schéma. Le lien entre position, vitesse et accélération n'est pas possible. La dérivation est un concept totalement étranger (je ne sais pas si cela est normal ?). Par exemple, l'accélération est écrite comme le carré de la dérivée première de la position, et ce n'est pas juste une histoire de positionnement du 2 : $\overrightarrow{a}=(d\overrightarrow{x}/dt)*(d\overrightarrow{x}/dt)$ pour Yann.</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
