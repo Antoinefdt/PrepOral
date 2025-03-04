@@ -1,0 +1,307 @@
+* {
+    margin : 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Torus Notched SemiBold";
+    src: url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.eot");
+    src: url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6aa06a9a432b8417171f60d8351aa310.svg#Torus Notched SemiBold")format("svg");
+}
+
+
+body{
+    overflow-x: hidden;
+    max-width: 2000px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+em,
+strong,
+label,
+input,
+select,
+span,
+button {
+    font-family: "Torus Notched SemiBold";
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
+    color: rgb(0,0,0);
+}
+
+@media (min-width: 900px) {
+    h2 {
+        font-size: 3em;
+        margin-top: 1%;
+        color: rgb(210,160,90);
+    }
+}
+
+@media (max-width: 900px) {
+    h2 {
+        font-size: 2.5em;
+        margin-top: 1%;
+        color: rgb(210,160,90);
+    }
+}
+
+h3 {
+    color: rgb(210,160,90); 
+}
+
+h4 {
+    color: rgb(255,180,50);
+}
+
+p {
+    font-size: 1em;
+}
+
+em {
+    font-size: 15px;
+    margin: 0;
+    font-style: italic;
+    color: rgb(240,130,90);
+}
+
+input {
+    margin-right: -1vw;
+}
+
+span {
+    margin-left: 1vw;
+}
+
+@media (min-width: 900px) {
+    .footer {
+        height: 8%;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        background-color: #333;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        height: 16%;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        background-color: #333;
+    }
+}
+
+
+.footer p {
+    color: white;
+}
+
+.footer h6 {
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 1em;
+    height: 25px;
+    width: 220px;
+    border-radius: 40px;
+    border: 2px solid rgb(130,190,50);
+    background-color: white;
+    font-size: 1em;
+    color: rgb(130,190,50);
+}
+
+button:hover {
+    cursor: pointer;
+    margin-bottom: 1em;
+    height: 25px;
+    width: 220px;
+    border-radius: 40px;
+    border: 2px solid rgb(130,190,50);
+    background-color: rgb(130,190,50);
+    font-size: 1em;
+    color: white;
+}
+
+/*------HEADER-------*/
+
+@media (min-width: 900px) {
+    .sec1 header {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: static;
+    }
+    
+    .sec1 header .container {
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 80px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .sec1 header .container ul {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sec1 header .container ul a {
+        font-size: 1.3em;
+        margin: 0 40px;
+        color: rgb(0,150,170);
+    }
+}
+
+@media (max-width: 900px) {
+    .sec1 header {
+        height: 125px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    
+    .sec1 header .container {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .sec1 header .container ul {
+        align-items: center;
+        width: 100%;
+    }
+
+    .sec1 header .container ul a {
+        font-size: 1.3em;
+        margin: 0 10px;
+        color: rgb(0,150,170);
+    }
+}
+
+/*------SECTION 1-------*/
+
+@media (min-width: 900px) {
+    .sec1 {
+        height: 100vh;
+        width: 100%;
+        flex: 1;
+        background-image: url(Fond.png);
+        background-repeat: no-repeat;
+        background-position: 800px 20px;
+        background-size: 1000px;
+    }
+
+    .sec1 h1 {
+        color: rgb(0, 150, 170);
+        font-size: 5em;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .sec1 {
+        height: 100vh;
+        width: 100%;
+        flex: 1;
+        background-image: url(fond.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .sec1 h1 {
+        color: rgb(0, 150, 170);
+        font-size: 3em;
+        margin-bottom: 5%;
+    }
+}
+
+
+.sec1 .container {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec1 .subject {
+    max-width: 1000px;         /* Définit la largeur maximale du container */
+    margin: 0 auto;        /* Centre le container horizontalement et ajoute une marge verticale */
+    border: 5px solid rgb(210,160,90);  /* Bordure épaisse et marron */
+    background-color: white;  /* Fond blanc */
+    padding: 20px;            /* Espace intérieur pour éviter que le texte touche la bordure */
+    height: 100%;
+  
+}
+
+
+
+.sec1 button {
+    height: 70px;
+    width: 230px;
+    border-radius: 40px;
+    border: 4px solid rgb(130,190,50);
+    background-color: white;
+    font-size: 2em;
+    color: rgb(130,190,50);
+}
+
+.sec1 button:hover {
+    height: 70px;
+    width: 230px;
+    border-radius: 40px;
+    border: 4px solid rgb(130,190,50);
+    background-color: rgb(130,190,50);
+    font-size: 2em;
+    color: white;
+}
+
+
+
+
+#exerciseList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.subject img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
