@@ -86,7 +86,7 @@
     
                 // Redirection vers le corrigé lors du clic
                 document.getElementById('corrigeBtn').addEventListener('click', function() {
-                window.open('Corriges/C1310720000.html', '_self');
+                 window.location.href = `results.html?filiere=${encodeURIComponent(filiere)}&concours=${encodeURIComponent(concours)}&theme=${encodeURIComponent(theme)}`
                 });
             </script>
         </div>
