@@ -65,7 +65,7 @@
                     magnétique $\mathcal{M}'(t)$ de la spire.<br>   
                     <em>3.</em> Écrire l’équation du mouvement de l'aimant. En déduire le temps 
                     caractéristique d’amortissement des oscillations de l’aimant. On pourra rappeller
-                    la résultante des forces de Laplace sur un aimant : $\vec{F}=[(\mathcal{M} \cdot \vec{grad})\vec{B}]_{z}$ 
+                    la résultante des forces de Laplace sur un aimant : $\vec{F}=\vec{grad}(\vec{\mathcal{M}} \cdot \vec{B})_z$ 
                     ]
                 </p>
                 </div>
@@ -74,6 +74,33 @@
                 <h3>Commentaires</h3><br><br>
                 <div class="subject">
                 <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrié</h3><br><br>
+                <div class="subject">
+                <p>
+                    <span style="text-decoration: underline;">Interprétation qualitative :</span>Plaçons nous dans le cas où $\dot z_0>0$, c’est à dire que l’aimant s’éloigne de la spire. Le flux magnétique à travers celle-ci diminue. 
+                    Le courant induit sera donc positif de manière à créer un champ propre de flux positif pour s’opposer à la baisse de flux extérieur (loi de Lenz).
+                    L’aimant, dont le moment magnétique est alors aligné avec le champ créé par la spire, sera donc attiré par les zones de champ fort, 
+                    c’est à dire vers la spire : l’effet sera donc de freiner l’aimant. On peut raisonner énergétiquement, les courants induits vont dissiper de 
+                    l’énergie par effet Joule. Comme il n’y a pas de source dans la spire, l’énergie ne peut être prélevée que sur l’énergie mécanique de l’aimant. <br><br>
+                      
+                    1) Calcul du champ magnétique au niveau de la spire. On suppose que le champ magnétique est uniforme sur la spire ($a \ll D$), on prend alors
+                      $\theta=\pi$ et $r=D+z_0(t)$ : 
+                      $$\vec{B}_{spire} = \frac{\mu_0 \mathcal{M}}{2\pi(D+z_0(t))^3} \vec{u_z} \simeq \frac{\mu_0 \mathcal{M}}{2\pi D^3}(1-\frac{3z_0(t)}{D})\vec{u_z}$$
+    
+                    2) On en déduit le courant induit $i(t)$ (on néglige l'autoinductance) :
+                      $$ i(t)=\frac{1}{R} e(t) = -\frac{1}{R} \frac{d\Phi}{dt}= \frac{3}{2} \frac{\mu_0 \mathcal{M} a^2}{R D^4} \dot z_0(t) $$ 
+    
+                    3) Calcul du champ crée par la spire selon l'axe (Oz). On reprend l'expression du champ magnétique créé par un moment magnétique avec 
+                      $\vec{\mathcal{M}'}=i(t)(\pi a^2)\vec{u_z}$. On trouve avec cette fois $\theta=0$ et $r=z$ ($z$ quelconque pour pouvoir prendre le gradient ensuite) :
+                      $$\vec{B}_i(z,t) = \frac{\mu_0 \mathcal{M}'}{2\pi z^3} \vec{u_z} = \frac{3}{4} \left(\frac{\mu_0^2 \mathcal{M} a^4}{R D^4} \dot z_0(t)\right) \frac{\vec{u_z}}{z^3} $$ 
+    
+                    4) Calcul de la force magnétique. On a : $\vec{F}_m = \vec{grad} (\vec{\mathcal{M}} \cdot \vec{B}_i) (z=D+z_0(t))$, on écrit le résultat à l'ordre 1 en
+                      $z_0(t)/D$ et $\dot z_0(t)/D$ : 
+                      $$ \vec{F}_m \simeq - \frac{9}{4} \left(\frac{\mu_0^2 \mathcal{M}^2 a^4}{R D^8}\right) \dot z_0(t) \vec{u_z} = -\alpha \dot z_0(t) \vec{u_z} $$ 
+                </p>
+                </div>
             </div><br><br>
             <button id="downloadBtn" class="button">Télécharger</button><br><br>
             <!-- Deuxième bouton pour le corrigé -->
