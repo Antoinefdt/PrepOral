@@ -108,6 +108,7 @@
                 document.getElementById('downloadBtn').addEventListener('click', function() {
                     var _sujet = document.getElementById('exerciseContent');
                     var wprint = window.open('','','left=0,top=0,width=800,height=600,toolbar=0,scrollbar=0, status=0');
+                    wprint.document.write('<link rel="stylesheet" href="style.css"'); 
                     wprint.document.write(_sujet.innerHTML);
                     wprint.document.close();
                     wprint.focus();
