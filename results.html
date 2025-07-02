@@ -129,7 +129,7 @@
 
             const { filiere, concours, theme } = getQueryParams();
             const filteredExercises = exercises.filter(ex =>
-            ex.filiere === filiere && ex.concours === concours && ex.theme === theme
+            (ex.filiere === filiere || filiere=='') && ex.concours === concours && ex.theme === theme
             );
 
             const exerciseListDiv = document.getElementById('exerciseList');
