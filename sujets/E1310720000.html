@@ -106,7 +106,7 @@
             <script>
                 
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                    var _sujet = documebt.getElementById('exerciseContent');
+                    var _sujet = document.getElementById('exerciseContent');
                     var wprint = window.open('','','left=0,top=0,width=800,height=600,toolbar=0,scrollbar=0, status=0');
                     wprint.document.write(_sujet.innerHTML);
                     wprint.document.close();
