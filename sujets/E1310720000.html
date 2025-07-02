@@ -109,8 +109,8 @@
                     var _sujet = document.getElementById('exerciseContent');
                     var wprint = window.open('','','left=0,top=0,width=800,height=600,toolbar=0,scrollbar=0, status=0');
                     wprint.document.write('<link rel="stylesheet" href="style.css"'); 
-                    wprint.document.write("<script>window.MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']] } } ;"+"</"+"script>");
-                    wprint.document.write('<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">"+"</"+"script>');
+                    wprint.document.write("<"+"script>window.MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']] } } ;"+"</"+"script>");
+                    wprint.document.write("<"+"script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'>"+"</"+"script>");
 
                     wprint.document.write(_sujet.innerHTML);
                     wprint.document.close();
