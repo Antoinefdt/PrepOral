@@ -1,0 +1,31 @@
+\underline{\textit{Exercice :}} CCINP 2024
+
+\bigskip
+
+On considère un interféromètre de \textsc{Michelson} réglé en lame d'air et éclairé par une source ponctuelle \(S\). Le miroir 
+mobile \( \mathcal{M}_1\) se déplace à la vitesse \(v_0\) dans la direction et selon le sens de l'axe $\vec{e_x}$. Il est réglé 
+de sorte à ce que la différence de marche soit nulle en \(\mathcal{F}_2'\) à l'instant $t=0$. On place enfin en 
+\(\mathcal{F}_2'\) - foyer image de la lentille en sortie du \textsc{Michelson} - un capteur délivrant un courant d'intensité 
+$i$ supposée proportionnelle à l'intensité lumineuse qu'il reçoit.\\
+
+
+\textbf{1)} On considère la source \(S\) monochromatique. Déterminer la différence de marche $\delta$ en \(\mathcal{F}_2'\) entre 
+deux rayons issus de \(S\).
+
+\textbf{2)} En déduire l'expression de $i(t)$, et représenter son allure.
+
+\textbf{3)} La source \(S\) n'est plus considérée comme monochromatique, mais est désormais caractérisée par un profil spectral 
+gaussien centré en \(\sigma_0=\frac{1}{\lambda_0}\):
+
+\begin{center}
+    $dI=Ce^{-\bigl(\frac{\sigma-\sigma_0}{a}\bigr)^2} d\sigma$
+\end{center}
+
+avec $a \ll \sigma_0$ et $C$ une constante réelle.\\
+Déterminer la nouvelle allure de $i(t)$.\\
+
+On donne les intégrales suivantes :
+\begin{itemize}
+    \item $\int_{-\infty}^{\infty} e^{-\sigma^2} d\sigma = \sqrt{\pi}$
+    \item $\int_{0}^{\infty} \cos(2\pi\delta\sigma) e^{-\bigl(\frac{\sigma-\sigma_0}{a}\bigr)^2} d\sigma = a\sqrt{\pi}e^{-(\pi a\delta)^2}\cos(2\pi\delta\sigma)$
+\end{itemize}
