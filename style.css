@@ -308,4 +308,4 @@ button:hover {
     height: auto;
 }
 
-.flex { display:flex;}
+.flex { display:flex; justify-content: space-between;}
