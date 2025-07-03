@@ -104,20 +104,9 @@
             </div><br><br>
             <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
             <script>
-                
+                // Redirection vers le PDF lors du clic
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                    var _sujet = document.getElementById('exerciseContent');
-                    var wprint = window.open('','','left=0,top=0,width=800,height=600,toolbar=0,scrollbar=0, status=0');
-                    wprint.document.write('<link rel="stylesheet" href="style.css"'); 
-                    wprint.document.write("<"+"script>window.MathJax = { tex: {inlineMath: [['$', '$'], ['\\(', '\\)']] } } ;"+"</"+"script>");
-                    wprint.document.write("<"+"script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'>"+"</"+"script>");
-
-                    wprint.document.write(_sujet.innerHTML);
-                    wprint.document.close();
-                    wprint.focus();
-                    wprint.print();
-                    wprint.close();
-                
+                window.location.href = 'latex/E1310720000.txt';
                 });
             </script>
         </div>
