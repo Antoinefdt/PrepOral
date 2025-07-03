@@ -1,0 +1,14 @@
+\underline{\textit{Exercice :}} Autour de l'aluminium
+
+\bigskip
+
+\textbf{1)} L'aluminium porte le numéro atomique \( Z(Al)=13\). Écrire sa configuration électronique dans l'état fondamental.
+
+\textbf{2)} Quelle est la position de l'élément aluminium dans la classification périodique ? Justifier brièvement.
+
+\textbf{3)} A quel ion stable peut conduire l'aluminium ?
+
+\textbf{4)} Donner la représentation de \textsc{Lewis} du chlorure d'aluminium \(AlCl_3\) en expliquant la démarche suivie.
+
+\textbf{5)} La molécule est en forme de triangle équilatéral. Est-elle polaire ? Si oui, donner un exemple de molécule apolaire. 
+Sinon, donner un exemple de molécule polaire.
