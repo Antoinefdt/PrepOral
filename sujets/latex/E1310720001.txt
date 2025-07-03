@@ -1,0 +1,12 @@
+\textbf{Exercice :}
+
+\bigskip
+
+On considère un anneau constitué d’un conducteur ohmique de conductivité $\gamma$ soumis à une d.d.p. $U$. 
+On néglige les effets de bords et on suppose que les lignes de courant en régime stationnaire sont orthoradiales (en géométrie cylindrique).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\linewidth]{1310720001.png}
+\end{figure}
+\textbf{Q)} Établir l’expression de la résistance électrique du conducteur entre les faces A et B.
