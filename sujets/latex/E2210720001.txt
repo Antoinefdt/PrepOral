@@ -1,0 +1,23 @@
+\underline{\textit{Exercice :}} Cinétique de la dissociation du pentoxyde de diazote
+
+\bigskip
+
+Le pentoxyde de diazote (\chemform{N_2O_5}) se dissocie en dioxyde d'azote et dioxygène. La réaction est d'ordre $1$ par rapport 
+au pentoxyde de diazote. On note $k$ la constante de vitesse. A l'instant $t=0$, on introduit du pentoxyde de diazote dans une 
+enceinte de volume constant préalablement vidée.\\
+Toutes les équations de réactions seront écrites en respectant les règles de l'UICPA : les coefficients stœchiométriques sont 
+des nombres entiers qui n'admettent pas de diviseur commun.\\
+
+\textbf{1)} Écrire l'équation de réaction de la dissociation du pentoxyde de diazote.
+
+\textbf{2)} \'Etablir la relation donnant \chemform{[N_2O_5]}, concentration en pentoxyde de diazote, en fonction du temps et 
+de la concentration initiale  \chemform{[N_2O_5]_0}
+
+\textbf{3)} On réalise l'expérience à $119^\circ$C. Au bout de $3,00$ s, $2/3$ du \chemform{N_2O_5} initialement introduit 
+ont été décomposés. Calculer, à cette température, la valeur de la constante de vitesse.
+
+\textbf{4)} Calculer le temps $\tau$ de demi-réaction à cette température. Quel serait-il si la concentration initiale 
+\chemform{[N_2O_5]_0} avait été doublée ?
+
+\textbf{5)} Qu'est-ce que l'énergie d'activation $E_a$ d'une réaction ? Proposer un protocole pour déterminer celle de la 
+réaction de dissociation du pentoxyde de diazote.
