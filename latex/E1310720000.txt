@@ -1,0 +1,22 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+\begin{minipage}{.63\textwidth}%
+On considère un aimant de dipôle magnétique $\mathcal{M}\vv{u_z}$ et de masse $m$ suspendu via un ressort de raideur $k$ au plafond. 
+Dans l’axe de ce dipôle, on place à une distance $D$, lorsque l’aimant est à l’équilibre, une spire de rayon $a$ et de centre $O$, dont 
+on négligera l’auto-inductance, et de résistance $R$. On met en mouvement l’aimant en l’écartant de sa position d’équilibre et on 
+note $z_0(t)$ sa position repérée par rapport à la situation d’équilibre. Les conditions initiales sont : 
+$z_0(0) = b > 0$ et $\dot{z_0}(0) = 0$. On supposera, dans le but de simplifier les calculs au maximum que $|z_0(t)| \sim b \ll  D$ et que
+$a \ll D$.
+
+On donne l'expression du champ magnétique dipolaire :
+$$\vv{B}=\frac{\mu_0 \mathcal{M}}{4\pi r^3}(2\cos{\theta}\vv{u_r}+\sin{\theta}\vv{u_{\theta}})$$
+\end{minipage}%
+\hfill
+\begin{minipage}{0.35\textwidth}%
+\centering
+\includegraphics[width=0.95\linewidth]{1310720000.png}
+\end{minipage}%
+
+\textbf{Q)} Étudier le mouvement de l’aimant.
