@@ -1,0 +1,21 @@
+\underline{\textit{Exercice 1 :}} Cinétique de la saponification de l'éthanoate d'éthyle
+
+\bigskip
+
+La saponification de l'éthanoate d'éthyle :
+
+\begin{chemmath}
+CH_3COOC_2H_5 + OH^- = CH_3COO^- + C_2H_5OH
+\end{chemmath}
+
+est d'ordre $1$ par rapport à chacun des réactifs. Dans un mélange stœchiométrique, où les réactifs ont chacun une concentration 
+initiale égale à $20,0$ mmol.L$^{-1}$, on suit le déroulement de la réaction par titrage acido-basique.\\
+
+\textbf{1)} Au bout de $20,0$ min, on prélève $10$ mL de la solution que l'on dilue dans l'eau froide et l'on titre les ions 
+hydroxyde restant par une solution d'acide chlorhydrique (\chemform{H_3O^+ + Cl^-}) à $0,100$ mol.L$^{-1}$. La réaction de titrage 
+est \chemform{H_3O^+ + HO^- = 2 H_2O}.\\
+L'équivalence est obtenue pour un volume d'acide $v_e=6,15$ mL. Calculer la constante de vitesse de la réaction.
+
+\textbf{2)} Quel volume $v_e'$ faut-il verser pour doser un échantillon de $100$ mL prélevé $20,0$ min plus tard ?\\
+
+\textbf{3)} Au bout de combien de temps la saponification est-elle totale  à $1,00\%$ près ?
