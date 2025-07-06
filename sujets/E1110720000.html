@@ -1,11 +1,80 @@
-\noindent De nombreux objets, dits géocroisseurs passent à proximité de la Terre, et parfois la heurtent. On considère ici un astéroïde de masse $m$, actuellement très éloigné de la Terre et de tout autre astre, et ayant donc une vitesse constante $\vec{v_0}$. Le prolongement de sa trajectoire rectiligne passe à une distance b (appelée paramètre d’impact) du centre O de la Terre ; cependant lorsqu’il se rapprochera de la Terre, l’attraction gravitationnelle de celle-ci va dévier l’astéroïde selon une trajectoire hyperbolique. On appelle périgée le point P de cette trajectoire le plus proche du centre de la Terre.
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-\bigskip
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
 
-1) Quelles sont les deux grandeurs relatives à l’astéroïde qui se conservent au cours de son mouvement ? Justifier les réponses.
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [1] </h2><br><br>
+            <h3>Astéroïde</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  De nombreux objets, dits géocroisseurs passent à proximité de la Terre, et parfois la heurtent. On considère ici un astéroïde de masse $m$, 
+                  actuellement très éloigné de la Terre et de tout autre astre, et ayant donc une vitesse constante $\vec{v_0}$. Le prolongement de sa 
+                  trajectoire rectiligne passe à une distance b (appelée paramètre d’impact) du centre O de la Terre ; cependant lorsqu’il se rapprochera de 
+                  la Terre, l’attraction gravitationnelle de celle-ci va dévier l’astéroïde selon une trajectoire hyperbolique. On appelle périgée le point P 
+                  de cette trajectoire le plus proche du centre de la Terre.
+
+
+                  1) Quelles sont les deux grandeurs relatives à l’astéroïde qui se conservent au cours de son mouvement ? Justifier les réponses.
 
 2) Traduire la conservation de ces deux grandeurs entre $M_{\infty}$ et P.
 
 3) En déduire la distance minimale d’approche $r_{min}=OP$.
 
 4) Faire l’application numérique pour $v_0 = 2, 0 \; km.s^{-1}$ et $b = 140 \; 000 \; km$.
+                    Donner des conditions sur l'ensemble des paramètres du problème pour que le mouvement du corps soit borné.
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <button id="downloadBtn">Télécharger</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'pdf/exercice1.pdf';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
