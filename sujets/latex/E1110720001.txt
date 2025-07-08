@@ -1,0 +1,11 @@
+\begin{wrapfigure}[11]{r}{6cm}
+	\includegraphics[scale=.27,angle=0]{E1110720001.png}
+\end{wrapfigure}
+\underline{\textit{Exercice :}}
+
+\bigskip
+Un homme de masse $M$ assimilé à un point matériel se trouve sur une échelle homogène de masse $m$ et de longueur $2l$ reposant contre un mur. On note $f$ le coefficient de frottement statique entre l'échelle et le sol en $B$ et on suppose que le contact mur-échelle se fait sans frottement. On pose $\overline{GH} = x$ où $G$ est le centre de masse de l'échelle.
+
+\medskip 
+
+Question : A quelle condition sur $x$, l'échelle reste-t-elle en équilibre?
