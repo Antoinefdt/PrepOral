@@ -1,5 +1,5 @@
 \begin{wrapfigure}[6]{r}{8cm}
-	\includegraphics[scale=.37,angle=0]{Capture d’écran 2024-09-13 à 15.48.20.png}
+	\includegraphics[scale=.37,angle=0]{1110720003.png}
 \end{wrapfigure}
 \underline{\textit{Exercice :}}
 
