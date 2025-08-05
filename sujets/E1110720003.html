@@ -1,1 +1,79 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [3] </h2><br><br>
+            <h3>Satellite</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Un satellite décrit une orbite circulaire à l’altitude $h$ autour de la Terre.<br><br>
+
+                    <em>1)</em> Exprimer la vitesse $V(h)$ du satellite  évoluant sur l’orbite circulaire à l’altitude 
+                    $h$ autour de la Terre.<br><br>
+
+                    <em>2)</em> En déduire que les énergies potentielle, cinétique et mécanique du satellite sont telles que :
+                    $E_m =-E_c = \frac{1}{2}E_p.$ <br><br>
+
+                     Par suite de l’existence de frottement avec l’atmosphère, le satellite perd légèrement de l’altitude à chaque 
+                    rotation ($|dh| \ll h$). On admet cependant que la trajectoire reste circulaire en première approximation.<br><br>
+                    
+                    <em>3)</em> Trouver la relation liant la variation de vitesse $dV$ à la variation d’altitude $dh$ à chaque tour.
+                    Commenter le résultat obtenu. Données : $dh = -1 $m ; $h =$ 500 km.
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1110720002.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
