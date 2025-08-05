@@ -1,0 +1,10 @@
+Un satellite décrit une orbite circulaire à l’altitude $h$ autour de la Terre.
+
+1) Exprimer la vitesse $V(h)$ du satellite  évoluant sur l’orbite circulaire à l’altitude $h$ autour de la Terre.
+
+2) En déduire que les énergies potentielle, cinétique et mécanique du satellite sont telles que :
+
+$E_m =-E_c = \frac{1}{2}E_p.$
+
+3) Par suite de l’existence de frottement avec l’atmosphère, le satellite perd légèrement de l’altitude à chaque rotation ($|dh| \ll h$). On admet cependant que la trajectoire reste circulaire en première approximation.
+Trouver la relation liant la variation de vitesse $dV$ à la variation d’altitude $dh$ à chaque tour. Commenter le résultat obtenu. Données : $dh = -1 $m ; $h =$ 500 km.
