@@ -1,0 +1,12 @@
+\begin{wrapfigure}[6]{r}{8cm}
+	\includegraphics[scale=.37,angle=0]{Capture d’écran 2024-09-13 à 15.48.20.png}
+\end{wrapfigure}
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Une caisse cubique de côté $a$ et de masse $m$ repose sur un plan horizontal avec un coefficient de frottement $f$.
+
+\medskip
+
+Question : Quel est le moyen le moins "fatiguant" pour la déplacer de $a$ : la faire glisser ou bien la faire pivoter ?
