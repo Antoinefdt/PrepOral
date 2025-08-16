@@ -1,0 +1,11 @@
+\underline{\textit{Exercice :}}
+\begin{wrapfigure}[7]{r}{7.5cm}
+	\includegraphics[scale=.3,angle=0]{1110720004.png}
+\end{wrapfigure}
+
+\bigskip
+Un skieur assimilé à un point matériel de masse $m$ se déplace sans frottements sur une piste initialement horizontale à la vitesse $v_0$ vers une rupture de pente à profil circulaire (rayon R)  d'un angle $\beta$.
+
+1) A quelle condition le skieur ne saute-t-il pas ?
+
+2) A quelle condition le skieur saute-t-il dès l’entrée dans la pente (en D) ? Interpréter le critère.
