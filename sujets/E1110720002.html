@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [3] </h2><br><br>
+            <h3>Déviation vers l'Est</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  On étudie la chute d’un corps assimilé à un point matériel $M$ de masse $m$ dans un référentiel local $\mathcal{R}_T$ situé 
+                  à une latitude $\lambda$. Le corps est lâché sans vitesse initiale d’un point de coordonnées $(0, 0, h)$ avec $h = 300 \; m$. 
+                  On note $x(t)$, $y(t)$ et $z(t)$ ses coordonnées dans $\mathcal{R}_T$ en fonction du temps. On pose $\vec{\bf{g}} = - 
+                  g \bf{\vec{u_z}}$. <br><br>
+
+                  <em>1.</em> Écrire les équations du mouvement <br><br>
+                  <em>2.</em> Par un calcul en O.D.G., vérifier que la force de Coriolis est bien négligeable en première approximation. 
+                  Résoudre les équations du mouvement en négligeant $\vec{F}_{ic}$ ; on notera $x_0 (t)$, $y_0 (t)$ et $z_0 (t)$ les solutions obtenues. 
+                  Peut-on cependant prévoir qualitativement l’effet de la force de Coriolis ? <br><br>
+                  <em>3.</em> Pour tenir compte de la force de Coriolis, nous allons procéder de manière perturbative : pour cela, exprimer la 
+                  force de Coriolis sur la trajectoire non perturbée paramétrée par $(x_0 (t), y_0 (t), z_0 (t))$. Injecter cette forme dans les 
+                  équations du mouvement. Les intégrer pour trouver la trajectoire tenant compte au premier ordre de la force de Coriolis paramétrée 
+                  par $(x_1 (t), y_1 (t), z_1 (t))$. Que dire du résultat ? Application numérique pour une latitude correspondant à Nice 
+                  ($\lambda=43,7 \; \text{°}$). <br><br>
+                    
+                </p>
+                <p>
+
+                    <img src="../images/1110720002.png" width=40% alt="Schéma illustratif"> <br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1110720002.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
