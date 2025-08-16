@@ -1,5 +1,5 @@
 \begin{wrapfigure}[6]{r}{8cm}
-	\includegraphics[scale=.37,angle=0]{1110720003.png}
+	\includegraphics[scale=.37,angle=0]{1110720001.png}
 \end{wrapfigure}
 \underline{\textit{Exercice :}}
 
