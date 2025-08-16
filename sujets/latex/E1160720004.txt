@@ -1,6 +1,6 @@
 \underline{\textit{Exercice :}}
 \begin{wrapfigure}[7]{r}{7.5cm}
-	\includegraphics[scale=.3,angle=0]{1110720004.png}
+	\includegraphics[scale=.3,angle=0]{1160720004.png}
 \end{wrapfigure}
 
 \bigskip
