@@ -1,5 +1,5 @@
 \begin{wrapfigure}[10]{r}{6.5cm}
-	\includegraphics[scale=.3,angle=0]{EXO1.png}
+	\includegraphics[scale=.3,angle=0]{1160720000.png}
 \end{wrapfigure}
 \underline{\textit{Exercice :}}
 
