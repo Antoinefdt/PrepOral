@@ -1,0 +1,11 @@
+\begin{wrapfigure}[10]{r}{6.5cm}
+	\includegraphics[scale=.3,angle=0]{EXO1.png}
+\end{wrapfigure}
+\underline{\textit{Exercice :}}
+
+\bigskip
+Considérons un point matériel $M$ de masse $m$ se déplaçant sans frottement le long de l’axe Ox, son abscisse est notée $x(t)$. Il est en outre relié à deux points fixes A et B par des ressorts identiques, de raideur k et de longueur à vide $l_0$. On donne OA = OB = $l_1$.
+
+1) Déterminer les positions d’équilibre $x_{eq}$ du point matériel le long de l’axe et discuter leur stabilité en fonction de la valeur de $l_1$ par rapport à $l_0$.
+
+2) Déterminer la période des oscillations autour des positions d’équilibre dans le cas où $l_1 < l_0$.
