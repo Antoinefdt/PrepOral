@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+2<!DOCTYPE html>
 <html lang="fr">
 <head>
     <title>PrepOral - accueil</title>
@@ -75,19 +75,23 @@
                 <p>
                     1) Le PFD donne : <br> <br>
                     $\begin{align*}
-                        \ddot x &= 2 \Omega \sin{\lambda} \dot y   \\
-                        \ddot y &= -2 \Omega(\sin{\lambda} \dot x+\cos{\lambda} \dot z) \\
-                        \ddot z &= -g + 2 \Omega \cos{\lambda} \dot y
+                        \ddot x &= - \omega_0^2 x   \\
+                        \ddot y &= \omega_0^2 y 
                     \end{align*}$
-                    <br><br>
-                    2) On a $\frac{F_{ic}}{mg} \simeq \frac{\Omega v}{g} \ll 1$ car $\Omega \simeq 10^{-4} \; rad.s^{-1}$. En négligeant 
-                    la force de Coriolis on a :
-                    $$x_0(t)=y_0(t)=0 \; \; \text{ et } \; \; z_0(t)=h-gt^2/2$$
-                    En prenant comme vitesse $\dot z_0$, on trouve une force de Coriolis dirigée selon $+\vec{u_y}$, donc vers l'Est.
-                    <br><br>
-                    3) On obtient :
-                    $$x_1(t)=0 \; \; \text{ ; } \; \; y_1(t)=\frac{1}{3} \Omega \cos{\lambda} g t^3 \; \; \text{ et } \; \; z_1(t)=h-gt^2/2$$
-                    On trouve une déviation vers l'Est de $\Delta y = y_1(\sqrt{2h/g}) = \frac{2^{3/2}}{3} \frac{\Omega \cos{\lambda} h ^{3/2}}{g^{1/2}} = 10,9 \; cm$
+                    <br>
+                    La seule position d'équilibre est situé en $(0,0)$ et elle est instable selon $y$. <br><br>
+                    
+                    2) En prenant en compte les forces d'inerties d'entraînement et de Coriolis, on a :
+                    $$\begin{align*}
+                        \ddot x  + (\omega_0^2 - \Omega^2) &= 2 \Omega \dot y  \\
+                        \ddot y - (\omega_0^2 + \Omega^2)&= - 2 \Omega \dot x
+                    \end{align*}$$
+            
+                    3) On doit avoir un déterminant nul pour trouver des solutions non nulles :
+                    $$r^4+2\Omega^2r^2+\Omega^4-\omega_0^2=0$$
+                    Ce qui donne : $r^2=-\Omega^2 ±pm \omega_0^2$. Si $r$ est solution alors $-r$ l'est aussi ce qui donnerait une 
+                    croissance exponentielle, on doit donc avoir $r$ qui soit imaginaire pur. Cela se traduit apr la condition :
+                    $$\Omega \gt \omega_0$$.
                 </p>
                 </div>
             </div><br><br>
