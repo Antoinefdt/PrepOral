@@ -1,0 +1,29 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On suppose qu’un point matériel de masse $m$ est astreint à se déplacer dans le plan $xOy$ d’un référentiel $\mathcal{R}$ galiléen sous 
+l’effet d’une force conservative associée à l’énergie potentielle suivante :
+$$E_p(x,y)=\frac{m\omega_0^2}{2}(x^2-y^2)$$
+\textbf{1)} Quelle est la position d’équilibre ? Est-elle stable ? On écrira et on résoudra pour cela les équations du mouvement.
+
+\medskip
+
+On suppose à présent que le référentiel $\mathcal{R}$ est en fait en rotation autour de son axe $Oz$ dans un référentiel $\mathcal{R'}$ 
+supposé galiléen à la vitesse angulaire $\Omega$.
+\newline
+\textbf{2)} Écrire les nouvelles équations du mouvement.
+\newline
+\textbf{3)} En cherchant des solutions sous la forme :
+$$\begin{pmatrix}
+x(t) \\
+y(t) \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+x_0 \\
+y_0 \\
+\end{pmatrix}
+\exp(rt)
+$$
+établir une condition portant sur $\Omega$ et $\omega$ pour que la position d’équilibre soit stable.
