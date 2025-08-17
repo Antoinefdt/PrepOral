@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MPSI] [Maison] [1] </h2><br><br>
+            <h3>Astéroïde</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  De nombreux objets, dits géocroisseurs passent à proximité de la Terre, et parfois la heurtent. On considère ici un astéroïde de masse $m$, 
+                  actuellement très éloigné de la Terre et de tout autre astre, et ayant donc une vitesse constante $\vec{v_0}$. Le prolongement de sa 
+                  trajectoire rectiligne passe à une distance b (appelée paramètre d’impact) du centre O de la Terre ; cependant lorsqu’il se rapprochera de 
+                  la Terre, l’attraction gravitationnelle de celle-ci va dévier l’astéroïde selon une trajectoire hyperbolique. On appelle périgée le point P 
+                  de cette trajectoire le plus proche du centre de la Terre. <br><br>
+                <p>
+
+                    <img src="../images/1160720000.png" width=40% alt="Schéma illustratif"> <br><br>
+                    
+                    <em>1.</em> Quelles sont les deux grandeurs relatives à l’astéroïde qui se conservent au cours de son mouvement ? Justifier les réponses.<br>
+
+                    <em>2.</em> Traduire la conservation de ces deux grandeurs entre $M_{\infty}$ et P.<br>
+
+                    <em>3.</em> En déduire la distance minimale d’approche $r_{min}=OP$.<br>
+
+                    <em>4.</em> Faire l’application numérique pour $v_0 = 2, 0 \; km.s^{-1}$ et $b = 5 \; 000 \; km$. On donne $\mathcal{G}=6,67 \times 10{-11} \; SI $ et 
+                    $M_T=5,97 \times 10^{24} \; kg$.
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                    1) L'énergie mécanique et le moment cinétique car la seule force est conservative et centrale. <br><br>
+                    2) On a : <br><br>
+                    $\begin{align*}
+                        \frac{1}{2}mv_0^2+0 & = \frac{1}{2}mv_p^2 - \frac{\mathcal{G} M_T m }{r_{min}} \\
+                        mbv_0 & =mr_{min}v_p
+                    \end{align*}$ <br><br>
+                    3) On résout l'équation du second degré qui nous donne une unique solution positive :
+                    $$r_{min}=\frac{\mathcal{G} M_T}{4v_0^2} \left( \sqrt{1+\frac{8v_0^2 b^2}{(\mathcal{G} M_T)^2}}-1 \right)$$
+                    4) $r_{min}=497 \; km$
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1160720000.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
