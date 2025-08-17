@@ -53,7 +53,8 @@
 
                     <em>3.</em> En déduire la distance minimale d’approche $r_{min}=OP$.<br>
 
-                    <em>4.</em> Faire l’application numérique pour $v_0 = 2, 0 \; km.s^{-1}$ et $b = 140 \; 000 \; km$.
+                    <em>4.</em> Faire l’application numérique pour $v_0 = 2, 0 \; km.s^{-1}$ et $b = 5 \; 000 \; km$. On donne $\mathcal{G}=6,67 \times 10{-11} \; SI $ et 
+                    $M_T=5,97 \times 10^{24} \; kg}$.
                 </p>
                 </div>
             </div><br><br>
@@ -61,6 +62,21 @@
                 <h3>Commentaires</h3><br><br>
                 <div class="subject">
                 <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                    1) L'énergie mécanique et le moment cinétique car la seule force est conservative et centrale. <br><br>
+                    2) On a : <br><br>
+                    $\begin{align*}
+                        \frac{1}{2}mv_0^2+0 & = \frac{1}{2}mv_p^2 - \frac{\mathcal{G} M_T m }{r_{min}} \\
+                        mbv_0 & =mr_{min}v_p
+                    \end{align*}$ <br><br>
+                    3) On résout l'équation du second degré qui nous donne une unique solution positive :
+                    $$r_{min}=\frac{\mathcal{G} M_T}{4v_0^2} \left( \sqrt{1+\frac{8v_0^2 b^2}{(\mahcal{G} M_T)^2}}-1 \right)$$
+                </p>
+                </div>
             </div><br><br>
             <button id="downloadBtn">Sujet Latex</button><br><br>
             <script>
