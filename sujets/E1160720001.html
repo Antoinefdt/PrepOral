@@ -39,10 +39,10 @@
                 <div class="subject">
                 <p>
                     On tire horizontalement un projectile à la surface de la Terre avec une vitesse $V_0$ telle que :
-                    $$V_0^2 = \alpha \dfrac{G M_T}{R}$$
-                    où $1 \leq \alpha \leq 2$, $G$ désigne la constante de gravitation universelle, $M_T$ la masse de la Terre et $R$ son rayon.<br><br>
+                    $$V_0^2 = \alpha \dfrac{\mathcal{G} M_T}{R}$$
+                    où $1 \leq \alpha \leq 2$, $\mathcal{G}$ désigne la constante de gravitation universelle, $M_T$ la masse de la Terre et $R$ son rayon.<br><br>
                
-                    <em>1.</em>Déterminer l’énergie mécanique puis l’énergie potentielle effective du projectile en fonction de la distance $r$ au 
+                    <em>1.</em> Déterminer l’énergie mécanique puis l’énergie potentielle effective du projectile en fonction de la distance $r$ au 
                     centre de la Terre ($r = R + h$). <br>
 
                     <em>2.</em> Tracer l’allure de ces énergies en fonction de la distance $r$ au centre de la Terre.<br>
@@ -63,7 +63,10 @@
                 <div class="subject">
                 <p>
                                         <img src="../images/1160720000.png" width=40% alt="Schéma illustratif"> <br><br>
-                    1) L'énergie mécanique et le moment cinétique car la seule force est conservative et centrale. <br><br>
+                    1) On a : 
+                    $$E_m=\frac{1}{2} m \dot r ^2 + \frac{mL_0^2}{2mr^2}-\frac{ m \mathcal{G} M_T}{r}$$
+                    Or, $L_0=mRv-0$ ainsi :
+                    $$E_{p,eff}=\mathcal{G}M_T m \left( \frac{\alpha R}{2r^2}-\frac{1}{r} \right)$$
                     2) On a : <br><br>
                     $\begin{align*}
                         \frac{1}{2}mv_0^2+0 & = \frac{1}{2}mv_p^2 - \frac{\mathcal{G} M_T m }{r_{min}} \\
