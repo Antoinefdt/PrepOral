@@ -1,0 +1,19 @@
+\textbf{Exercice :}
+
+\bigskip
+
+On tire horizontalement un projectile à la surface de la Terre avec une vitesse $V_0$ telle que 
+\[
+V_0^2 = \alpha \dfrac{G M_T}{R}
+\]
+où $1 \leq \alpha \leq 2$, $G$ désigne la constante de gravitation universelle, $M_T$ la masse de la Terre et $R$ son rayon.
+
+\begin{enumerate}
+    \item Déterminer l’énergie mécanique puis l’énergie potentielle effective du projectile en fonction de la distance $r$ au centre de la Terre ($r = R + h$).
+    
+    \item Tracer l’allure de ces énergies en fonction de la distance $r$ au centre de la Terre.
+    
+    \item En déduire l’expression des altitudes maximale et minimale du projectile.
+    
+    \item Préciser la nature de la trajectoire dans les cas $\alpha = 1$, $1 < \alpha < 2$ et $\alpha = 2$.
+\end{enumerate}
