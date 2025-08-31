@@ -1,0 +1,11 @@
+\begin{wrapfigure}[7]{r}{7cm}
+	\includegraphics[scale=.28,angle=0]{1110720004.png}
+\end{wrapfigure}
+\underline{\textit{Exercice :}}
+
+\bigskip
+On exerce une force $\vec{F}$ faisant un angle $\alpha$ avec l'horizontale sur un fil enroulé sur un yoyo de masse $m$, de rayons $R$ et $a$ (pour l'enroulement) et d moment d'inertie $J$ par rapport à $Cy$. Le contact cylindre-sol est caractérisé par un coefficient de frottement $\mu$. On suppose qu'il y a roulement sans glissement.
+
+\medskip
+
+Question : Dans quel sens se déplace le yoyo ?
