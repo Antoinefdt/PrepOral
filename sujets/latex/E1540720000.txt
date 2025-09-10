@@ -1,0 +1,25 @@
+\underline{\textit{Exercice :}}
+\bigskip
+
+\begin{minipage}{.58\textwidth}%
+La tension $u_e$ est issue d’un appareil de mesure, mais se trouve parasitée par un bruit à 50 $Hz$ 
+due à la tension d’alimentation de l’appareil. On souhaite l’éliminer
+à l’aide du filtre schématisé ci-contre.
+\medskip
+
+\textbf{1)} Quel est la nature de ce filtre ?
+\medskip
+
+\textbf{2)} Déterminer sa fonction de transfert. Que vaut-elle en $\omega_0 = 1/\sqrt{LC}$ ? 
+\end{minipage}%
+\hfill
+\begin{minipage}{0.4\textwidth}%
+\includegraphics[width=\linewidth]{Images/Filtre_rejecteur.png}
+\end{minipage}%
+\medskip
+
+\textbf{3)} On dispose d’une bobine d’inductance $1 \;H$. Quel condensateur faut-il choisir ?
+\medskip
+
+\textbf{4)} Pour améliorer la sélectivité du filtre, est-il préférable de choisir $R = 25 \; 
+\Omega$ ou $R = 250 \; \Omega $ ?
