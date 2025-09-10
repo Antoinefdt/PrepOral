@@ -41,21 +41,11 @@
                     La tension $u_e$ est issue d’un appareil de mesure, mais se trouve parasitée par un bruit à 50 $Hz$ due 
                     à la tension d’alimentation de l’appareil. On souhaite l’éliminer à l’aide du filtre schématisé ci-contre.
                     <br><br>
-                    1. Quel est la nature de ce filtre ?
-                    \medskip
-                    
-                    \textbf{2)} Déterminer sa fonction de transfert. Que vaut-elle en $\omega_0 = 1/\sqrt{LC}$ ? 
-                    \end{minipage}%
-                    \hfill
-                    \begin{minipage}{0.4\textwidth}%
-                    \includegraphics[width=\linewidth]{Images/Filtre_rejecteur.png}
-                    \end{minipage}%
-                    \medskip
-                    
-                    \textbf{3)} On dispose d’une bobine d’inductance $1 \;H$. Quel condensateur faut-il choisir ?
-                    \medskip
-                    
-                    \textbf{4)} Pour améliorer la sélectivité du filtre, est-il préférable de choisir $R = 25 \; \Omega$ ou $R = 250 \; \Omega $ ?
+                    <em>1.</em> Quel est la nature de ce filtre ?<br><br>
+                    <em>2.</em> Déterminer sa fonction de transfert. Que vaut-elle en $\omega_0 = 1/\sqrt{LC}$ ?<br><br>
+                    <em>3.</em> On dispose d’une bobine d’inductance $1 \;H$. Quel condensateur faut-il choisir ?<br><br>
+                    <em>4.</em> Pour améliorer la sélectivité du filtre, est-il préférable de choisir $R = 25 \; \Omega$ ou 
+                    $R = 250 \; \Omega $ ?
                 </p>
                 </div>
             </div><br><br>
@@ -68,13 +58,15 @@
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
                 <p>
-                    1) $$V(h)=\sqrt{\frac{\mathcal{G} M_T}{R+h}}$$
-                    
-                    2) facile <br><br>
-                    
-                    3) On dérive l'expression de $V(h)$ :
-                    $$dV=-\frac{\sqrt{\mathcal{G} M_T}}{2(R+h)^{3/2}} dh$$
-                    On trouve, $dV=5,53 \; mm.s^{-1}$.
+                    <em>1.</em> A BF et HF, on a $u_s=u_e$, on a donc un filtre coupe-bande.<br><br>
+                    <em>2.</em> $$\underline{H}=\frac{1-LC\omega^2}{1-LC\omega^2+j\frac{L}{R}\omega}$$
+                    On trouve $\underline{H}(\omega_0)=0$, ce filtre rejette cette fréquence. (Attention la forme
+                    canonique n'est pas évidente, on ne peut psa identifier Q).<br><br>
+                    <em>3.</em> On choisit $C= 10 \; \mu F$ <br><br>
+                    <em>4.</em> On peut voir dans l'expression du module qu'il faut prendre R grand pour minimer 
+                    le dénominateur et donc rendre $\underline{H}$ grand lorsqu'on s'éloigne de $\omega_0$.
+                    On peut sinon calculer la bande passante (différence des fréquences pour lesquelles $H=H_max\\sqrt{2}$.
+                    On trouve $$\Delta \omega =\frac{1}{RC}$$
                 </p>
                 </div>
             </div><br><br>
@@ -82,7 +74,7 @@
             <script>
                 // Lors du clic, redirige vers le PDF pré-généré
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                window.location.href = 'latex/E1160720002.txt';
+                window.location.href = 'latex/E1540720000.txt';
                 });
             </script>
         </div>
