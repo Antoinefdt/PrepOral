@@ -27,4 +27,4 @@ et $b$ en fonction des données.
 \medskip
 
 \textbf{5)} On note $\Delta f = (f_0(x) -f_0(x=0))$ la variation de fréquence liée à un déplacement. 
-La plus petite variation détectable est $\Delta f_{min} = 3 \; Hz$. Quel est le plus petit déplacement détectable ?
+La plus petite variation détectable est $\Delta f_{min} = 3 \; Hz$ et on prends $L=1 \; mH$. Quel est le plus petit déplacement détectable ?
