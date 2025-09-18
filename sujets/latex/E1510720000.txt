@@ -12,9 +12,9 @@ câble de torsion (de constante $\gamma$) à un disque $\mathcal{D}_0$ dont le m
     \includegraphics[width=0.5\linewidth]{Images/Filtrage_méca.png}
 \end{figure}
 
-Le mouvement de $\mathcal{D}_0$ est tel que : $\dot \theta_e(t) = \omega + \omega_1(t)$ où $\omega$ est une constante et $\omega_1(t)$ 
-une perturbation périodique de période $T = 2\pi/\omega$.
+Le mouvement de $\mathcal{D}_0$ est tel que : $\dot \theta_e(t) = \omega_1 + \omega_2(t)$ où $\omega_1$ est une constante et $\omega_2(t)$ 
+une perturbation périodique de période $T = 2\pi/\omega_1$.
 
 \medskip
 
-\textbf{Q)} À quelle condition a-t-on $\dot \theta_s(t) \simeq \omega$ ?
+\textbf{Q)} À quelle condition a-t-on $\dot \theta_s(t) \simeq \omega_1$ ?
