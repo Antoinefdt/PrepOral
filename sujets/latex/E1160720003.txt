@@ -1,0 +1,15 @@
+\underline{\textit{Exercice :}}
+\bigskip
+
+
+Un faisceau de matière radioactive émettant des particules $\alpha$ (noyaux d’hélium, $He^{2+}$) est dirigé vers un noyau d’or, 
+de centre $O$ et de rayon $R$ contenant une charge totale $Q>0$ constante. Les particules $\alpha$ de masse $m$ se dirigent vers le 
+noyau avec une vitesse $-v_0 \vv{u_x}$ (à grande distance de $O$). 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Rutherford.png}
+\end{figure}
+
+\textbf{Q)} Donner une condition sur la valeur du paramètre d’impact $a$ pour qu’une particule donnée ne rencontre pas la boule. 
+On posera utilement $R_c = 2k/(m v_0^2)$ avec $k = qQ/(4\pi\epsilon_0 )$.
