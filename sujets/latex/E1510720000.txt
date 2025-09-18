@@ -1,0 +1,20 @@
+\underline{\textit{Exercice :}}
+
+\bigskip 
+
+
+Un disque $\mathcal{D}$ de moment d’inertie $J$ par rapport à son axe de rotation peut tourner librement autour de $Oz$ (angle $\theta_s$) 
+via une liaison pivot lubrifiée (le couple résistant appliqué au disque s’écrit $\Gamma = -h \dot \theta_s$). En outre il est relié via un 
+câble de torsion (de constante $\gamma$) à un disque $\mathcal{D}_0$ dont le mouvement est imposé.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/Filtrage_méca.png}
+\end{figure}
+
+Le mouvement de $\mathcal{D}_0$ est tel que : $\dot \theta_e(t) = \omega + \omega_1(t)$ où $\omega$ est une constante et $\omega_1(t)$ 
+une perturbation périodique de période $T = 2\pi/\omega$.
+
+\medskip
+
+\textbf{Q)} À quelle condition a-t-on $\dot \theta_s(t) \simeq \omega$ ?
