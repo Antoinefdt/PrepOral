@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MPSI] [Maison] [7] </h2><br><br>
+            <h3>Chute le long d'une hélice</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  On considère un point matériel $M$, de masse $m$, que l’on lâche sans vitesse initiale sur un boulier hélicoïdal d’axe 
+                  $Oz$ et de pas $2\pi h$. L’hélice est paramétrée en polaire par :
+                  $$x=R\cos\theta \; \; \text{ ; } \; \; y=R\sin\theta \; \; \text{ ; } \; \; z=h\theta$$
+                  Le mouvement est supposé sans frottements. <br><br>
+
+                  <em>1.</em> Calculer le temps mis par $M$ pour faire 5 tours d’hélice. <br><br>
+                  <em>2.</em> Calculer la réaction du support sur $M$. Discuter les cas $h \rightarrow  0$ et $h \rightarrow +\infty$.<br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                  <em>1.</em> Le mouvement est conservatif le TEM donne :
+                  $$\frac{m}{2}(R^2+h^2)\dot \theta ^2 +mgh\theta =0$$
+                  On obtient alors :
+                  $$\tau = \sqrt{ \frac{R^2+h^2}{2gh} \int_0^{-10 \pi} \frac{du}{u}$$
+                  $$\tau = \sqrt{ 20\pi \frac{R^2+h^2}{gh} $$
+                  <em>2.</em> On tulise le PFD à l'envers connaissant $\dot \dot \theta$ :
+                  $$\begin{align*}
+                    -mR\dot \theta ^2 =& F_r \\
+                    mR \dot \dot \theta =& F_{\theta} \\
+                    m \dot \dot z =& F_z -mg
+                  \end{align*}$$
+                  Connaissant $\dot \dot \theta en intégrant le TEM, on trouve :
+                  $$\begin{align*}
+                    F_r =& mg \left( \frac{2Rh}{R^2+h^2} \theta \right) <0 \\
+                    F_{\theta} =& mg \left( -\frac{Rh}{R^2+h^2}  \right) <0 \\
+                    F_z =& mg \left( \frac{R^2}{R^2+h^2} \theta \right) >0 \\
+                  \end{align*}$$
+                </p
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1160720006.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
