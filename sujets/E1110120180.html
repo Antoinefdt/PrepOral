@@ -59,11 +59,24 @@
                 <div class="subject">
                 <p>Encore jamais posé !</p>
             </div><br><br>
-            <button id="downloadBtn">Télécharger</button><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   On commence par étudier les positions d'équilibres :
+                    $$ E_p (r) = -\frac{1}{2} \omega^2 r^2 + m g f(r)$$
+                    $r_0$ est une position d'équilibre si : $omega=\sqrt{mg f'(r_0)/r_0)$. Elle est stable si :
+                    $$\omega^2 < mg f''(r_0)$$
+                    
+                    
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
             <script>
                 // Lors du clic, redirige vers le PDF pré-généré
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                window.location.href = 'pdf/exercice1.pdf';
+                window.location.href = 'latex/E1110120180.txt';
                 });
             </script>
         </div>
