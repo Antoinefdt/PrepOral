@@ -1,0 +1,45 @@
+\underline{\textit{Exercice :}}
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[scale=.3,angle=0]{EXO11.png}
+	\end{center}
+\end{figure}
+
+\textbf{1)} Considérons un rayon lumineux arrivant en $O$ sur le coeur
+avec un angle d’incidence $\theta$. Ce rayon est réfracté avec
+un angle de réfraction $\theta '$ et vient frapper la gaine en $M_1$.
+
+a. Pour quelles valeurs de $\theta '$ le rayon subit-il une réflexion totale en $M_1$ ?
+
+b. Après réflexion totale en $M_1$, le rayon se propage
+dans le cœur et vient frapper la gaine en $M_2$. Que se
+passe-t-il alors ?
+
+\textbf{2)} Exprimez la valeur maximale de $\theta$, notée $\theta_{max}$, pour
+laquelle le rayon subit une réflexion totale une fois arrivé en $M_1$.
+
+\medskip
+
+On considère une fibre optique de longueur $L$. Le rayon entre dans la fibre avec un angle d’incidence $\theta$ variable compris entre 0 et $\theta_{lim}$ . On note $c$ la vitesse
+de la lumière dans le vide.
+
+\textbf{3)} Pour quelle valeur de l’angle $\theta$ , le temps de parcours de la lumière dans la fibre est-il minimal ? maximal ? Exprimer alors l’intervalle de temps $\delta t$, différence du temps de parcours entre le trajet minimal et maximal en fonction de $L$, $c$, $n_c$ et $n_g$.
+
+\medskip 
+
+Le codage binaire de l’information consiste à envoyer des impulsions lumineuses (appelées « bits ») périodiquement avec une fréquence d’émission $f_e$. On suppose ces impulsions infiniment courtes.
+
+\textbf{4)}  Quelle condition portant sur la fréquence d’émission $f_e$ exprime le non-recouvrement des impulsions à la
+sortie de la fibre optique ?
+
+\textbf{5)} Pour un débit d’information de $f_e= 100 \; Mbits/s $, quelle longueur maximale $L_{max}$ de fibre optique peut-on utiliser pour transmettre le signal ? On donne : $n_c=1,53$ et $n_g=1,49$.
+
+\medskip 
+
+Pour remédier à l’élargissement des impulsions, on a fabriqué des fibres dites à gradient d’indice dans lesquelles on a remplacé le cœur par un milieu inhomogène d’indice \( n(y) \) vérifiant la relation
+\[
+n^2(y) = n_c^2 \cdot \left[ 1 - 2 \cdot \Delta \cdot \left( \frac{y}{r_c} \right)^2 \right] \quad \text{pour } |y| \leq r_c,
+\]
+où \( y \) désigne la distance algébrique du point considéré à l’axe \( Ox \) et \( r_c \) le rayon du cœur de la fibre. La gaine reste homogène d’indice \( n_g \) et on a encore \( n(y = 0) = n_c = 1{,}53 \). Le rayon entre dans la fibre en \( O \) avec un angle d’incidence \( \theta \) compris entre \( 0 \) et \( \theta_{lim} \). 
+
+\textbf{6)} Trouver l'équation d'un rayon lumineux entrant dans cette fibre.
