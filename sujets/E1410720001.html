@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [2] </h2><br><br>
+            <h3>Fibre optique</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <img src="../images/1410720001.png"  width=50% alt="Schéma illustratif"> <br><br> 
+
+                  <p><em>1.</em> Considérons un rayon lumineux arrivant en $O$ sur le coeur avec un angle d’incidence 
+                      $\theta$. Ce rayon est réfracté avec un angle de réfraction $\theta '$ et vient frapper la gaine en $M_1$.<br>
+
+                      <em>a.</em> Pour quelles valeurs de $\theta '$ le rayon subit-il une réflexion totale en $M_1$ ?<br>
+
+                      <em>b.</em> Après réflexion totale en $M_1$, le rayon se propage dans le cœur et vient frapper la gaine 
+                      en $M_2$. Que se passe-t-il alors ?<br><br>
+                    
+                  <em>2.</em> Exprimez la valeur maximale de $\theta$, notée $\theta_{max}$, pour laquelle le rayon subit 
+                    une réflexion totale une fois arrivé en $M_1$.<br><br>
+
+                    On considère une fibre optique de longueur $L$. Le rayon entre dans la fibre avec un angle d’incidence 
+                    $\theta$ variable compris entre 0 et $\theta_{lim}$ . On note $c$ la vitesse de la lumière dans le vide.<br><br>
+                  <em>3.</em>Pour quelle valeur de l’angle $\theta$ , le temps de parcours de la lumière dans la fibre 
+                    est-il minimal ? maximal ? Exprimer alors l’intervalle de temps $\delta t$, différence du temps 
+                    de parcours entre le trajet minimal et maximal en fonction de $L$, $c$, $n_c$ et $n_g$.<br><br>
+
+                    Le codage binaire de l’information consiste à envoyer des impulsions lumineuses (appelées « bits ») 
+                    périodiquement avec une fréquence d’émission $f_e$. On suppose ces impulsions infiniment courtes.<br>
+
+                  <em>4.</em> Quelle condition portant sur la fréquence d’émission $f_e$ exprime le non-recouvrement des 
+                    impulsions à la sortie de la fibre optique ?<br><br>
+
+                  <em>5.</em> Pour un débit d’information de $f_e= 100 \; Mbits/s $, quelle longueur maximale $L_{max}$ de 
+                  fibre optique peut-on utiliser pour transmettre le signal ? On donne : $n_c=1,53$ et $n_g=1,49$.<br><br>
+
+                  Pour remédier à l’élargissement des impulsions, on a fabriqué des fibres dites à gradient d’indice dans 
+                  lesquelles on a remplacé le cœur par un milieu inhomogène d’indice \( n(y) \) vérifiant la relation
+                    \[
+                    n^2(y) = n_c^2 \cdot \left[ 1 - 2 \cdot \Delta \cdot \left( \frac{y}{r_c} \right)^2 \right] 
+                    \quad \text{pour } |y| \leq r_c,
+                    \]
+                    où \( y \) désigne la distance algébrique du point considéré à l’axe \( Ox \) 
+                    et \( r_c \) le rayon du cœur de la fibre. La gaine reste homogène d’indice \( n_g \) et on a 
+                    encore \( n(y = 0) = n_c = 1{,}53 \). Le rayon entre dans la fibre en \( O \) avec un angle 
+                    d’incidence \( \theta \) compris entre \( 0 \) et \( \theta_{lim} \). <br>
+                
+                  <em>6.</em> Trouver l'équation d'un rayon lumineux entrant dans cette fibre.<br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p> Encore jamais posé !</p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1410720001.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
