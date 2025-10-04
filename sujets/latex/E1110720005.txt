@@ -1,0 +1,24 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Un astronaute au bord de l'ISS se demande dans quelle direction est-il préférable de sortir de la station pour une mission. 
+On modélise la situation de la manière suivante : l’ISS, assimilée à un point matériel $S$, est en orbite circulaire autour 
+de la Terre de centre $T$. Le rayon de l’orbite est $r_0 = 7000 \; km$ et la vitesse angulaire associée est notée $\omega$. 
+On introduit le référentiel $\mathcal{R}_S$ (base $Sxyz$) centré sur $S$ et en rotation à a vitesse angulaire $\omega \bf 
+\vec{u_z}$ par rapport au référentiel géocentrique $\mathcal{R}_g$ (base $TXYZ$). La position d'un astronaute $M$ est 
+paramétrée par ses coordonnées $(x(t),y(t),z(t))$ dans $\mathcal{R}_S$ et on notera $\vv{r}=\vv{SM}$ son vecteur position. 
+Dans toute la suite, on se limite au mouvement de $M$ dans le voisinage de l'ISS, on supposera donc que $r<<r_0$.
+
+\medskip
+
+\textbf{1)} Établir l’expression des forces exercées sur $M$ en calculant leurs composantes à l’ordre 1 en $r/r_0$. 
+En déduire que les équations du mouvement sont :
+\begin{align}
+   \ddot x(t) -3\omega^2 x(t) -2 \omega \dot y(t)  & = 0 \\
+   \ddot y(t) + 2 \omega \dot x(t) &=0 \\
+    \ddot z(t) + \omega ^2 z(t) &=0
+\end{align}
+
+\textbf{2)} Résoudre les équations du mouvement dans les trois cas suivants : $\vv{v_0}\in \{v_0 \vv{e_x},v_0 \vv{e_y},v_0 \vv{e_z}\}$
+\newline \textbf{3)} A la place de l'astronaute quelle direction emprunteriez-vous ?
