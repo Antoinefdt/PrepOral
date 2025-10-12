@@ -1,0 +1,34 @@
+\underline{\textit{Exercice :}}
+
+\medskip 
+
+On utilise l’interféromètre de Michelson monté en coin d’air pour un angle $\alpha \simeq 10^{-3}$ et éclairé par une source monochromatique située à l’infini et de longueur d’onde $\lambda_0$.
+
+\bigskip
+
+\textbf{1)} La source est ponctuelle et l’onde incidente arrive sous un angle $\beta$ sur le miroir $M_1$. Déterminer les vecteurs d’ondes $\vec{k_1}$ et $\vec{k_2}$ des ondes réfléchies par les miroirs $M_1$ et $M_2$. On prendra l’origine des phases et de l’espace en $O$ appartenant à l’arête du coin d’air. Montrer alors que l’ordre d’interférence en un point $M(x,y)$ s’écrit :
+\[
+p(x,y) = \frac{1}{\lambda_0}\left[ x(\sin(\beta + 2\alpha) - \sin \beta) + y(\cos(\beta + 2\alpha) - \cos \beta) \right]
+\tag{1}
+\]
+
+\bigskip
+
+\textbf{2)} Déterminer l’équation des franges brillantes.
+
+\bigskip
+
+\textbf{3)} La source étant étendue, c’est-à-dire que $\beta$ varie entre $-\beta_m$ et $+\beta_m$, exprimer la variation de l’ordre d’interférences en fonction de $\beta_m$ en un point $M$ de l’espace.
+
+\medskip
+Montrer que les franges d’interférences disparaissent très rapidement lorsqu’on s’éloigne des miroirs. Justifier l’utilisation d’une incidence quasi-normale pour avoir un bon contraste. On prendra successivement $\beta_m \approx 10^{-2}\,\text{rad}$ et $\beta_m \approx 1\,\text{rad}$ pour les AN.
+
+\bigskip
+
+\textbf{4)} Déterminer le lieu des points $M$ où 
+$\frac{\mathrm{d}p}{\mathrm{d}\beta} = 0.$
+Interpréter.
+
+\bigskip
+
+\textbf{5)} Montrer alors que lorsqu’on fait l’image des miroirs sur un écran, on observe bien des franges d’égale épaisseur.
