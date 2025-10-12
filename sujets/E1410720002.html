@@ -37,12 +37,12 @@
             <div id="exerciseContent">
                 <h3>Enoncé</h3><br><br>
                 <div class="subject">
-                <img src="../images/1410720002.png"  width=50% alt="Schéma illustratif"> <br><br> 
+                <img src="../images/1410720002.png"  width=30% alt="Schéma illustratif"> <br><br> 
 
-                On utilise l’interféromètre de Michelson monté en coin d’air pour un angle $\alpha \simeq 10^{-3}$ et éclairé 
+                <p> On utilise l’interféromètre de Michelson monté en coin d’air pour un angle $\alpha \simeq 10^{-3}$ et éclairé 
                 par une source monochromatique située à l’infini et de longueur d’onde $\lambda_0$.<br><br>
 
-                <p><em>1.</em> La source est ponctuelle et l’onde incidente arrive sous un angle $\beta$ sur le miroir $M_1$. 
+                  <em>1.</em> La source est ponctuelle et l’onde incidente arrive sous un angle $\beta$ sur le miroir $M_1$. 
                   Déterminer les vecteurs d’ondes $\vec{k_1}$ et $\vec{k_2}$ des ondes réfléchies par les miroirs 
                   $M_1$ et $M_2$. On prendra l’origine des phases et de l’espace en $O$ appartenant à l’arête du coin d’air. 
                   Montrer alors que l’ordre d’interférence en un point $M(x,y)$ s’écrit :
@@ -51,9 +51,6 @@
                   $$
                     
                   <em>2.</em> Déterminer l’équation des franges brillantes.<br><br>
-
-                    On considère une fibre optique de longueur $L$. Le rayon entre dans la fibre avec un angle d’incidence 
-                    $\theta$ variable compris entre 0 et $\theta_{lim}$ . On note $c$ la vitesse de la lumière dans le vide.<br><br>
                   
                   <em>3.</em>La source étant étendue, c’est-à-dire que $\beta$ varie entre $-\beta_m$ et $+\beta_m$, exprimer la
                   variation de l’ordre d’interférences en fonction de $\beta_m$ en un point $M$ de l’espace.<br>
@@ -77,7 +74,71 @@
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
                 <p>
-                    1)
+                    1. En utilisant les lois de la réflexion, on obtient les vecteurs d’ondes des ondes qui se réfléchissent sur les 
+                    deux miroirs :
+                    \[
+                    \vec{k_1} = k_0(\sin\beta\,\vec{u_x} + \cos\beta\,\vec{u_y})
+                    \quad\text{et}\quad
+                    \vec{k_2} = k_0(\sin(\beta + 2\alpha)\,\vec{u_x} + \cos(\beta + 2\alpha)\,\vec{u_y}).
+                    \]
+                    L’éclairement en un point $M$ s’écrit :
+                    \[
+                    \mathcal{E} = |a_0 e^{-i\vec{k_1}\cdot\vec{r}} + a_0 e^{-i\vec{k_2}\cdot\vec{r}}|^2
+                    = 2\varepsilon_0(1 + \cos((\vec{k_2}-\vec{k_1})\cdot\vec{r})).
+                    \]
+                    L’ordre d’interférence en $M$ vaut donc :
+                    \[
+                    p(x,y) = \frac{1}{\lambda_0}\big[ x(\sin(\beta + 2\alpha) - \sin\beta) + y(\cos(\beta + 2\alpha) - \cos\beta) \big].
+                    \]
+
+                    2. Une frange brillante correspond à un ordre $p$ entier, soit en utilisant un peu de trigonométrie élémentaire :
+                    \[
+                    p\lambda_0 = 2x\cos(\beta + \alpha)\sin\alpha - 2y\sin(\beta + \alpha)\sin\alpha,
+                    \]
+                    ou encore
+                    \[
+                    y = \frac{x}{\tan(\beta + \alpha)} - \frac{p\lambda_0}{2\sin(\alpha + \beta)\sin\alpha}.
+                    \]
+                    Ce sont des plans contenant $Oz$ et faisant un angle $\alpha + \beta$ avec $Oy$.<br><br>
+
+                    3. \[
+                    \Delta p \lambda = 2x[\cos(\beta_m + \alpha) - \cos(\alpha - \beta_m)]\sin\alpha - 2y[\sin(\beta_m + \alpha) - \sin(\alpha - \beta_m)]\sin\alpha.
+                    \]
+                    Là encore un peu de trigonométrie donne :
+                    \[
+                    \Delta p = -\frac{4x}{\lambda}\sin^2\alpha\,\sin\beta_m + \frac{4y}{\lambda}\cos\alpha\,\sin\alpha\,\sin\beta_m.
+                    \]
+                    Pour $\alpha \simeq 10^{-3}$ et $\beta_m \simeq 10^{-2}$, cette relation se simplifie en :
+                    \[
+                    \Delta p \simeq -\frac{4x}{\lambda}(\alpha^2\beta_m) + \frac{4y}{\lambda}\alpha\beta_m.
+                    \]
+                    On remarque que la variation de $p$ est beaucoup plus forte lorsqu’on se déplace le long de $Oy$ que le long de $Ox$.  
+                    Ceci est le phénomène de \textit{localisation des franges} : pour avoir $\Delta p < 1$, on doit avoir
+                    \[
+                    \frac{y}{\lambda} < \frac{1}{4\alpha\beta} \Rightarrow y \lesssim 1\,\text{cm}.
+                    \]
+                    Si $\beta_m \approx 1\,\text{rad}$, on obtient $y \lesssim 0.1\,\text{mm}$, ce qui montre que les franges sont très fortement localisées au voisinage des miroirs.
+                    
+                    <br>
+                    Le premier terme doit également être analysé : $\Delta p_y$ varie en $\alpha^2\beta$, donc il est bien plus faible.  
+                    Pour $\beta_m \approx 10^{-2}$ et $x \approx 1\,\text{cm}$, soit un déplacement de la taille des miroirs, on a $\Delta p \approx 10^{-3}$.  
+                    Pour $\beta_m \approx 1\,\text{rad}$ et $x \approx 1\,\text{cm}$, on a $\Delta p \approx 10^{-1}$, ce qui commence à affecter le contraste, même si l’effet reste faible.
+                    
+                    <br>
+                    Tout ceci montre qu’on a intérêt à utiliser une source bien collimatée et à bien faire l’image des miroirs sur 
+                    l’écran de manière à obtenir un bon contraste.<br><br>
+
+                    4. \[
+                    \frac{\mathrm{d}p}{\mathrm{d}\beta} = 0 \quad \Leftrightarrow \quad y = -\tan(\alpha + \beta)\,x.
+                    \]
+                    Ce plan, qui fait un angle $-(\alpha + \beta)$ avec $Oxz$, est le plan où $p$ ne varie pas à l’ordre $0$ avec 
+                    $\beta$ : sur ce plan, le contraste est optimal. Pour des angles faibles ce plan est celui des miroirs.<br><br>
+
+                    5. Pour $y=0$, $p(x)\simeq 2x \alpha /\lambda$.
+ 
+
+                    
+
                     
                 </p
                 </div>
