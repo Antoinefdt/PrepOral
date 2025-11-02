@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [5] </h2><br><br>
+            <h3>Mesure des coefficients de Cauchy</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p> On considère un morceau de verre dont l'indice varie avec la longueur d'onde $\lambda$ selon 
+                  la loi de Cauchy : $n(\lambda)=A+\frac{B}{\lambda^2}$.<br><br>
+
+                  <em>Q.</em>  Vous avez à votre disposition un dispositif de trous d'Young, une source de lumière blanche et 
+                  une source laser monochromatique ($\lambda = 632 \; nm$). Proposer un dispositif expérimental 
+                  permettant de calculer les valeurs de $A$ et $B$.<br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                  En lumière monochromatique, en insérant un morceau du matériau d'épaisseur $e$, la figure
+                  d'interférences est décalée d'une longueur $x_1=\frac{eD(n-1)}{a}$. En effet, on trouve :
+                  $$\delta=\frac{ax}{D}-e(n-1)$$
+                  En lumière blanche, les figures se superposent pour chaque $\lambda$ et l'intensité dépend donc 
+                  de la longueur d'onde :
+                  $$I(\lambda)=I_0(1+cos(2\pi p(\lambda)))$$
+                  On n'obtient donc pas de frange blanche sauf dans le cas particulier où $p$ ne dépend pas 
+                  de $\lambda$, ie : $\frac{dp}{d\lambda}=0$.
+                  Ce point est située en $x_2$ telle que :
+                  $$x_2=\frac{eD}{a}(n-1-\lambda \frac{dn}{d\lambda})$$
+                  Ainsi, 
+                  $$x_2-x_1=-\frac{eD\lambda}{a} \frac{dn}{d\lambda}=\frac{2eD}{a}\frac{B}{\lambda^2}$$
+                  Enfin, $$A=1+\frac{a}(2eD}(3x_1-x_2)$$
+                </p
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1410720004.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
