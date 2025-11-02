@@ -1,0 +1,19 @@
+\underline{\textit{Exercice :}}
+
+\bigskip 
+
+\begin{minipage}{.5\textwidth}%
+Une source ponctuelle monochromatique \( S \) de longueur d'onde \( \lambda = 0{,}6\, \mu \text{m} \) est placée au foyer d'une lentille convergente de focale \( f' \). On place ensuite symétriquement par rapport à l'axe optique un biprisme taillé dans un verre d'indice \( n = 1{,}5 \) et d'angles \( \alpha = 10' \). On note \( O \) l'intersection de l'arête du prisme et de l'axe optique.
+
+\medskip
+
+\textbf{1)} Tracer les rayons lumineux issus de \( S \) de part et d'autre de l'axe optique. Justifier qu'il y a interférences et préciser le champ d'interférences.
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}%
+\includegraphics[width=\linewidth]{Capture d’écran 2024-10-31 à 17.21.34.png}
+\end{minipage}%
+
+\textbf{2)} Déterminer les vecteurs d'ondes \( \vec{k}_1 \) et \( \vec{k}_2 \) des ondes planes qui interfèrent sur l'écran.
+
+\textbf{3)} En déduire l'éclairement \( E(x,y) \) en un point de l'écran. Préciser l'allure de la figure d'interférences, son interfange ainsi que son contraste.
