@@ -1,0 +1,20 @@
+\underline{\textit{Exercice :}} Thermophysique - Mines-Télécom 2018 adapté
+
+\bigskip
+
+\begin{minipage}{.53\textwidth}%
+On considère le dispositif ci-dessus, dont les parois sont calorifugées. La paroi $(P)$ est fixe, tandis que le piston $(\Pi)$ est mobile. La pression extérieure est la pression atmosphérique $P^\circ$. A l'instant initial, le compartiment à gauche de $(P)$, de volume $V$, est vide. Le compartiment de droite, de volume $V_0$, contient une mole de gaz parfait. On perce un trou dans la paroi $(P)$.\\
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}%
+\includegraphics[width=\linewidth]{Thermo_2.png}
+\end{minipage}%
+\vspace{0.5cm}
+
+\textbf{1)} Montrer qu'il existe une valeur de $V$ qui distingue deux cas dans la résolution du problème.\\
+
+\textbf{2)} Déterminer l'état final $(T_f,P_f,V_f)$ du dispositif après la transformation induite par le perçage du trou.\\
+
+\textbf{3)} Que vaut l'entropie créée ? On donne
+
+$$\Delta S = nc_p \ln\biggl(\frac{T_f}{T_i}\biggr) - nR \ln\biggl(\frac{P_f}{P_i}\biggr)$$
