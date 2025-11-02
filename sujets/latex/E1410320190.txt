@@ -1,0 +1,16 @@
+\underline{\textit{Exercice :}} Mines-Ponts 2019
+
+\bigskip
+
+On considère un interféromètre de \textsc{Michelson} initialement placé à la teinte plate. La source utilisée est quasi-monochromatique, de longueur d'onde dominante $\lambda=589$ nm.\\\\
+\textbf{1)} On désire se placer en configuration lame d'air. Décrire le montage associé et préciser brièvement le protocole suivi. On s'appuiera sur un/des schéma(s) clair(s).\\
+
+\noindent On obtient la figure suivante.\\
+
+
+\centerline{\includegraphics[scale=0.6,angle=0]{Michelson_lame_dair.jpg}}
+
+\vspace{0.5cm}
+
+\textbf{2)} Déterminer l'épaisseur de la lame d'air correspondante, sachant que l'image est observée après projection par une lentille de focale $f'=1$m.\\
+\textbf{3)} Déterminer l'incertitude associée.
