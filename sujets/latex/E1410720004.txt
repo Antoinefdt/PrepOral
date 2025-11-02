@@ -5,5 +5,5 @@ On considère un morceau de verre dont l'indice varie avec la longueur d'onde $\
 $n(\lambda)=A+\frac{B}{\lambda^2}$.\\
 
 Vous avez à votre disposition un dispositif de trous d'Young, une source de lumière blanche et une source 
-laser monochromatique ($\lambda = 632 \; nm$). Proposer un dispositif expérimental permettant de calculer 
+laser monochromatique ($\lambda = 550 \; nm$). Proposer un dispositif expérimental permettant de calculer 
 les valeurs de $A$ et $B$.
