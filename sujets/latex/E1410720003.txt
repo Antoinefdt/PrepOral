@@ -1,0 +1,23 @@
+\underline{\textit{Exercice :}}
+
+
+\bigskip 
+
+
+\begin{minipage}{.45\textwidth}%
+    Sur le bras d’un interféromètre de Michelson en configuration lame d’air et éclairé par un Laser 
+He-Ne de longueur d’onde $\lambda = 638 \; nm$, on intercale une cellule de longueur $e = 1, 6 \; cm$. 
+Cette cellule possède des parois en verre d’épaisseur $e_0 = 2 \; mm $ d’indice $n_0 = 1, 5$. 
+\end{minipage}%
+\hfill
+\begin{minipage}{0.52\textwidth}%
+\includegraphics[width=\linewidth]{signal.png}
+\end{minipage}%
+
+On fait le vide dans la cellule. Puis on y injecte de l’air sous pression atmosphérique et un capteur 
+d’éclairement placé au centre de la figure d'interférence délivre une tension $U(t)$ représentée sur la figure ci-dessus.\\
+
+\textbf{0)} Présenter le Michelson en configuration lame d'air (montage expérimental, expression de $\delta$, 
+forme des franges). \\
+
+\textbf{1)} Déterminer l'indice de l'air et donner une incertitude sur la mesure.
