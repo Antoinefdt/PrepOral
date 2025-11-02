@@ -1,0 +1,23 @@
+\underline{\textit{Exercice 2 :}} Centrale-Supélec 2012 adapté
+
+\bigskip
+
+
+\begin{minipage}{.53\textwidth}%
+Un interféromètre de \textsc{Michelson} est éclairé par une source monochromatique de longueur d'onde $\lambda=632,8$ nm centrée sur l'axe \(OX\). On note \(\ell_i\) la longueur \(OO_i\) entre le centre $O$ et le miroir $i$, et $e=\ell_2-\ell_1$ la différence de ces longueurs. \((L)\) est enfin une lentille convergente de centre optique \(\Omega\) et de distance focale $f'=1,0$ m.\\
+\textbf{1)} Quel type de configuration reconnaissez-vous pour l'interféromètre de \textsc{Michelson} ? A quelle distance \(\Omega C\) doit se trouver le détecteur \((D)\) pour observer correctement la figure d'interférences ?
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}%
+\includegraphics[width=\linewidth]{Michelson_gravimetre.png}
+\end{minipage}%
+\vspace{0.5cm}
+
+\begin{minipage}{.53\textwidth}%
+Le miroir $\mathcal{M}_2$ est solidaire d'un mobile astreint à se déplacer en translation selon \(OZ\). Ce mobile est lâché en chute libre, sans vitesse initiale, à $t=0$. On considère que le \textsc{Michelson} présente la position du contact optique à $t=0$. Le graphe suivant représente l'éclairement au point \(C\) en fonction du temps.\\
+\textbf{2)} Estimer la valeur du champ de pesanteur terrestre $g$.
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}%
+\includegraphics[width=\linewidth]{Intensite_gravimetre.png}
+\end{minipage}%
