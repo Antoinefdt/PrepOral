@@ -1,0 +1,28 @@
+\underline{\textit{Exercice :}} Thermophysique - Mines-Télécom 2024 adapté
+
+\bigskip
+
+On considère un cylindre de section $S=1$ dm$^2$ et de longueur $L=1$ m séparé en deux compartiments de même volume par un piston relié à une tige. On dispose ensuite $1$ g d'eau dans le compartiment de droite et $2$ g d'eau dans le compartiment de gauche, l'eau étant partout maintenue à $T=100^\circ$C.\\
+
+\begin{minipage}{.53\textwidth}%
+\textbf{QdC)} Tracer le diagramme pression-température de l'eau.\\
+
+\textbf{1)} Dans quel état semble-t-il \textit{a priori} légitime de supposer l'eau présente dans chaque compartiment ?\\
+
+\textbf{2)} Quelle force doit-on alors exercer sur la tige pour maintenir le piston à sa position initiale ?\\
+
+\textbf{3)} Tout calcul fait, l'hypothèse de la question \textbf{1)} était-elle justifiée ?\\
+
+
+\end{minipage}%
+\hfill
+\begin{minipage}{0.45\textwidth}%
+\includegraphics[width=\linewidth]{Thermo.png}
+\end{minipage}%
+\vspace{0.5cm}
+
+Données :
+\begin{itemize}
+    \item masse molaire de l'eau $M_{eau}=18$ g.mol$^{-1}$.
+    \item constante des gaz parfaits $R=8,314$ J.mol$^{-1}$.K$^{-1}$
+\end{itemize}
