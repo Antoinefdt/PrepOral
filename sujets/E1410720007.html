@@ -44,7 +44,7 @@
                   \[
                   t' = t, \qquad r' = -r, \qquad \text{et} \qquad r^2 + t^2 = 1.
                   \]
-                  <img src="../images/1410720006.png"  width=30% alt="Schéma illustratif"> <br><br> 
+                  <img src="../images/1410720007.png"  width=30% alt="Schéma illustratif"> <br><br> 
                   La lumière décrit dans la cavité un parcours confondu avec le triangle équilatéral $OAB$ de longueur totale $
                   L = OA + AB + BO$. Le dispositif est éclairé par une onde monochromatique de longueur d’onde $\lambda$ et 
                   d’amplitude complexe mesurée en $O$ égale à $a_1$.  <br><br>
@@ -56,7 +56,7 @@
                   la cavité en fonction de $a_1$, $\varphi$ et $r$. Comparer les éclairements des ondes incidente et émergente.<br><br>
 
                   La cavité est remplie d'un milieu qui amplifie la lumière : lors d’un tour de cavité, l’amplitude complexe de 
-                  l’onde est multipliée par un coefficient réel positif $g$ (appelé gain).<br<br>
+                  l’onde est multipliée par un coefficient réel positif $g$ (appelé gain).<br><br>
                   
                    <em>3.</em> Exprimer à nouveau $s_1$.<br><br>
                   
@@ -77,24 +77,21 @@
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
                 <p>
-                    1) $$A_t=a_0 T \sum_{k=0}^{+\infty} (Re^{i \phi})^k=\frac{a_0 T}{1-Re^{i \phi}}$$
+                    1) $$s_k=a_1 (1-r^2)r^k\exp{-ik\phi}$$
+                    où $\phi=2\piL/\lambda$
 
-                    2) $I_{max}=I_0(\frac{T}{1-R})^2$ et $m=\frac{4R}{(1-R)^2}$<br><br>
+                    2) $$s_1=a_1 \frac{e^{-i\phi}-r}{1-re^{-i\phi}}$$
+                    On retrouve $s_1^2=a_1^2.<br><br>
 
-                    3)a $$\Delta I=-\frac{I_{max}}{2} \frac{m sin{\phi}}{(1+m^2 sin^2{\phi/2})^2} \Delta \phi$$
+                    3) $$s_1=a_1 \frac{ge^{-i\phi}-r}{1-rge^{-i\phi}}$$
 
-                    3)b $$C_{phi}=\frac{2Rsin{\phi}}{1+R^2-2Rcos{\phi}}$$
+                    4) On veut que le dénominateur tende vers $+\infty$ : $g=1/r$ et $\phi=0 \; [2\pi]$. On compensse les pertes
+                    et les interférences sont constructives, ainsi on sélectionne les pulsations $\omega_n=2\pi nc/L$. <br><br>
 
-                    3)c $$C_{phi,max}=\frac{2R}{1-R^2} \Delta \phi$$
-
-                    4)a $$\Delta \phi =\frac{4 \pi e (n-n_0)}{\lambda}$$
-                    $$e_{min}=\frac{\lambda(1-R^2) \mathcal{C}_0}{8 \pi R (n-n_0)}=0,26 \; \mu m$$
-
-                    4)b $$\Delta \phi = \pi/2 + 2k\pi$$
-
-                    4)c $$R^2-2,5R+1 <0 $$ 
-                        d'où $R_{min}=0,5$.
-                
+                    5) On remarque que sans rotation deux ondes se propagent dans les deux sens possible. Avec la rotation, on peut
+                    considérer pour simplifier que le chemin suivi par la lumière et un cercle de rayon $R=L/(2\pi)$. Les distances
+                    parcourues par les deux ondes (2 sens) sont changées : $L'=L \pm \delta L$ où $\Delta L=\Omega L^2/(2 \pi c)$ à
+                    l'ordre le plus bas en $\Delta L/L$. Ainsi, on double toutes les fréquences : $\omega_n'^{\pm}=2\pi nc/(L\pm \Delta L)$.
                 </p
                 </div>
             </div><br><br>
