@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [8] </h2><br><br>
+            <h3>Gyrolaser</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p> On envisage le montage de la figure ci dessous comprenant deux miroirs parfaits de coefficients de réflexion 
+                  en amplitude complexe égaux à $-1$ et une séparatrice telle que les coefficients de réflexion et transmission 
+                  valent $(r, t)$ lorsque l’onde incidente est à l’intérieur de la cavité, et $(r', t')$ lorsque l’onde incidente 
+                  est à l’extérieur de la cavité, avec :
+                  \[
+                  t' = t, \qquad r' = -r, \qquad \text{et} \qquad r^2 + t^2 = 1.
+                  \]
+                  
+                  La lumière décrit dans la cavité un parcours confondu avec le triangle équilatéral $OAB$ de longueur totale $
+                  L = OA + AB + BO$. Le dispositif est éclairé par une onde monochromatique de longueur d’onde $\lambda$ et 
+                  d’amplitude complexe mesurée en $O$ égale à $a_1$.  <br><br>
+                  
+                  <em>1.</em> Exprimer $s_{1,k}$ l’amplitude complexe mesurée en $O$ de l’onde qui émerge de la cavité en 
+                  ayant accompli $k \geq 1$ tours dans celle-ci.<br><br>
+
+                  <em>2.</em> En déduire l’expression $s_1$ de l’amplitude complexe mesurée en $O$ de l’onde émergeant de 
+                  la cavité en fonction de $a_1$, $\varphi$ et $r$. Comparer les éclairements des ondes incidente et émergente.<br><br>
+
+                  La cavité est remplie d'un milieu qui amplifie la lumière : lors d’un tour de cavité, l’amplitude complexe de 
+                  l’onde est multipliée par un coefficient réel positif $g$ (appelé gain).<br<br>
+                  
+                   <em>3.</em> Exprimer à nouveau $s_1$.<br><br>
+                  
+                    <em>4.</em> En déduire deux conditions pour qu’une onde d’amplitude non nulle puisse se propager dans la 
+                  cavité même en l’absence d’onde incidente. Quelles sont alors les pulsations possibles pour ce Laser ?<br><br>
+                  
+                  <em>5.</em> On place ce Laser sur un plateau tournant à la vitesse angulaire $\Omega$, que dire des 
+                  fréquences du Laser ?<br><br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                    1) $$A_t=a_0 T \sum_{k=0}^{+\infty} (Re^{i \phi})^k=\frac{a_0 T}{1-Re^{i \phi}}$$
+
+                    2) $I_{max}=I_0(\frac{T}{1-R})^2$ et $m=\frac{4R}{(1-R)^2}$<br><br>
+
+                    3)a $$\Delta I=-\frac{I_{max}}{2} \frac{m sin{\phi}}{(1+m^2 sin^2{\phi/2})^2} \Delta \phi$$
+
+                    3)b $$C_{phi}=\frac{2Rsin{\phi}}{1+R^2-2Rcos{\phi}}$$
+
+                    3)c $$C_{phi,max}=\frac{2R}{1-R^2} \Delta \phi$$
+
+                    4)a $$\Delta \phi =\frac{4 \pi e (n-n_0)}{\lambda}$$
+                    $$e_{min}=\frac{\lambda(1-R^2) \mathcal{C}_0}{8 \pi R (n-n_0)}=0,26 \; \mu m$$
+
+                    4)b $$\Delta \phi = \pi/2 + 2k\pi$$
+
+                    4)c $$R^2-2,5R+1 <0 $$ 
+                        d'où $R_{min}=0,5$.
+                
+                </p
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1410720007.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
