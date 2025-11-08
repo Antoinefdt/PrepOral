@@ -33,7 +33,7 @@ On désignera par $r$ et $t$ les coefficients de réflexion et de transmission e
         \item[a)] Calculer l’augmentation $\Delta \varphi$ du déphasage $\varphi$ en fonction de $e$, $n$, $n_0$ et $\lambda$.
         On donne $R = 0{,}85$. Calculer la plus petite valeur de l’épaisseur $e$ de la lame susceptible d’être décelée par ce dispositif.
 
-        \item[b)] Calculer les épaisseurs $L = L_0$ de la cavité qu’il convient d’adopter pour obtenir $\varphi = \frac{\pi}{2}$ modulo $2\pi$.
+        \item[b)] Calculer les épaisseurs $L$ de la cavité qu’il convient d’adopter pour obtenir $\varphi = \frac{\pi}{2}$ modulo $2\pi$.
 
         \item[c)] Quelle doit être la valeur minimale du pouvoir réflecteur $R$ des miroirs du FP pour pouvoir observer une lame mince d’épaisseur $2~\mu$m introduite dans la cavité ?
     \end{enumerate}
