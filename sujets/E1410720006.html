@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] [7] </h2><br><br>
+            <h3>Contraste de phase avec un Fabry-Pérot</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p> Une cavité optique Fabry-Pérot, remplie d’un milieu d’indice de réfraction $n_0$, est limitée par deux miroirs 
+                  plans partiellement réfléchissants, de même pouvoir de réflexion $R$ et de transmission $T$ en intensité, 
+                  parallèles et distants de $L$. La cavité est entourée d’air d’indice égal à 1.<br>
+
+                  On désignera par $r$ et $t$ les coefficients de réflexion et de transmission en amplitude (supposés réels) des 
+                  miroirs. On éclaire cette cavité, en incidence normale, par une onde lumineuse incidente monochromatique de 
+                  longueur d’onde $\lambda$ dans le vide et d’amplitude complexe $a_0$.<br><br>
+                  
+                  <em>1.</em> Exprimer l’amplitude complexe $A_t$ de l’onde résultante à la sortie de la cavité FP, en fonction 
+                  de $a_0$, $R$, $T$ et $\varphi$.<br><br>
+
+                  <em>2.</em> Montrer que l’intensité transmise à la sortie de la cavité est de la forme :
+                    \[
+                    I = \frac{I_{\max}}{1 + m \sin^2\left(\frac{\varphi}{2}\right)}
+                    \]
+
+                   <em>3.</em> On modifie légèrement le déphasage $\varphi$ qui devient $\varphi' = \varphi +
+                    \Delta \varphi$ avec $\Delta \varphi \ll \varphi$.<br>
+                    <em>3.a</em> Montrer que la nouvelle intensité transmise à la sortie de la cavité FP est :
+                    \[
+                    I' = I + \Delta I
+                    \]
+                  <em>3.b</em> On appelle contraste de phase la quantité $C_\varphi = \frac{|\Delta I|}{I}$. Exprimer 
+                  $C_\varphi$ en fonction de $R$, $\varphi$ et $\Delta \varphi$.<br>
+
+                  <em>3.b</em> On appelle contraste de phase la quantité $C_\varphi = \frac{|\Delta I|}{I}$. Exprimer 
+                  $C_\varphi$ en fonction de $R$, $\varphi$ et $\Delta \varphi$.<br>
+
+                  <em>3.c</em> Calculer, en fonction de $R$ et $\Delta \varphi$, le contraste maximum $C_{\varphi, \max}$ 
+                  pour une variation de phase $\Delta \varphi$ imposée, et $R$ donné.<br><br>
+
+                 <em>4.</em>n interpose dans le liquide d’indice $n_0$, parallèlement aux faces qui limitent le FP, une 
+                  lame transparente à faces parallèles de très faible épaisseur $e$ et d’indice $n$ très voisin de $n_0$. 
+                  On donne $n_0 = 1{,}586$ (aniline), $n = 1{,}590$, $\lambda = 6438~\text{\AA}$. L’œil ne peut percevoir 
+                  que les contrastes supérieurs à $C_{\varphi 0} = \frac{1}{8}$.<br>
+
+                  <em>4.a</em> Calculer l’augmentation $\Delta \varphi$ du déphasage $\varphi$ en fonction de $e$, $n$, $n_0$ et
+                  $\lambda$. On donne $R = 0{,}85$. Calculer la plus petite valeur de l’épaisseur $e$ de la lame susceptible 
+                  d’être décelée par ce dispositif.<br>
+
+                   <em>4.b</em> Calculer les épaisseurs $L = L_0$ de la cavité qu’il convient d’adopter pour obtenir 
+                  $\varphi = \frac{\pi}{2}$ modulo $2\pi$.<br>
+
+                  <em>4.c</em> Quelle doit être la valeur minimale du pouvoir réflecteur $R$ des miroirs du FP pour 
+                  pouvoir observer une lame mince d’épaisseur $2~\mu$m introduite dans la cavité ?<br>
+                  
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                  1) $$A_t=a_0 T \sum_{k=0}^{+\infty} (Re^{i \psi})^k=\frac{a_0 T}{1-Re^{i \psi}}$$
+                </p
+                </div>
+            </div><br><br>
+            <button id="downloadBtn">Sujet Latex</button><br><br>
+            <script>
+                // Lors du clic, redirige vers le PDF pré-généré
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1410720006.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
