@@ -1,0 +1,21 @@
+\underline{\textit{Exercice :}} CCINP $2023$
+
+\bigskip
+
+On observe un potentiel de la forme :
+
+$$V(M)=\frac{q}{4\pi \varepsilon_0}\frac{1}{r}e^{-\frac{r}{a}}$$
+
+où $a>0$, $q>0$, et où l'on a noté $r=\lVert \overrightarrow{OM} \rVert$. L'objectif est de déterminer la distribution de charges qui correspond à cette situation.\\
+
+\textbf{1)} Calculer le champ électrique créé par ce potentiel.\\
+
+\textbf{2)} En déduire le flux électrique à travers la sphère de centre $O$ et de rayon $r$.\\
+
+\textbf{3)} Quel comportement observe-t-on lorsque $r \rightarrow 0$ ?\\
+
+\textbf{4)} Exprimer la densité volumique de charges $\rho(r)$.\\
+
+\textbf{5)} Calculer la charge $q'$ contenue dans la sphère de centre $O$ et de rayon $r$. \textit{On pourra s'appuyer sur les résultats de la question} \textbf{2)}.\\
+
+\textbf{6)} Conclure.\\ 
