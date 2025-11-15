@@ -1,0 +1,30 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On envisage le montage de la figure ci dessous comprenant deux miroirs parfaits de coefficients de réflexion en amplitude complexe égaux à $-1$ et une séparatrice telle que les coefficients de réflexion et transmission valent $(r, t)$ lorsque l’onde incidente est à l’intérieur de la cavité, et $(r', t')$ lorsque l’onde incidente est à l’extérieur de la cavité, avec :
+\[
+t' = t, \qquad r' = -r, \qquad \text{et} \qquad r^2 + t^2 = 1.
+\]
+
+La lumière décrit dans la cavité un parcours confondu avec le triangle équilatéral $OAB$ de longueur totale $L = OA + AB + BO$. Le dispositif est éclairé par une onde monochromatique de longueur d’onde $\lambda$ et d’amplitude complexe mesurée en $O$ égale à $a_1$.  
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Capture d’écran 2025-11-08 à 18.46.06.png}
+\end{figure}
+
+\textbf{1)} 
+Exprimer $s_{1,k}$ l’amplitude complexe mesurée en $O$ de l’onde qui émerge de la cavité en ayant accompli $k \geq 1$ tours dans celle-ci.  \\
+
+\textbf{2)} En déduire l’expression $s_1$ de l’amplitude complexe mesurée en $O$ de l’onde émergeant de la cavité en fonction de $a_1$, $\varphi$ et $r$. Comparer les éclairements des ondes incidente et émergente.
+
+\bigskip
+
+La cavité est remplie d'un milieu qui amplifie la lumière : lors d’un tour de cavité, l’amplitude complexe de l’onde est multipliée par un coefficient réel positif $g$ (appelé gain).\\
+
+\textbf{3)} Exprimer à nouveau $s_1$.\\
+
+\textbf{4)} En déduire deux conditions pour qu’une onde d’amplitude non nulle puisse se propager dans la cavité même en l’absence d’onde incidente. Quelles sont alors les pulsations possibles pour ce Laser ? \\
+
+\textbf{5)} On place ce Laser sur un plateau tournant à la vitesse angulaire $\Omega$, que dire des fréquences du Laser ?
