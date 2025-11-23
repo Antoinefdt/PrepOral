@@ -1,0 +1,15 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+On considère un câble cylindrique d’axe $Oz$, de longueur infinie, de rayon $a$ portant une densité volumique de charge uniforme $\rho_0$.
+
+\begin{itemize}
+    \item[\textbf{1)}] Déterminer le potentiel $V(M)$ en tout point de l’espace. Tracer qualitativement l’allure des lignes de champ et des équipotentielles.
+    
+    \item[\textbf{2)}] Dans la mesure où $a$ est petit par rapport à l’échelle à laquelle on souhaite calculer le champ, on assimile le câble à une distribution linéique. Déterminer le champ électrostatique créé par cette distribution linéique. $\lambda$.
+    
+    \item[\textbf{3)}] On suppose qu’une molécule polaire est placée en $r > a$ avec $\vec{p}_0 = p_0 \vec{u}_r$. Déterminer la résultante et le moment des forces exercées sur le dipôle. Retrouver ce résultat qualitativement.
+    
+    \item[\textbf{4)}] Même question dans le cas où $\vec{p}_0 = p_0 \vec{u}_\theta$.
+\end{itemize}
