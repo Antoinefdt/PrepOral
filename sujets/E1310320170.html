@@ -38,11 +38,18 @@
                 <h3>Enoncé</h3><br><br>
                 <div class="subject">
                 <p>
-                    On considère un condensateur déformé constitué de deux plaques identiques de dimensions $\ell \times L$, dont l'une est inclinée d'un angle $\theta \ll 1$ par rapport à l'autre. La plus petite distance entre les deux plaques, que l'on appellera <i>épaisseur</i>, est notée $h_0$. <br><br>
+                    On considère un condensateur déformé constitué de deux plaques identiques de dimensions $\ell 
+                    \times L$, dont l'une est inclinée d'un angle $\alpha \ll 1$ par rapport à l'autre. 
+                    La plus petite distance entre les deux plaques, que l'on appellera <i>épaisseur</i>, est n
+                    otée $h_0$. <br><br>
 
                     <em>1.</em> Déterminer la capacité de ce condensateur. <br>
 
-                    <em>2.</em> Déterminer la variation de densité volumique d'énergie emmagasinée par rapport à un condensateur plan. <br><br>
+                    <em>2.</em> Déterminer la variation de densité volumique d'énergie emmagasinée par rapport à 
+                    un condensateur plan. <br>
+
+                    <em>3.</em> (Non présent dans le sujet, bonus) Déterminer le moment de force subit par une des 
+                    plaques. <br><br>
                 </p>
                 </div>
             </div><br><br>
@@ -51,11 +58,31 @@
                 <div class="subject">
                 <p><em>[MP* Chaptal 2024]</em> De bonnes initiatives, mais des difficultés à simplifier le problème malgré mes indications. Quelques confusions en termes de notations $\delta$/$d$/rien du tout, mais corrigées. Semble penser qu'un développement limité ne peut pas être mené au delà du premier ordre. Les calculs sont pour autant menés rigoureusement.</p>
             </div><br><br>
-            <button id="downloadBtn">Télécharger</button><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                    <em>1.</em> PLusieurs méthodes possibles : <br><br>
+                    1. On découpe le système en tronçon de condensateur de longueur $dx$ selon 
+                    $L$ et on applique $C=\frac{\epsilon_0 L dx}{e(x)}$ on somme alors les capacités 
+                    selon $x$ et on trouve :
+                    $$C(\alpha)=\frac{\epsilon_0 L}{\tan(\alpha)} ln \left( 1+ \frac{l \tan(\alpha)}{h_0}\right)$$
+                    2. En négligeant les effets de bords $V(\theta)$ on résout l'équation de Laplace :
+                    $$V(\theta)=V_1+\frac{V_2-V_1}{\alpha}$$
+                    On utilise le fait que $\vec{E}=/sigma/ \epsilon_0$ au voisinage d'une plaque puis $Q=\iint \sigma dS$ :
+                    $$ Q_1=\epsilon_0 \frac{V_1-V_2}{\alpha} L ln \left( 1+ \frac{l \tan(\alpha)}{h_0}\right)$$ 
+                    3. Appliquer le principe de superposition.<br>
+                    <em>3.</em> On calule la force subit par un élément de surface $dS$, au premier ordre en $\theta$, on
+                    retrouve le résultat du condensateur plan : $\vec{dF}=\frac{\sigma^2}{2\epsilon_0}dS\vec{n}$. En intégrant :
+                    $$M_z=\frac{\epsilon_0(V_1-V_2)^2}{2\alpha^2} L ln \left( 1+ \frac{l \tan(\alpha)}{h_0}\right)$$
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
             <script>
-                // Lors du clic, redirige vers le PDF pré-généré
+                // Redirection vers le PDF lors du clic
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                window.location.href = 'pdf/exercice1.pdf';
+                window.location.href = 'latex/E1310320170.txt';
                 });
             </script>
         </div>
