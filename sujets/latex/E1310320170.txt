@@ -1,0 +1,10 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+On considère un condensateur déformé constitué de deux plaques identiques de dimensions $l\times L$, dont l'une est inclinée d'un angle 
+ $\alpha$ par rapport à l'autre. La plus petite distance entre les deux plaques, que l'on appellera épaisseur, est notée $h_0$.\\
+ 
+\textbf{1)} Déterminer la capacité de ce condensateur.\\
+
+\textbf{2)} Déterminer le moment de force subit par une des plaques.
