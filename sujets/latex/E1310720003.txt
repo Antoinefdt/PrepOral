@@ -1,0 +1,8 @@
+\underline{\textit{Exercice :}} 
+\bigskip
+
+On assimile localement une galaxie à une répartition de masse de densité $\mu_0$ uniforme entre deux plans $z = \pm a$. Une poussière de masse $m$ est initialement située $z = d > a$ sans vitesse initiale.
+
+\bigskip 
+
+\textbf{Q)} Montrer que le mouvement est périodique et déterminer sa période.
