@@ -33,23 +33,26 @@
 
         <div class="container">
             <h2>[MP] [Maison] </h2><br><br>
-            <h3>Résistance d’un conducteur annulaire</h3><br><br>
+            <h3>Champ d'un fil infini</h3><br><br>
             <div id="exerciseContent">
                 <h3>Enoncé</h3><br><br>
                 <div class="subject">
                 <p>
-                    On considère un anneau constitué d’un conducteur ohmique de conductivité $\gamma$ soumis à une d.d.p. $U$. 
-                    On néglige les effets de bords et on suppose que les lignes de courant en régime stationnaire sont orthoradiales 
-                    (en géométrie cylindrique).
-                  
-
+                    On considère un câble cylindrique d’axe $Oz$, de longueur infinie, de rayon $a$ portant une densité
+                    volumique de charge uniforme $\rho_0$.
                     </p><br><br>
 
-                    <img src="../images/1310720001.png"  width=30% alt="Schéma illustratif"> <br><br>
-
                     <p>
-                    <em>Q.</em> Établir l’expression de la résistance électrique du conducteur entre les faces A et B.<br><br>
-                </p>
+                    <em>1.</em> Déterminer le potentiel $V(M)$ en tout point de l’espace. Tracer qualitativement 
+                        l’allure des lignes de champ et des équipotentielles. <br>
+                    <em>2.</em> Dans la mesure où $a$ est petit par rapport à l’échelle à laquelle on souhaite 
+                        calculer le champ, on assimile le câble à une distribution linéique. Déterminer le champ 
+                        électrostatique créé par cette distribution linéique. $\lambda$. <br>
+                    <em>3.</em> On suppose qu’une molécule polaire est placée en $r > a$ avec $\vec{p}_0 = p_0 
+                        \vec{u}_r$. Déterminer la résultante et le moment des forces exercées sur le dipôle. 
+                        Retrouver ce résultat qualitativement. <br>
+                    <em>4.</em> Même question dans le cas où $\vec{p}_0 = p_0 \vec{u}_\theta$. <br>
+                    </p>
                 </div>
             </div><br><br>
             <div id="comments">
@@ -61,32 +64,19 @@
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
                 <p>
-                    Par hypothèse $\vec{j} \propto \vec{u_{\theta}}$, avec la loi d'Ohm locale on en déduit également que $\vec{E} \propto \vec{u_{\theta}}$.
-                    Ainsi, $V(\theta)$ et on a par l'équation de Poisson (comme $\rho=0$ dans le conducteur) : 
-                    $$\Delta V = \frac{1}{r^2} \frac{\partial^2 V}{\partial \theta^2} =0$$
-                    D'où, en notant $\beta$ l'angle orienté OAB :
-                    $$V(\theta)=V_A+\frac{(V_B-V_A)}{\beta} \theta $$
-                    On en déduit alors $\vec{j}$ par la loi d'Ohm locale :
-                    $$\vec{j}=\gamma \vec{E} =\frac{\gamma (V_B-V_A)}{\beta r} \vec{u_{\theta}}$$
-                    On peut alors calculer le courant $I$ parcourant une section de l'anneau :
-                    $$I=\iint_S \vec{j} \cdot \vec{dS} = \frac{\gamma \ln(b/a) e}{\beta} (V_B-V_A)$$
-                    Ainsi en prenant $\beta \simeq 2\pi$ :
-                    $$R\simeq \frac{2 \pi}{\gamma \ln(b/a) e}$$
+                    1. $$V(r)=-\frac{\rho_0 R^2}{2 \epsilon_0}\ln(r) \text{ pour } r >a$$
+                        $$V(r)=-\frac{\rho_0 r^2}{4 \epsilon_0}\ln(r) + A \text{ pour } r >a$$
+                    2. $\lambda=\rho_0\pi a^2$ et $$\vec{E}=\frac{\lambda}{2\pi \epsilon_0 r} \vec{u_r}$$
+                    3. $$\vec{F}=(\vec{p} \cdot \vec{grad}) \vec{E}=-\frac{p_0 E(r)}{r} \vec{u_r}$$
+                    4. $$\vec{F}=(\vec{p} \cdot \vec{grad}) \vec{E}=\frac{p_0 E(r)}{r} \vec{u_{\theta}}$$
                 </p>
                 </div>
             </div><br><br>
-            <div class='flex'>
-                <button id="downloadBtnE" class="button">Sujet Latex</button>
-                <button id="downloadBtnC" class="button">Corrigé Latex</button>
-            </div>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
             <script>
                 // Redirection vers le PDF lors du clic
-                document.getElementById('downloadBtnE').addEventListener('click', function() {
-                window.location.href = 'latex/E1310720001.txt';
-                });
-                // Redirection vers le PDF lors du clic
-                document.getElementById('downloadBtnC').addEventListener('click', function() {
-                window.location.href = 'latex/C1310720001.txt';
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1310720002.txt';
                 });
             </script>
         </div>
