@@ -33,25 +33,18 @@
 
         <div class="container">
             <h2>[MP] [Maison] </h2><br><br>
-            <h3>Champ d'un fil infini</h3><br><br>
+            <h3>Poussière intergalactique</h3><br><br>
             <div id="exerciseContent">
                 <h3>Enoncé</h3><br><br>
                 <div class="subject">
                 <p>
-                    On considère un câble cylindrique d’axe $Oz$, de longueur infinie, de rayon $a$ portant une densité
-                    volumique de charge uniforme $\rho_0$.
+                    On assimile localement une galaxie à une répartition de masse de densité $\mu_0$ uniforme entre
+                    deux plans $z = \pm a$. Une poussière de masse $m$ est initialement située $z = d > a$ sans
+                    vitesse initiale.
                     </p><br><br>
 
                     <p>
-                    <em>1.</em> Déterminer le potentiel $V(M)$ en tout point de l’espace. Tracer qualitativement 
-                        l’allure des lignes de champ et des équipotentielles. <br>
-                    <em>2.</em> Dans la mesure où $a$ est petit par rapport à l’échelle à laquelle on souhaite 
-                        calculer le champ, on assimile le câble à une distribution linéique. Déterminer le champ 
-                        électrostatique créé par cette distribution linéique. $\lambda$. <br>
-                    <em>3.</em> On suppose qu’une molécule polaire est placée en $r > a$ avec $\vec{p}_0 = p_0 
-                        \vec{u}_r$. Déterminer la résultante et le moment des forces exercées sur le dipôle. 
-                        Retrouver ce résultat qualitativement. <br>
-                    <em>4.</em> Même question dans le cas où $\vec{p}_0 = p_0 \vec{u}_\theta$. <br>
+                    <em>Q.</em> Montrer que le mouvement est périodique et déterminer sa période. <br>
                     </p>
                 </div>
             </div><br><br>
@@ -63,12 +56,15 @@
             <div id="corrige">
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
-                <p>
-                    1. $$V(r)=-\frac{\rho_0 R^2}{2 \epsilon_0}\ln(r) \text{ pour } r >a$$
-                        $$V(r)=-\frac{\rho_0 r^2}{4 \epsilon_0}\ln(r) + A \text{ pour } r >a$$
-                    2. $\lambda=\rho_0\pi a^2$ et $$\vec{E}=\frac{\lambda}{2\pi \epsilon_0 r} \vec{u_r}$$
-                    3. $$\vec{F}=(\vec{p} \cdot \vec{grad}) \vec{E}=-\frac{p_0 E(r)}{r} \vec{u_r}$$
-                    4. $$\vec{F}=(\vec{p} \cdot \vec{grad}) \vec{E}=\frac{p_0 E(r)}{r} \vec{u_{\theta}}$$
+                <p> Théorème de Gauss gravitationnel :
+                    $$g(z)=-4\pi \mathcal{G} \mu_0 a=-g_0 \text{ pour } z>a$$
+                    $$g(z)=4\pi \mathcal{G} \mu_0 z \text{ pour } a>z>-a$$
+                    $$g(z)=4\pi \mathcal{G} \mu_0 a=g_0 \text{ pour } z< - a$$
+                    On a deux phases de chute libre et une zone d'oscillations harmoniques 
+                    (\omega_0^2=g_0/a, $v_1=/sqrt{2(d-a)g_0}).
+                    On trouve : 
+                        $$ T= 4\sqrt{ \frac{2(d-a)}{g_0}+T_0 \left(1-\frac{arctan(v_1/a \omega_0}{\pi/2} \right)$$
+                    
                 </p>
                 </div>
             </div><br><br>
@@ -76,7 +72,7 @@
             <script>
                 // Redirection vers le PDF lors du clic
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                window.location.href = 'latex/E1310720002.txt';
+                window.location.href = 'latex/E1310720003.txt';
                 });
             </script>
         </div>
