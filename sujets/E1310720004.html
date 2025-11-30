@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Force de Debye</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Une molécule apolaire placée dans un champ électrique, $\vec{E}$, peut se polariser en un 
+                  dipôle induit de moment $\vec{p_i}=\alpha \epsilon_0 \vec{E}$. On place cette molécule en 
+                  un point $M$ et on considère que le champ extérieur envisagé est celui créé par un dipôle 
+                  permanent de moment $\vec{p}$ placé en $O$.
+                    </p><br><br>
+
+                    <p>
+                    <em>1.</em> Calculer le champ électrique créé par un dipôle permanent en coordonnées 
+                      sphériques dans l'approximation dipolaire. <br>
+                    <em>2.</em> Exprimer l'énergie potentielle de la molécule placée en $M$. <br>
+                    <em>3.</em> Calculer la force moyenne subit par une molécule à distance $r$ du 
+                      dipôle $\vec{p}$. Commenter. <br>
+                     </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. $$V=\frac{p \cos(\theta)}{4 \pi \epsilon_0 r^2} $$
+                  $$\vec{E}=\frac{1}(4\pi \epslion_0 r^3} \left( 3(\vec{p} \cdot \vec{u_r})\vec{u_r}-\vec{p}\right)$$ 
+                   2. $$U(r,\theta)=-\frac{ \alpha p^2}{16 \pi^2 \epsilon_0 r^6}(3\cos(\theta)^2+1)$$
+                   3. $$\vec{F}=-\frac{15 \alpha p^2}{16 \pi^2 \epsilon_0 r^7} \vec{u_r}$$
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1310720004.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
