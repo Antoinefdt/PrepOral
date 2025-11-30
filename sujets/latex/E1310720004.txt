@@ -1,0 +1,13 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+Une molécule apolaire placée dans un champ électrique, $\vv{E}$, peut se polariser en un dipôle induit de moment $\vec{p_i}=\alpha \epsilon_0 \vv{E}$. On place cette molécule en un point $M$ et on considère que le champ extérieur envisagé est celui créé par un dipôle permanent de moment $\vec{p}$ placé en $O$.
+
+\bigskip
+
+\textbf{1)} Calculer le champ électrique créé par un dipôle permanent en coordonnées sphériques dans l'approximation dipolaire.\\
+
+\textbf{2} Exprimer l'énergie potentielle de la molécule placée en $M$.\\
+
+\textbf{3)} Calculer la force moyenne subit par une molécule à distance $r$ du dipôle $\vec{p}$. Commenter.
