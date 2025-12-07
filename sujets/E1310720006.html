@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Boule chargée en rotation</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  Une sphère métallique creuse, de rayon $R$, porte la charge $Q$ uniformément répartie sur toute sa
+                  surface. Cette sphère est mise en rotation à la vitesse $\omega$ constante autour de l’axe $(Oz)$.
+                  Les charges présentes à la surface de la sphère sont solidaires de la surface et sont donc entraînées
+                  par ce mouvement de rotation, on considère que la répartition de charges n’est pas modifiée.
+                    </p><br><br>
+
+                    <p>
+                    <em>1.</em> Calculer le moment magnétique $\vec{\mathcal{M}}$ de cette distribution de courant.  <br>
+                    <em>2.</em>  Donner la forme du champ magnétique $\vec{B}_0$ au centre de la sphère. <br>
+                    <em>3.</em> Expliquer pourquoi le théorème d’Ampère n’est pas applicable ici. <br>
+                      Une autre formulation du théorème d’Ampère est connue sous le nom de loi de Biot et Savart 
+                      qui assure que le champ magnétique créé en un point $M$ par un circuit filiforme porté par le
+                      contour $C$ et parcouru par un courant $I$ vaut :
+                      \[
+                      \vec{B}(M) = \frac{\mu_0 I}{4\pi} \oint_{P \in C} \frac{d\vec{\ell}_P \wedge \vec{PM}}{\|\vec{PM}\|^3}.
+                      \]
+                    <em>4.</em> Calculer alors le champ magnétique $\vv{B}_0$ créé au centre de la sphère.<br><br>
+                     </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. $$\vec{dM} = 4 R^4 \sigma  \omega \sin^3{\theta} d\theta \vec{u_z}$$
+                    $$\vec{M}=\frac{4}{3} \pi R^4 \sigma \omega \vec{u_z} $$ 
+                  2. $\vec{B} \propto \vec{u_z}$ <br><br>
+                  4. $$ \vec{B} = \frac{2 \mu_0 \sigma \omega R}{3} \vec{u_z} $$
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1310720006.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
