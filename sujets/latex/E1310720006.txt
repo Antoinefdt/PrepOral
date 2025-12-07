@@ -1,0 +1,27 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+Une sphère métallique creuse, de rayon $R$, porte la charge $Q$ uniformément répartie sur toute sa
+surface. Cette sphère est mise en rotation à la vitesse $\omega$ constante autour de l’axe $(Oz)$.
+Les charges présentes à la surface de la sphère sont solidaires de la surface et sont donc entraînées
+par ce mouvement de rotation, on considère que la répartition de charges n’est pas modifiée.
+
+\begin{enumerate}
+    \item Calculer le moment magnétique $\vv{\mathcal{M}}$ de cette distribution de courant. 
+    
+    \item Donner la forme du champ magnétique $\vv{B}_0$ au centre de la sphère.
+
+    \item Expliquer pourquoi le théorème d’Ampère n’est pas applicable ici.
+\end{enumerate}
+
+Une autre formulation du théorème d’Ampère est connue sous le nom de loi de Biot et Savart qui assure que le champ magnétique créé en un point $M$ par un circuit filiforme porté par le
+contour $C$ et parcouru par un courant $I$ vaut :
+\[
+\vv{B}(M) = \frac{\mu_0 I}{4\pi} \oint_{P \in C} \frac{d\vv{\ell}_P \wedge \vv{PM}}{\|\vv{PM}\|^3}.
+\]
+
+\begin{enumerate}
+    \setcounter{enumi}{3}
+     \item Calculer alors le champ magnétique $\vv{B}_0$ créé au centre de la sphère.
+\end{enumerate}
