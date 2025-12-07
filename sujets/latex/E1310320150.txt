@@ -1,0 +1,10 @@
+\underline{\textit{Exercice :}} 
+\bigskip
+
+Un câble coaxial de longueur infinie est constitué de deux conducteurs coaxiaux : le premier est un cylindre de rayon $R_1$, traversé par un courant $I$ selon $+\vv{u_z}$ et le second est une coquille cylindrique de rayon interne $R_2>R_1$ et d’épaisseur $e$, traversée par un courant $I$ selon $-\vv{u_z}$. On suppose toutes les répartitions de courants uniformes.
+
+\medskip
+
+\textbf{1)} Calculer le champ magnétique partout dans l'espace.\\
+
+\textbf{2)} Calculer l'inductance d'une longueur $l$ de câble.
