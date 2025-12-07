@@ -1,0 +1,16 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+On considère une spire circulaire de rayon $a$, d’axe $Oz$ et de centre $O$. Cette spire est parcourue par un courant $I$ compté positivement dans le sens trigonométrique. La loi de Biot et Savart permet de calculer aisément le champ magnétique en un point $M$ de l’axe $Oz$ de la spire : $$\vv{B}=\frac{\mu_0I}{2a}\sin^3(\alpha(z))\vv{u_z}$$ où $\alpha(z)$ est l'angle sous lequel est vu le rayon de la spire depuis $M(z)$.
+
+\medskip
+
+\textbf{1)} En modélisant la spire par un moment magnétique retrouver ce résultat dans l'approximation dipolaire. \\
+
+On considère à présent un solénoïde de longueur $L$, constitué de $N$ spires jointives de rayon $a$, coaxiales et
+parcoures par un courant $I$.\\
+
+\textbf{2)} Déterminer le champ magnétique sur l'axe du solénoïde.\\
+
+\textbf{3)} Faire le lien avec le modèle du solénoïde vu en cours.
