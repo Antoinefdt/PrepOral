@@ -40,7 +40,10 @@
                 <p>
                     <i>Remarque : sujet ENSEA/ENSIIE</i> <br><br>
 
-                    On considère un fil infini situé sur l'axe $Oz$ et parcouru par un courant $i(t)=I_e\sqrt{2} \cos{\omega t}$. Une spire rectangulaire, de résistance $R$ et de côtés $a$ et $b$, se situe à une distance $d$ du fil. Elle est positionnée de telle façon que le flux du champ magnétique la traversant soit maximal. <br><br>
+                    On considère un fil infini situé sur l'axe $Oz$ et parcouru par un courant $i(t)=I_e\sqrt{2} 
+                    \cos{\omega t}$. Une spire rectangulaire, de résistance $R$ et de côtés $a$ et $b>a$, 
+                    se situe à une distance $d$ du fil. Elle est positionnée de telle façon que le 
+                    flux du champ magnétique la traversant soit maximal. <br><br>
 
                     <em>1.</em> Calculer le champ $\overrightarrow{B}$ créé par le fil en un point $M$ de l'espace. <br>
 
@@ -61,11 +64,24 @@
                 <div class="subject">
                 <p><em>[MP* Chaptal 2024]</em>  La redémonstration du champ magnétique généré est à revoir : avant mon intervention, Juliette savait que son résultat était faux mais ne trouvait pas pourquoi. Il était surtout inhomogène et incohérent avec les cas limites. De grandes lacunes d'expression orale également, toujours tournée vers le tableau et ne s'exprimant que très peu.</p>
             </div><br><br>
-            <button id="downloadBtn">Télécharger</button><br><br>
+             <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p> 1. $$ \vec{B}=\frac{\mu_0 I(t)}{2 \pi r} \vec{u_\theta}$$ 
+                    2. $$ \Phi = \frac{\mu_0 I(t) b }{2 \pi } \ln \left( \frac{d+a}{d} \right)$$
+                    3. $$M=\frac{\mu_0 b }{2 \pi } \ln \left( \frac{d+a}{d} \right)$$
+                    4. $$ e(t) = - \frac{d\Phi}{dt} = \sqrt{2} M I_e \omega \sin(\omega t)$$
+                    5. $$i_s(t)= e(t)/R$$
+                    6. $$\vec{F_L} = \oint (i(t) \vec{dl} \times \vec{B} )= -\frac{\mu_0 I(t) i_s(t) b a}{2 \pi d(d+a)}\vec{u_r}$$
+                    
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
             <script>
-                // Lors du clic, redirige vers le PDF pré-généré
+                // Redirection vers le PDF lors du clic
                 document.getElementById('downloadBtn').addEventListener('click', function() {
-                window.location.href = 'pdf/exercice1.pdf';
+                window.location.href = 'latex/E1310520210.txt';
                 });
             </script>
         </div>
