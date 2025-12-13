@@ -1,0 +1,41 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+On modélise une bobine infinie parcourue par un courant $I$ et comportant $n$ spires par mètre par une densité volumique de courant qui s’écrit :
+\begin{align*}
+    &\vv{j}(r,\theta,z) = \vv{0}
+\qquad \text{pour } r < R - \varepsilon \; \text{ et  } \;  r > R \\
+&\vv{j}(r,\theta,z) = j_0\,\vec{u}_\theta
+\qquad \text{pour } R - \varepsilon < r < R
+\end{align*}
+
+où $\varepsilon \ll R$ est l’épaisseur de la bobine.
+
+\bigskip
+
+\textbf{Q.1} Déterminer le champ magnétique en tout point de l’espace.  
+
+\bigskip
+
+\textbf{Q.2} On envisage la limite où $\varepsilon \to 0$, c’est-à-dire que la bobine est modélisée par une répartition surfacique de courants.  
+En déduire la densité surfacique de courants $\vec{j}_{s0}$ ainsi que le champ magnétique en tout point de l’espace. On vérifiera la cohérence avec les relations de passage.
+
+\bigskip
+
+\textbf{Q.3} Calculer l’énergie $U_m$ contenue dans la bobine sur une hauteur $H$ finie selon $\vec{u}_z$.
+
+\bigskip
+
+\textbf{Q.4} On envisage l’établissement du courant $I$ dans la bobine :
+\[
+\vv{j}_s(t) = j_s(t)\,\vec{u}_\theta
+\]
+où $j_s(t)$ passe de $0$ à $j_{s0}$ en un temps $\tau$.\\
+
+Calculer le champ électrique en tout point de l'espace.
+
+\bigskip
+
+\textbf{Q.5} Calculer le vecteur de Poynting en $r = R^{-}$ ainsi que la puissance $\mathcal{P}$ qui traverse le cylindre de rayon $R$ et de hauteur $H$.  
+Que vaut $\displaystyle \int_0^{+\infty} \mathcal{P}\,dt$ ? Interpréter.
