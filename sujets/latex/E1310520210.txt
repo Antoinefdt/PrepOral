@@ -1,0 +1,17 @@
+\underline{\textit{Exercice :}} ENSEA/ENSIIE $2021$
+
+\bigskip
+
+On considère un fil infini situé sur l'axe $Oz$ et parcouru par un courant $i(t)=I_e\sqrt{2} \cos{\omega t}$. Une spire rectangulaire, de résistance $R$ et de côtés $a$ et $b$, se situe à une distance $d$ du fil.\\
+
+\textbf{1)} Calculer le champ $\overrightarrow{B}$ créé par le fil en un point $M$ de l'espace.\\
+
+\textbf{2)} Exprimer le flux du champ magnétique dans la spire.\\
+
+\textbf{3)} En déduire le coefficient d'inductance mutuelle $M$.\\
+
+\textbf{4)} Calculer la force électromotrice induite dans la spire.\\
+
+\textbf{5)} En déduire l'expression du courant induit dans la spire $i_s(t)$. Déterminer la rapport des valeurs efficaces de $i$ et $i_s$.\\
+
+\textbf{6)} Déterminer les actions mécaniques qui s'exercent entre le fil et la spire.\\
