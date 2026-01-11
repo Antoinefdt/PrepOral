@@ -39,9 +39,9 @@
                 <div class="subject">
                 <p>
                   Considérons une particule ponctuelle $P$ de charge $q$ en mouvement au voisinage d’un point $O$ fixe dans le référentiel $\mathcal{R}$
-                  du laboratoire et choisi comme origine. Cette particule possède une accélération $\vec{a}=a \vv{e_z}$, et de ce fait rayonne un 
+                  du laboratoire et choisi comme origine. Cette particule possède une accélération $\vec{a}=a \vec{e_z}$, et de ce fait rayonne un 
                   champ électromagnétique. On cherche à déterminer la puissance totale $\mathcal{P}$ rayonnée par cette particule dans tout l’espace.<br>
-                   À grande distance, le champ magnétique $\vv{B}(M,t)$ de l’onde rayonnée par la particule s’approxime en coordonnées sphériques par :
+                   À grande distance, le champ magnétique $\vec{B}(M,t)$ de l’onde rayonnée par la particule s’approxime en coordonnées sphériques par :
                   \[
                   \vec{B}(M,t) \simeq - \frac{q}{4\pi \varepsilon_0 c^3 r} \,
                   \vec{e}_r \wedge \vec{a}\!\left(t - \frac{r}{c}\right).
@@ -82,11 +82,120 @@
             <div id="corrige">
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
-                <p>
-                   1. 
+                <p> 1. L’onde est émise à une distance $r$ du point $M$, si bien qu’il lui faut une durée $r/c$ pour l’atteindre une fois 
+                    qu’elle a été émise par la particule.<br><br>
+
+                    2. La dépendance en $t - r/c$ laisse entendre qu’elle se propage selon $+\vec e_r$.  
+                    D’après la relation de structure,
+                    \[
+                    \vec B = \frac{\vec e_r \wedge \vec E}{c}
+                    \]
+                    donc
+                    \[
+                    \vec e_r \wedge c\vec B
+                    = \vec e_r \wedge (\vec e_r \wedge \vec E)
+                    = (\vec E \cdot \vec e_r)\vec e_r - \vec E.
+                    \]
                     
-                
-                </p>
+                    Or une OEM plane est une onde transverse, donc $\vec E \cdot \vec e_r = 0$, et ainsi
+                    \[
+                    \vec E = - \vec e_r \wedge c\vec B.
+                    \]
+
+                    Pour $\vec a = a\,\vec e_z$, sachant que
+                    \[
+                    \vec e_r \wedge \vec e_z = -\sin\theta\,\vec e_\varphi,
+                    \]
+                    on obtient
+                    \[
+                    \vec B(M,t)
+                    = + \frac{q}{4\pi\varepsilon_0 c^3 r}\,
+                    a\!\left(t-\frac{r}{c}\right)\sin\theta\,\vec e_\varphi.
+                    \]
+
+                    Et comme $\vec e_r \wedge \vec e_\varphi = -\vec e_\theta$, alors
+                    \[
+                    \vec E(M,t)
+                    = + \frac{q}{4\pi\varepsilon_0 c^2 r}\,
+                    a\!\left(t-\frac{r}{c}\right)\sin\theta\,\vec e_\theta.
+                    \]
+                    
+                    L’onde possède localement une polarisation rectiligne selon $\vec e_\theta$.<br><br>
+
+                    3. Par définition,
+                    \[
+                    \vec \Pi(M,t) = \frac{\vec E(M,t)\wedge \vec B(M,t)}{\mu_0}.
+                    \]
+                    
+                    Ainsi,
+                    \[
+                    \vec \Pi(M,t)
+                    = \frac{1}{\mu_0}
+                    \left(\frac{q}{4\pi\varepsilon_0 r}\right)^2
+                    \frac{1}{c^5}
+                    \sin^2\theta\,a^2
+                    (\vec e_\theta \wedge \vec e_\varphi),
+                    \]
+                    d’où
+                    \[
+                    \vec \Pi(M,t)
+                    = \frac{q^2 \sin^2\theta}{16\pi^2 r^2 \varepsilon_0 c^3}
+                    a^2\,\vec e_r,
+                    \]
+                    en utilisant la relation $\varepsilon_0\mu_0 c^2 = 1$.
+
+                    La présence du facteur $\sin\theta$ montre que la puissance est principalement rayonnée dans la direction $\theta=\pi/2$, 
+                    c’est-à-dire perpendiculairement à la direction dans laquelle la particule est accélérée.<br><br>
+                    
+                    4. Par définition,
+                    \[
+                    \mathcal P(r,t) = \iint \vec \Pi \cdot d\vec S
+                    \]
+                    soit
+                    \[
+                    \mathcal P(r,t)
+                    = \frac{q^2}{16\pi^2 \varepsilon_0 c^3}
+                    a^2
+                    \iint \sin^2\theta\, r^2 \sin\theta\, d\theta\, d\varphi.
+                    \]
+
+                    Ainsi,
+                    \[
+                    \mathcal P
+                    = \frac{q^2}{16\pi^2 \varepsilon_0 c^3}
+                    a^2
+                    \int_0^\pi \sin^3\theta\, d\theta
+                    \int_0^{2\pi} d\varphi,
+                    \]
+                    et finalement
+                    \[
+                    \mathcal P
+                    = \frac{q^2}{6\pi\varepsilon_0 c^3}
+                    a\!\left(t-\frac{r}{c}\right)^2. 
+                    \]
+
+                    5. Dans ces conditions, on peut poser
+                    \[
+                    z(t) = A\cos(\omega t),
+                    \quad
+                    a(t) = \ddot z = -\omega^2 A\cos(\omega t).
+                    \]
+
+                    Donc
+                    \[
+                    \left\langle a\!\left(t-\frac{r}{c}\right)^2 \right\rangle
+                    = \omega^4 A^2
+                    \left\langle
+                    \cos^2\!\left(\omega t - \frac{\omega r}{c}\right)
+                    \right\rangle
+                    = \frac{\omega^4 A^2}{2}.
+                    \]
+                    
+                    Ainsi,
+                    \[
+                    \langle \mathcal P \rangle
+                    = \frac{q^2 A^2 \omega^4}{12\pi\varepsilon_0 c^3}.
+                    \]  </p>
                 </div>
             </div><br><br>
             <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
