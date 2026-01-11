@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Rayonnement d'un dipôle oscillant</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  Considérons une particule ponctuelle $P$ de charge $q$ en mouvement au voisinage d’un point $O$ fixe dans le référentiel $\mathcal{R}$
+                  du laboratoire et choisi comme origine. Cette particule possède une accélération $\vec{a}=a \vv{e_z}$, et de ce fait rayonne un 
+                  champ électromagnétique. On cherche à déterminer la puissance totale $\mathcal{P}$ rayonnée par cette particule dans tout l’espace.<br>
+                   À grande distance, le champ magnétique $\vv{B}(M,t)$ de l’onde rayonnée par la particule s’approxime en coordonnées sphériques par :
+                  \[
+                  \vec{B}(M,t) \simeq - \frac{q}{4\pi \varepsilon_0 c^3 r} \,
+                  \vec{e}_r \wedge \vec{a}\!\left(t - \frac{r}{c}\right).
+                  \]
+                  On admet de plus que l’onde rayonnée en $M$ a localement la structure d’une onde plane.<br>
+                  Données :
+                  \[
+                  \vec{u} \wedge (\vec{v} \wedge \vec{w})
+                  = (\vec{u} \cdot \vec{w}) \vec{v}
+                  - (\vec{u} \cdot \vec{v}) \vec{w},
+                  \]
+                 <br><br>
+
+                  <em>1.</em> Interpréter physiquement la dépendance en temps intervenant dans l’expression de $\vec{B}(M,t)$. <br><br>
+
+
+                  <em>2.</em> Déterminer l'expression du champ électrique rayonné.<br><br>
+                    
+                  <em>3.</em>Exprimer le vecteur de Poynting de l’onde rayonnée. Dans quelle direction, s’effectue préférentiellement ce rayonnement ?<br><br>
+
+                  <em>4.</em> En déduire la puissance totale $\mathcal{P}(r,t)$ rayonnée au travers d’une sphère de rayon $r$ par la particule 
+                  chargée accélérée.<br><br>
+                  
+                  <em>5.</em> Un cas important est celui où la particule oscille de manière sinusoïdale autour de l’origine $O$. Exprimer la puissance 
+                  moyenne rayonnée en fonction de la pulsation d’oscillation $\omega$.<br><br>
+
+                  <em>6.</em> On modélise les oscillations d'un électron dans une atome de Mercure par un oscillateur harmonique avec 
+                  $\omega_0/2\pi=5.10^{14} \; Hz$. Évaluer le rapport entre l'énergie mécanique de l'électron et l'énergie rayonnée. 
+                  Proposer alors un modèle permettant d'évaluer la temps de vie de cette oscillation.<br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. 
+                    
+                
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1310720008.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
