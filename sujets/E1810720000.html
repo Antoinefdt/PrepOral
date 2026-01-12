@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Excitation magnétique d'une corde</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                   On étudie la propagation d’ondes transversales au sein d’une corde métallique de longueur 
+                  $L$, fixée en ses deux extrémités d’abscisses $x=0$ et $x=L$, sa masse linéique est notée 
+                  $\mu$.  
+                  On note $z(x,t)$ l’amplitude des petits mouvements de la corde le long de $\vec u_z$ et on
+                  néglige l’influence du poids de la corde. La corde conductrice est en outre parcourue par 
+                  un courant $
+                  I(t)=I_0\cos(\omega t)$ et elle subit l’action d’un champ magnétique :
+                  \[
+                  \vv B = B_0 \sin\!\left(\frac{\pi x}{L}\right)\vec u_y.
+                  \]
+                    </p><br>
+
+                    <p>
+                    <em>1.</em> Déterminer l'équation différentielle vérifiée par $z(x,t)$.  <br><br>
+                    <em>2.</em>  On cherche une solution sous la forme
+                    \[
+                    z(x,t)=C\sin\!\left( kx\right)\cos(\omega t).
+                    \]
+                    Déterminer $C$ et $k$ et commenter ce qui se produit lorsque $\omega \to kc$.
+                     <br><br>
+                    <em>3.</em> En réalité, le champ magnétique est créé par un aimant en U dont l’entrefer a une 
+                      largeur $ e < L $ et peut être modélisé par un champ magnétique uniforme
+                        \[
+                        \vec B = B_0 \vec u_y
+                        \quad \text{pour} \quad \frac{L-e}{2}<x<\frac{L+e}{2},
+                        \]
+                        et un champ magnétique nul en dehors.<br>
+                        Quelles sont les fréquences de résonance ?<br><br>
+                     </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. 
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1810720000.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
