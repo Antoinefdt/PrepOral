@@ -46,7 +46,7 @@
                   un courant $
                   I(t)=I_0\cos(\omega t)$ et elle subit l’action d’un champ magnétique :
                   \[
-                  \vv B = B_0 \sin\!\left(\frac{\pi x}{L}\right)\vec u_y.
+                  \vec B = B_0 \sin\!\left(\frac{\pi x}{L}\right)\vec u_y.
                   \]
                     </p><br>
 
@@ -59,10 +59,10 @@
                     Déterminer $C$ et $k$ et commenter ce qui se produit lorsque $\omega \to kc$.
                      <br><br>
                     <em>3.</em> En réalité, le champ magnétique est créé par un aimant en U dont l’entrefer a une 
-                      largeur $ e < L $ et peut être modélisé par un champ magnétique uniforme
+                      largeur $ e \lt L $ et peut être modélisé par un champ magnétique uniforme
                         \[
                         \vec B = B_0 \vec u_y
-                        \quad \text{pour} \quad \frac{L-e}{2}<x<\frac{L+e}{2},
+                        \quad \text{pour} \quad \frac{L-e}{2} \lt x \lt \frac{L+e}{2},
                         \]
                         et un champ magnétique nul en dehors.<br>
                         Quelles sont les fréquences de résonance ?<br><br>
@@ -78,7 +78,30 @@
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
                 <p>
-                   1. 
+                   1. On applique le principe fondamental de la dynamique à un élément de corde en ajoutant la force de
+                    Laplace au bilan des forces.  
+                    Pour calculer la force magnétique, on considérera que la corde est horizontale 
+                    (calcul au premier ordre).  
+                    \begin{equation}
+                    \frac{\partial^2 z}{\partial t^2}
+                    - c^2 \frac{\partial^2 z}{\partial x^2}
+                    = \frac{I_0 B_0}{\mu}
+                    \sin\!\left(\frac{\pi x}{L}\right)\cos(\omega t).
+                    \end{equation}
+                    avec $c=\sqrt{T/\mu}$.<br><br>
+
+                    2. Pour satisfaire les CL on a : $k_n=n\pi/L$. En remplaçant la forme proposée de $z(x,t)$ dans 
+                    l’équation d’onde, on obtient :
+                        \[
+                        \boxed{
+                        C = \frac{I_0 B_0 c^2/\mu}{\omega^2 - \pi^2 c^2/L^2}.
+                        }
+                        \]
+
+                    Lorsque $\omega \to n \pi c/L$, il se produit une résonance :  
+                    le mode fondamental de la corde est excité par la force magnétique. 
+                    La divergence non physique de l’amplitude provient du fait que les frottements ont 
+                    été négligés dans cette étude.
                 </p>
                 </div>
             </div><br><br>
