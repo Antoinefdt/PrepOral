@@ -65,7 +65,44 @@
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
                 <p>
-                   
+                   1. $$f(x,y)=g(y)=\sin (n \pi y/a)$$
+                    2. L'équation de d'Alembert donne :
+                     $$ \omega^2 = c^2 k^2 + \left( \frac{c n \pi }{a} \right)^2$$ 
+                    Filtre passe haut avec une fréquence de coupure.<br><br>
+                    3. On utilise l'équation de Maxwell-Faraday :
+                    \[
+                    \vec{B}
+                    = \frac{k}{\omega} E_0 \sin\!\left(\frac{n\pi y}{a}\right)\cos(\omega t - kz)\,\vec{e}_y
+                    + \frac{n\pi}{\omega a} E_0 \cos\!\left(\frac{n\pi y}{a}\right)\sin(\omega t - kz)\,\vec{e}_z
+                    \]
+                    d'où : 
+                    $$ \mathcal{P}=\frac{kE_0^2 ab}{4\mu_O \omega}$$
+                    4. Effet Joule dans les courants surfaciques des parois conductrices. On considère une épaisseur de 
+                    peau $\delta=\sqrt{\frac{2}{\gamma \mu_O \omega}}$, on peut calculer les courants surfaciques avec 
+                    les relations de passages puis approximer la répartition de courants en volume sur l'apaisseur $\delta$.
+                    On déduit :
+                    \[
+                    \vec{j}_s(x=0)
+                    = \frac{E_0 \pi}{\mu_0 \omega a}\,\sin(\omega t - kz)\,\vec{u}_y =\vec{j}_s(x=a)
+                    \]
+
+                    Pour les deux autres parois :
+                    \[
+                    \vec{j}_s(y=0)
+                    = -\,\frac{E_0 \pi}{\mu_0 \omega a}
+                    \cos\!\left(\frac{\pi x}{a}\right)\sin(\omega t - kz)\,\vec{u}_x
+                    + \frac{E_0 k}{\mu_0 \omega}
+                    \sin\!\left(\frac{\pi x}{a}\right)\cos(\omega t - kz)\,\vec{u}_z .
+                    \]
+                    
+                    et
+                    \[
+                    \vec{j}_s(y=b)
+                    = -\,\vec{j}_s(y=0) .
+                    \]
+                    On utilise ensuite $p=j^2/\gamma}$, finalement la puissance perdue sur une longueur $dz$ est :
+                    $$dP=\frac{E_0^2}{\mu_0^2 \omega^2 \delta \gamma} \left( \frac{\pi^2 b}{a^2} +
+                    \frac{\pi^2 }{2a} + \frac{k^2 a}{2}\right)$$
                 </p>
                 </div>
             </div><br><br>
