@@ -1,0 +1,20 @@
+\underline{\textit{Exercice :}} 
+
+\bigskip
+
+On considère un guide d'onde délimité par 4 plans conducteurs parfait en $x=0$ ;  $x=b$ ;  $y=0$ et  $y=a$. On étudie la propagation d'une onde EM selon l'axe (Oz) à l'intérieur du guide d'onde, le champ électrique considéré s'écrit :
+$$\vv{E}=E_0f(x,y)\cos (\omega t-kz)\vec{e_x}$$
+
+\textbf{1)} Déterminer $f(x,y)$.
+
+\medskip
+
+\textbf{2)} Établir la relation de dispersion de ces ondes.
+
+\medskip
+
+\textbf{3)} Quelle est la puissance moyenne transportée par ces ondes à travers la section $a\times b$ ?
+
+\medskip
+
+\textbf{4)} Comment modéliseriez-vous les pertes énergétiques au cours de la propagation ?
