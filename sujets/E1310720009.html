@@ -101,7 +101,54 @@
                         m \frac{\partial \vec v}{\partial t}
                         = -e \vec E - e \vec v \wedge \vec B_0,
                         \]
-                    2.
+                    2. L'onde est TEM et on a la relation de structure habituelle. 
+                    Comme l’onde est TE, on cherchera la solution complexe de cette équation
+                    sous la forme
+                    \[
+                    \vec v = \vec v_i\, e^{i(\omega t - \vec k \cdot \vec r)}
+                    \quad \text{avec} \quad
+                    \vec v_i = v_x \vec u_x + v_y \vec u_y.
+                    \]
+                    3. \[
+                        [\gamma] =
+                        \frac{n e^2}{m} \frac{1}{\omega_0^2 - \omega^2}
+                        \begin{pmatrix}
+                        i\omega & -\omega_0 \\
+                        \omega_0 & i\omega
+                        \end{pmatrix}
+                        =
+                        \frac{1}{\mu_0 c^2}
+                        \frac{\omega_p^2}{\omega_0^2 - \omega^2}
+                        \begin{pmatrix}
+                        i\omega & -\omega_0 \\
+                        \omega_0 & i\omega
+                        \end{pmatrix}.
+                        \]
+                        
+                        Expression dans laquelle on a posé
+                        \[
+                        \omega_0 = \frac{eB_0}{m}
+                        \qquad \text{et} \qquad
+                        \omega_p^2 = \frac{n e^2}{m \varepsilon_0}.
+                        \]
+                    4. C'est une équation aux valeurs propres :
+                        \[
+                        \left(k^2 - \frac{\omega^2}{c^2}\right)\vec E_i
+                        = -i \mu_0 \omega [\gamma]\vec E_i.
+                        \]
+                    5. Polarisation circulaire gauche :
+                        \[
+                        k^2 = \frac{\omega^2}{c^2}
+                        \left(1 - \frac{\omega_p^2}{\omega(\omega - \omega_0)}\right).
+                        \]
+                    6. Polarisation circulaire droite :
+                        \[
+                        k^2 = \frac{\omega^2}{c^2}
+                        \left(1 - \frac{\omega_p^2}{\omega(\omega + \omega_0)}\right).
+                        \]
+                    7. Les vecturs d'ondes sont réels dans la limite HF, il n'y a donc pas d'amortissement. <br>
+                    Les deux relations de dispersions sont différentes, on décompose l'onde PR en deux ondes circulaires
+                    gauches et droites, la polarisation reste rectiligne mais tourne d'un angle $\alpha$ : activité optique.
                     </p>
                 </div>
             </div><br><br>
