@@ -1,0 +1,27 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Une OPPM se propage dans le demi-espace vide $z < 0$ : $ \vv{E} = E_0 \cos(\omega t - kz)\,\vec{u}_x$.  
+Le demi-espace $z > 0$ est rempli d’un matériau localement neutre dans lequel l’onde incidente donne lieu à une onde transmise décrite par les champs
+\[
+\vv{E} = E(z,t)\,\vec{u}_x \quad \text{et} \quad \vv{B} = B(z,t)\,\vec{u}_y.
+\]
+En pratique le champ électromagnétique ne pénètre dans le matériau que sur une épaisseur $\delta$ finie et on supposera donc que pour $z \gg \delta$, $E = 0$ et $B = 0$.
+
+\bigskip
+
+\textbf{1)} Déterminer la force volumique magnétique dans le matériau.
+
+\medskip
+
+\textbf{2)} Comme le champ électromagnétique ne pénètre dans le matériau que sur une faible épaisseur, on calcule la force $\left\langle \mathrm{d}^2\vv{F} \right\rangle$ qui s’exerce sur une colonne s’appuyant sur un élément de surface $\mathrm{d}S = \mathrm{d}x\,\mathrm{d}y$ de l’interface vide–matériau s’étendant de $z = 0^+$ à $z = +\infty$. Déterminer la pression de radiation associée à cette force surfacique.
+
+\medskip
+
+\textbf{3)} Calculer $p$ dans le cas d’un matériau parfaitement réfléchissant puis dans celui d’un matériau parfaitement absorbant. On exprimera le résultat en fonction de $\varepsilon_0$ et $E_0$.
+
+\medskip
+
+\textbf{4)} La pression de radiation exercée par le soleil permet de comprendre que les mouvements des poussières dans le système solaire ne soient pas toujours képlériens. Justifier qu'à une distance donnée $r$ du soleil, il existe une taille critique $a_c$ pour une poussière sphérique parfaitement absorbante, telle
+que pour $a < a_c$ la pression de radiation domine et pour $a > a_c$ la gravitation domine.
