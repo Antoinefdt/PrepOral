@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Pression de radiation</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                  Une OPPM se propage dans le demi-espace vide $z < 0$ : $ \vv{E} = E_0 \cos(\omega t - kz)\,\vec{u}_x$.  
+                  Le demi-espace $z > 0$ est rempli d’un matériau localement neutre dans lequel l’onde incidente donne lieu à une onde transmise décrite par les champs
+                  \[
+                  \vv{E} = E(z,t)\,\vec{u}_x \quad \text{et} \quad \vv{B} = B(z,t)\,\vec{u}_y.
+                  \]
+                  En pratique le champ électromagnétique ne pénètre dans le matériau que sur une épaisseur $\delta$ finie et on supposera donc que pour $z \gg \delta$, $E = 0$ et $B = 0$.
+                  <br><br>
+
+                  <em>1.</em> Déterminer la force volumique magnétique dans le matériau. <br><br>
+
+
+                  <em>2.</em> Comme le champ électromagnétique ne pénètre dans le matériau que sur une faible épaisseur, on calcule 
+                    la force $\left\langle \mathrm{d}^2\vv{F} \right\rangle$ qui s’exerce sur une colonne s’appuyant sur un élément
+                    de surface $\mathrm{d}S = \mathrm{d}x\,\mathrm{d}y$ de l’interface vide–matériau s’étendant de $z = 0^+$ à $z = 
+                    +\infty$. Déterminer la pression de radiation associée à cette force surfacique.<br><br>
+                    
+                  <em>3.</em> Calculer $p$ dans le cas d’un matériau parfaitement réfléchissant puis dans celui d’un matériau 
+                    parfaitement absorbant. On exprimera le résultat en fonction de $\varepsilon_0$ et $E_0$.<br><br>
+
+                  <em>4.</em> La pression de radiation exercée par le soleil permet de comprendre que les mouvements des poussières d
+                    ans le système solaire ne soient pas toujours képlériens. Justifier qu'à une distance donnée $r$ du soleil, 
+                    il existe une taille critique $a_c$ pour une poussière sphérique parfaitement absorbante, telle
+                    que pour $a < a_c$ la pression de radiation domine et pour $a > a_c$ la gravitation domine.<br><br>
+                  <br>
+                </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p> 1. \[
+                        m \frac{\partial \vec v}{\partial t}
+                        = -e \vec E - e \vec v \wedge \vec B_0,
+                        \]
+                    2. L'onde est TEM et on a la relation de structure habituelle. 
+                    Comme l’onde est TE, on cherchera la solution complexe de cette équation
+                    sous la forme
+                    \[
+                    \vec v = \vec v_i\, e^{i(\omega t - \vec k \cdot \vec r)}
+                    \quad \text{avec} \quad
+                    \vec v_i = v_x \vec u_x + v_y \vec u_y.
+                    \]
+                    3. \[
+                        [\gamma] =
+                        \frac{n e^2}{m} \frac{1}{\omega_0^2 - \omega^2}
+                        \begin{pmatrix}
+                        i\omega & -\omega_0 \\
+                        \omega_0 & i\omega
+                        \end{pmatrix}
+                        =
+                        \frac{1}{\mu_0 c^2}
+                        \frac{\omega_p^2}{\omega_0^2 - \omega^2}
+                        \begin{pmatrix}
+                        i\omega & -\omega_0 \\
+                        \omega_0 & i\omega
+                        \end{pmatrix}.
+                        \]
+                        
+                        Expression dans laquelle on a posé
+                        \[
+                        \omega_0 = \frac{eB_0}{m}
+                        \qquad \text{et} \qquad
+                        \omega_p^2 = \frac{n e^2}{m \varepsilon_0}.
+                        \]
+                    4. C'est une équation aux valeurs propres :
+                        \[
+                        \left(k^2 - \frac{\omega^2}{c^2}\right)\vec E_i
+                        = -i \mu_0 \omega [\gamma]\vec E_i.
+                        \]
+                    5. Polarisation circulaire gauche :
+                        \[
+                        k^2 = \frac{\omega^2}{c^2}
+                        \left(1 - \frac{\omega_p^2}{\omega(\omega - \omega_0)}\right).
+                        \]
+                    6. Polarisation circulaire droite :
+                        \[
+                        k^2 = \frac{\omega^2}{c^2}
+                        \left(1 - \frac{\omega_p^2}{\omega(\omega + \omega_0)}\right).
+                        \]
+                    7. Les vecturs d'ondes sont réels dans la limite HF, il n'y a donc pas d'amortissement. <br>
+                    Les deux relations de dispersions sont différentes, on décompose l'onde PR en deux ondes circulaires
+                    gauches et droites, la polarisation reste rectiligne mais tourne d'un angle $\alpha$ : activité optique.
+                    </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1310720009.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
