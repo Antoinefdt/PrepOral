@@ -1,0 +1,54 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On envisage un traitement quantique de l’oscillateur harmonique. Le potentiel associé est $V(x)=\frac{1}{2}kx^2$, on notera $\mu$ la masse de l'oscillateur et $E$ son énergie. Il sera modélisé par la fonction d’onde $\psi(x,t)$, on supposera que l'état quantique est un état stationnaire.
+
+\medskip
+
+\textbf{1)} Déterminer l'équation différentielle vérifiée par la partie spatiale de $\psi(x,t)$, noté $\varphi(x)$.
+
+\medskip
+
+\textbf{2)} On définit une nouvelle variable $\alpha$ et un constante $\gamma$ données par : 
+$$\alpha=\left(  \frac{\mu k}{\hbar^2}\right) ^{1/4}x \quad \text{ et } \quad \gamma = \left(\frac{4\mu E^2}{\hbar^2 k}\right)^{1/2} $$
+Quelles sont les dimensions de $\alpha$ et de $\gamma$ ?  
+Réécrire l’équation différentielle en fonction du seul paramètre $\gamma$.
+
+\medskip 
+
+\textbf{3)} Déterminer la solution $f_{\infty}(\alpha)$ dans le régime $\alpha \to \pm \infty$.
+
+\medskip
+
+Dès lors que nous connaissons le comportement asymptotique de la solution recherchée, nous pouvons l’extraire de celle-ci en effectuant le changement de fonction
+\[
+\varphi(\alpha) = g(\alpha)f_{\infty}(\alpha).
+\]
+
+\textbf{4)} Déterminer l’équation différentielle vérifiée par la fonction $g$.
+
+\medskip
+
+Pour résoudre cette équation, on effectue un développement en série entière de la fonction $g$ :
+\[
+g(\alpha) = \sum_{p=0}^{+\infty} b_p \alpha^p
+\]
+
+\textbf{5)}
+Exprimer le coefficient $b_{p+2}$ en fonction du coefficient $b_p$, de l’entier $p$ et de $\gamma$.
+
+\medskip
+
+Si l’on conserve tous les termes de la série, on montre que le comportement asymptotique de la fonction $g(\alpha)$ l’emporte sur $f_{\infty}(\alpha)$ en $\pm\infty$, ce qui ne permet pas de construire de solution physiquement acceptable.  
+La seule possibilité est de tronquer la série en imposant l’existence d’un entier $n$ tel que pour $p \ge n$ alors $b_{p+2}=0$.
+
+\medskip
+
+\textbf{6)}
+En déduire que les énergies accessibles à un oscillateur harmonique en régime quantique sont de la forme :
+\[
+E_n = \left(n+\frac{1}{2}\right)\hbar\omega
+\qquad \text{avec } n\in\mathbb{N},
+\]
+où $\omega$ est une grandeur que l’on exprimera en fonction de $\mu$ et $k$.
