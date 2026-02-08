@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Niveaux d'énergies d'un oscillateur harmonique</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                   On envisage un traitement quantique de l’oscillateur harmonique. Le potentiel 
+                  associé est $V(x)=\frac{1}{2}kx^2$, on notera $\mu$ la masse de l'oscillateur et 
+                  $E$ son énergie. Il sera modélisé par la fonction d’onde $\psi(x,t)$, 
+                  on supposera que l'état quantique est un état stationnaire.
+                  </p><br><br>
+
+                    <p>
+                    <em>1.</em> Déterminer l'équation différentielle vérifiée par la partie 
+                      spatiale de $\psi(x,t)$, noté $\varphi(x)$. <br><br>
+
+                     
+                    <em>2.</em> On définit une nouvelle variable $\alpha$ et un constante $\gamma$ 
+                      données par : 
+                      $$\alpha=\left(  \frac{\mu k}{\hbar^2}\right) ^{1/4}x \quad \text{ et } \quad
+                      \gamma = \left(\frac{4\mu E^2}{\hbar^2 k}\right)^{1/2} $$
+                      Quelles sont les dimensions de $\alpha$ et de $\gamma$ ?  
+                      Réécrire l’équation différentielle en fonction du seul paramètre $\gamma$.<br><br>
+                                            
+                    <em>3.</em> Déterminer la solution $f_{\infty}(\alpha)$ dans le régime $\alpha \to \pm \infty$.<br><br>
+                   
+                    Dès lors que nous connaissons le comportement asymptotique de la solution recherchée, nous pouvons l’extraire de celle-ci en effectuant le changement de fonction
+                    \[
+                    \varphi(\alpha) = g(\alpha)f_{\infty}(\alpha).
+                    \]
+                    <em>4.</em>  Déterminer l’équation différentielle vérifiée par la fonction $g$.<br><br>
+                      Pour résoudre cette équation, on effectue un développement en série entière de la fonction $g$ :
+                        \[
+                        g(\alpha) = \sum_{p=0}^{+\infty} b_p \alpha^p
+                        \]
+                      <em>5.</em> Exprimer le coefficient $b_{p+2}$ en fonction du coefficient $b_p$, de l’entier $p$ et de $\gamma$.<br><br>
+                    
+                      Si l’on conserve tous les termes de la série, on montre que le comportement asymptotique de la fonction 
+                      $g(\alpha)$ l’emporte sur $f_{\infty}(\alpha)$ en $\pm\infty$, ce qui ne permet pas de construire de solution 
+                      physiquement acceptable.  
+                    La seule possibilité est de tronquer la série en imposant l’existence d’un entier $n$ tel que pour $p \ge n$ 
+                      alors $b_{p+2}=0$.<br><br>
+                      <em>6.</em>En déduire que les énergies accessibles à un oscillateur harmonique en régime quantique sont de la forme :
+                      \[
+                      E_n = \left(n+\frac{1}{2}\right)\hbar\omega
+                      \qquad \text{avec } n\in\mathbb{N},
+                      \]
+                      où $\omega$ est une grandeur que l’on exprimera en fonction de $\mu$ et $k$.<br><br> 
+                    </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. Eq de Schrodinger.<br><br>
+                    2. Les deux grandeurs sont sans dimension.
+                      \[
+                      -\frac{d^2 \varphi}{d\alpha^2} + \alpha^2 \varphi(\alpha) = \gamma \varphi(\alpha).
+                      \]
+                    
+                    3. Pour $\alpha \to \pm\infty$, on peut négliger $\gamma$ devant $\alpha^2$, et donc négliger le terme de 
+                    droite de l’équation. On trouve : 
+                     $$f_{\infty}(\alpha) \propto \exp(\pm \alpha^2/2)$$
+                    Seul la solution - est normalisable. <br><br>
+                  
+                    4. \[
+                      \frac{d^2g}{d\alpha^2}
+                      - 2\alpha \frac{dg}{d\alpha}
+                      + (\gamma - 1)g(\alpha) = 0.
+                      \]
+                  5. \[
+                    b_{p+2} =
+                    \frac{2p+1-\gamma}{(p+1)(p+2)}\, b_p.
+                    \]
+                  6.On prend $n$ le plus grand entier tel que $b_n \neq 0$.  
+                    On a alors :
+                    \[
+                    2n + 1 - \gamma = 0
+                    \qquad \text{soit} \qquad
+                    \gamma = 2n + 1.
+                    \]
+                    
+                    En remplaçant $\gamma$ par son expression, on obtient :
+                    \[
+                    \frac{2E}{\hbar}\sqrt{\frac{\mu}{k}} = 2n + 1,
+                    \]
+                    soit :
+                    \[
+                    E = \left(n+\frac{1}{2}\right)\hbar\sqrt{\frac{k}{\mu}}.
+                    \]
+                    
+                    Avec
+                    \[
+                    \omega = \sqrt{\frac{k}{\mu}},
+                    \]
+                    on retrouve la pulsation propre de l’oscillateur harmonique.
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1710720000.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
