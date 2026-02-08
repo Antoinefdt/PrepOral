@@ -1,0 +1,28 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Une particule de masse $m$, d’énergie $E$, est confinée dans l’intervalle $0 \le x \le L$ où son énergie potentielle est choisie nulle $V(x)=0$.
+
+\medskip
+
+On adopte dans un premier temps seulement un traitement classique.  
+On admet que la densité de probabilité de présence classique de la particule entre $x$ et $x+dx$ est proportionnelle à la durée de passage $dt$ entre ces deux abscisses.
+
+\medskip 
+
+\textbf{1)} Déterminer la densité de probabilité de présence classique.
+
+\medskip
+ 
+\textbf{2)}
+Calculer la probabilité de présence de la particule entre les abscisses $0$ et $L/4$.
+
+\medskip
+
+\textbf{3)} On adopte maintenant un traitement quantique. On considère que la fonction d'onde de la particule est un état stationnaire. Déterminer son expression.
+
+\medskip
+
+\textbf{4)}
+Calculer la probabilité de présence de la particule entre les abscisses $0$ et $L/4$. Comparer au cas classique.
