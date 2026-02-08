@@ -1,0 +1,54 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On considère une particule de masse $m$ confinée dans un puits de potentiel infini défini par :
+\[
+V(x)=
+\begin{cases}
++\infty & \text{pour } x<0 \\
+0 & \text{pour } x \in \; ]0,a[ \\
++\infty & \text{pour } x>a 
+\end{cases}
+\]
+
+\textbf{1)} Montrer que les états stationnaires de la particule s’écrivent :
+\[
+\psi_n(x,t) = \varphi_n(x)\,\exp\!\left(-\frac{iE_n t}{\hbar}\right)
+ \; \; \;  \text{  avec } \; \; \; 
+\varphi_n(x) = \varphi_0 \sin\!\left(\frac{n\pi x}{a}\right)
+\qquad n \in \mathbb{N}^*
+\]
+et déterminer $\varphi_0$ ainsi que leur énergie $E_n$ associée.
+
+\medskip
+
+\textbf{2)} On considère les fonctions d’ondes suivantes :
+\[
+\varphi_g(x) = \frac{1}{\sqrt{2}}\bigl(\varphi_1(x) + \varphi_2(x)\bigr),
+\qquad
+\varphi_d(x) = \frac{1}{\sqrt{2}}\bigl(\varphi_1(x) - \varphi_2(x)\bigr),
+\]
+où $\varphi_1$ et $\varphi_2$ sont les parties spatiales des deux premiers niveaux d’énergie.
+
+\begin{itemize}
+  \item Montrer qu’elles sont bien normalisées.
+  \item Où se trouve la particule lorsque sa fonction d’onde est dans l’un ou l’autre de ces états ?
+\end{itemize}
+
+\textbf{3)}
+On suppose que la particule a pour fonction d’onde initiale
+\[
+\psi(x,t=0) = \varphi_g(x)
+\]
+Établir l’expression de $\psi(x,t)$ pour $t>0$.
+
+\medskip
+
+\textbf{4)}
+Exprimer la densité de probabilité de présence à l’instant $t$ à l’aide des fonctions
+\[
+\rho_g = |\varphi_g|^2
+\qquad \text{et} \qquad
+\rho_d = |\varphi_d|^2.
+\]
