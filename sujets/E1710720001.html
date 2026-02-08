@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Etats non stationnaires </h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                   On considère une particule de masse $m$ confinée dans un puits de potentiel infini défini par :
+                    \[
+                    V(x)=
+                    \begin{cases}
+                    +\infty & \text{pour } x<0 \\
+                    0 & \text{pour } x \in \; ]0,a[ \\
+                    +\infty & \text{pour } x>a 
+                    \end{cases}
+                    \]
+                  </p><br><br>
+
+                    <p>
+                    <em>1.</em> Montrer que les états stationnaires de la particule s’écrivent :
+                      \[
+                      \psi_n(x,t) = \varphi_n(x)\,\exp\!\left(-\frac{iE_n t}{\hbar}\right)
+                       \; \; \;  \text{  avec } \; \; \; 
+                      \varphi_n(x) = \varphi_0 \sin\!\left(\frac{n\pi x}{a}\right)
+                      \qquad n \in \mathbb{N}^*
+                      \]
+                      et déterminer $\varphi_0$ ainsi que leur énergie $E_n$ associée. <br><br>
+
+                     
+                    <em>2.</em>  On considère les fonctions d’ondes suivantes :
+                      \[
+                      \varphi_g(x) = \frac{1}{\sqrt{2}}\bigl(\varphi_1(x) + \varphi_2(x)\bigr),
+                      \qquad
+                      \varphi_d(x) = \frac{1}{\sqrt{2}}\bigl(\varphi_1(x) - \varphi_2(x)\bigr),
+                      \]
+                      où $\varphi_1$ et $\varphi_2$ sont les parties spatiales des deux premiers niveaux d’énergie.<br>
+                      
+                      Montrer qu’elles sont bien normalisées.<br>
+                      Où se trouve la particule lorsque sa fonction d’onde est dans l’un ou l’autre de ces états ?
+                      <br><br>
+                                            
+                    <em>3.</em> On suppose que la particule a pour fonction d’onde initiale
+                      \[
+                      \psi(x,t=0) = \varphi_g(x)
+                      \]
+                      Établir l’expression de $\psi(x,t)$ pour $t>0$.<br><br>
+                    <em>4.</em>  Exprimer la densité de probabilité de présence à l’instant $t$ à l’aide des fonctions
+                        \[
+                        \rho_g = |\varphi_g|^2
+                        \qquad \text{et} \qquad
+                        \rho_d = |\varphi_d|^2.
+                        \]
+                    </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. $$\varphi_0=\sqrt{2/a}  \quad \text{et} \quad E_n=n^2 \left(\frac{\pi^2 \hbar^2}{2ma^2} \right)<br><br>
+                    
+                  2. On remarque que les deux fonctions sont orthogonales. L'une représente une localisation gauche et l'autre droite.<br><br>
+
+                  3. On superpose les deux solutions avec un terme de phase différent. On trouve une oscillation entre les deux états :
+
+                  $$| \psi(x,t) |^2= \rho_g/2 (1+ \cos((E_2-E_1)t/\hbar)) +\rho_d/2 (1 - \cos((E_2-E_1)t/\hbar))$$
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1710720001.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
