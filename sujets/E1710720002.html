@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MP] [Maison] </h2><br><br>
+            <h3>Classique vs quantique</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                   Une particule de masse $m$, d’énergie $E$, est confinée dans l’intervalle $0 \le x \le L$ où son énergie potentielle
+                  est choisie nulle $V(x)=0$.<br>
+                  On adopte dans un premier temps seulement un traitement classique.  
+                  On admet que la densité de probabilité de présence classique de la particule entre $x$ et $x+dx$ est proportionnelle à la durée de passage $dt$ entre ces deux abscisses.
+                  </p><br><br>
+
+                    <p>
+                    <em>1.</em> Déterminer la densité de probabilité de présence classique.<br><br>
+
+                     
+                    <em>2.</em>  Calculer la probabilité de présence de la particule entre les abscisses $0$ et $L/4$.
+                      <br><br>
+                                            
+                    <em>3.</em> On adopte maintenant un traitement quantique. On considère que la fonction d'onde de la particule 
+                      est un état stationnaire. Déterminer son expression.<br><br>
+                      
+                    <em>4.</em>  Calculer la probabilité de présence de la particule entre les abscisses $0$ et $L/4$. 
+                      Comparer au cas classique.
+                    </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. $$P=1/L$$
+                    
+                  3. \[
+                  \psi_n(x,t) = \varphi_n(x)\,\exp\!\left(-\frac{iE_n t}{\hbar}\right)
+                   \; \; \;  \text{  avec } \; \; \; 
+                  \varphi_n(x) = \sqrt{2/L} \sin\!\left(\frac{n\pi x}{L}\right)
+                  \qquad n \in \mathbb{N}^*
+                  \]
+
+                  4. $$P=\frac{1}{4}-\frac{\sin(n\pi/2)}{2\pi n}$$
+                  On retrouve 1/4 dans la limite des grands nombres quantiques.
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1710720002.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
