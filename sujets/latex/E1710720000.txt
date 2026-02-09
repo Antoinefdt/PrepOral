@@ -17,7 +17,7 @@ Réécrire l’équation différentielle en fonction du seul paramètre $\gamma$
 
 \medskip 
 
-\textbf{3)} Déterminer la solution $f_{\infty}(\alpha)$ dans le régime $\alpha \to \pm \infty$.
+\textbf{3)} Montrer que $f_{\infty}(\alpha)$ est solution dans le régime $\alpha \to \pm \infty$.
 
 \medskip
 
