@@ -58,11 +58,78 @@
             <div id="comments">
                 <h3>Commentaires</h3><br><br>
                 <div class="subject">
-                Jamais posé.
+                <p>Encore jamais posé !</p>
             </div><br><br>
-             <button id="downloadBtn">Sujet Latex</button><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   1. On applique le premier principe de la thermodynamique en régime stationnaire :
+                        \[
+                        D_m (h_2 - h_1) = \mathcal{P}.
+                        \]
+                        D’où, en utilisant $h = c_p T$,
+                        \[
+                        D_m c_p (T_2 - T_1) = \mathcal{P}.
+                        \]
+                        On en déduit :
+                        \[
+                        T_2 = \frac{\mathcal{P}}{D_m c_p} + T_1 = 550~\text{K}.
+                        \]
+                                            
+                  2. En appliquant le second principe au gaz en régime stationnaire, on obtient :
+                    \[
+                    s_2 - s_1 \geq 0.
+                    \]
+                    
+                    Pour calculer $s_2 - s_1$, on utilise l’identité thermodynamique :
+                    \[
+                    \mathrm{d}s = \frac{\mathrm{d}h}{T} - \frac{v\,\mathrm{d}p}{T},
+                    \]
+                    ou encore, par unité de masse et pour un gaz parfait :
+                    \[
+                    \mathrm{d}s = c_p \frac{\mathrm{d}T}{T} - \frac{R}{M}\frac{\mathrm{d}p}{p}.
+                    \]
+                    
+                    En intégrant entre l’état initial et l’état final, en posant $r = R/M$ et en utilisant
+                    \[
+                    c_p = \frac{\gamma r}{\gamma - 1},
+                    \]
+                    on obtient :
+                    \[
+                    s_2 - s_1
+                    = r \ln \left[
+                    \left( \frac{T_2}{T_1} \right)^{\frac{\gamma}{\gamma-1}}
+                    \left( \frac{p_1}{p_2} \right)
+                    \right].
+                    \]
+                    
+                    Cela montre l’existence d’une température minimale en fin de compression,
+                    le minimum étant atteint dans le cas réversible. On a ainsi :
+                    \[
+                    T_2 \geq T_1 \left( \frac{p_2}{p_1} \right)^{1-\frac{1}{\gamma}}
+                    = 500{,}5~\text{K}.
+                    \]
+                    
+                    En appliquant le premier principe :
+                    \[
+                    D_m c_p (T_2 - T_1) = \mathcal{P},
+                    \]
+                    d’où l’inégalité finale :
+                    \[
+                    \mathcal{P}
+                    \geq c_p D_m T_1
+                    \left[
+                    \left( \frac{p_2}{p_1} \right)^{1-\frac{1}{\gamma}} - 1
+                    \right]
+                    = 2005~\text{W}.
+                    \]
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
             <script>
-                // Lors du clic, redirige vers le PDF pré-généré
+                // Redirection vers le PDF lors du clic
                 document.getElementById('downloadBtn').addEventListener('click', function() {
                 window.location.href = 'latex/E1260720000.txt';
                 });
