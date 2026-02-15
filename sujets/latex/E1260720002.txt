@@ -1,0 +1,37 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On cherche à comparer les performances d'un moteur thermique de Carnot et un moteur à explosion. Les gaz seront assimilées à des gaz parfaits de coefficient isentropique $\gamma=1,4$.
+
+\medskip 
+
+\textbf{1) Moteur de Carnot}
+\newline L'air, initialement enfermé dans un cylindre de volume $V_A=1,0 \; L$ à la pression $P_A=1,0$ bar à $T_A=300 \; K$, subit le cycle réversible suivant :
+
+$\bullet$ étape AB : compression isotherme à $T_A$ jusqu'à $V_B=V_A/8$
+\newline $\bullet$ étape BC : compression adiabatique jusqu'à $P_C=50,0$ bar
+\newline $\bullet$ étape CD : détente isotherme à $T_C$ 
+\newline $\bullet$ étape DA : détente adiabatique 
+
+\medskip
+
+\textbf{1.1} Représenter ce cycle dans le diagramme de Clayperon (P,V).
+\newline \textbf{1.2} Calculer la pression $P_B$, la température $T_C$ et la pression $P_D$.
+\newline \textbf{1.3} Définir et calculer le rendement de Carnot.
+\newline \textbf{1.4} Calculer le rendement directement à partir des valeurs des transferts thermiques et du travail échangé par l'air avec l'extérieur.
+
+\medskip
+
+\textbf{2) Moteur à explosion}
+\newline On ajoute maintenant $n'=2,0 \times 10^{-4}$ mol d'essence et on considère le cycle suivant :
+
+$\bullet$ étape AB : compression adiabatique jusqu'à $P_B$ et $V_B=V_A/8$
+\newline $\bullet$ étape BC : combustion isochore de toute l'essence, libérant dans l'enceinte une énergie molaire $E_e=5910 \; \text{kJ.mol}^{-1}$ totalement abosrbée par l'air
+\newline $\bullet$ étape CD : détente adiabatique réversible 
+\newline $\bullet$ étape DA' : refroidissement isochore jusqu'à $T_{A'}=T_A$, une nouvelle quantité d'essence est alors ajoutée pour revenir en A
+
+\medskip
+
+\textbf{2.1} Calculer les pressions $P_B$ et $P_C$, ainsi que le températures $T_B$, $T_C$ et $T_D$.
+\newline \textbf{2.2} Calculer le rendement de ce moteur.
