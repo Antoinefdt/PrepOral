@@ -114,7 +114,56 @@
                   \mathcal{P}\, dt = m c_\ell \left(1 - \frac{T_c}{T}\right) dT
                   \]
                 
-
+                    Cette relation donne accès au temps \(dt\) mis pour faire varier la température de l’eau de \(dT\).
+                    On trouve alors la durée \(\tau_1\) de cette première phase en intégrant :
+                    \[
+                    \mathcal{P}\tau_1
+                    = \int_{T_1}^{T_f} m c_\ell \left(1 - \frac{T_c}{T}\right)\, dT
+                    = m c_\ell \left[ (T_f - T_1) - T_c \ln\!\left(\frac{T_f}{T_1}\right) \right]
+                    \]
+                    
+                    Considérons à présent un intervalle de temps \(dt\) pendant la deuxième phase de la congélation où l’eau liquide se solidifie à température \(T_f = 273~\text{K}\) constante.
+                    En appliquant le premier principe sous sa forme enthalpique à l’eau pendant \(dt\) où une masse \(dm\) d’eau passe de l’état liquide à l’état solide, on a :
+                    \[
+                    dH = -dm\,L_f = -\delta Q_e
+                    \]
+                    
+                    On obtient alors :
+                    \[
+                    \mathcal{P}\,dt = -dm\,L_f \left(1 - \frac{T_c}{T_f}\right)
+                    \]
+                    
+                    Cette relation donne accès au temps \(dt\) mis pour solidifier une masse \(dm\) d’eau à la température \(T_f\).
+                    On trouve alors la durée \(\tau_2\) de cette deuxième phase en intégrant :
+                    \[
+                    \mathcal{P}\tau_2 = -m L_f \left(1 - \frac{T_c}{T_f}\right)
+                    \]
+                    
+                    Considérons enfin un intervalle de temps \(dt\) pendant la troisième phase de la congélation où la glace passe de \(T_f\) à \(T_2\).
+                    En appliquant le premier principe sous sa forme enthalpique à la glace, on a :
+                    \[
+                    dH = m c_g\, dT = -\delta Q_e
+                    \]
+                    
+                    On obtient alors :
+                    \[
+                    \mathcal{P}\,dt = m c_g \left(1 - \frac{T_c}{T}\right)\, dT
+                    \]
+                    
+                    Cette relation donne accès au temps \(dt\) mis pour faire varier la température de la glace de \(dT\).
+                    On trouve alors la durée \(\tau_3\) de cette dernière phase en intégrant :
+                    \[
+                    \mathcal{P}\tau_3
+                    = \int_{T_f}^{T_2} m c_g \left(1 - \frac{T_c}{T}\right)\, dT
+                    = m c_g \left[ (T_2 - T_f) - T_c \ln\!\left(\frac{T_2}{T_f}\right) \right]
+                    \]
+                    
+                    On en déduit alors :
+                    \[
+                    \tau = \tau_1 + \tau_2 + \tau_3
+                    \]
+                    
+                    On note que le résultat est inversement proportionnel à la puissance du moteur.
                 </p>
                 </div>
             </div><br><br>
