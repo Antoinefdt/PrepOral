@@ -1,0 +1,32 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Une masse $m=1,5 \; kg$ d’eau liquide à la température initiale $\theta_1 = 
+20$°C est placée dans un congélateur dont le moteur électrique (celui du 
+compresseur) a une puissance mécanique de 50 W. Au bout d’un certain temps 
+$\tau$, l’eau est sortie sous forme de glace à la température $\theta_2 = 
+-10$°C. On supposera que l’eau évolue à pression constante $p_0 = 1 \; atm$.
+Le congélateur est une machine thermique dont le fluide effectue des cycles entre le milieu extérieur de température $\theta_e=25$°C et l’eau dont la température lentement variable est notée $T(t)$. 
+
+On donne pour l’eau : $c_{liquide}=4,2 \; kJ.K^{-1}.kg^{-1}$ ; $c_{solide}=2,1 \; kJ.K^{-1}.kg^{-1}$ et $L_f=334 \; kJ.kg^{-1}$.
+
+\medskip
+
+On considère un intervalle de temps de durée $dt$ pendant lequel le fluide frigorifique effectue un cycle entre l’air extérieur et le congélateur, réduit à la seule masse d’eau, dont la température varie de $dT$.
+
+\medskip
+
+\textbf{1)} Faire un schéma du congélateur en faisant apparaître les différents termes d'échange d'énergie.
+
+\medskip
+
+\textbf{2)} Exprimer $Q$ le transfert thermique reçu par l’eau au cours de la congélation.
+
+\medskip
+
+\textbf{3)} On souhaite évaluer le temps minimum $\tau$ de congélation. Justifier que cela revient à supposer que les cycles effectués par le fluide sont réversibles.
+
+\medskip
+
+\textbf{4)} Calculer $\tau$.
