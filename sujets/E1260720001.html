@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[MPSI] [Maison] [2] </h2><br><br>
+            <h3>Temps minimum de congélation</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p> Une masse $m=1,5 \; kg$ d’eau liquide à la température initiale $\theta_1 = 
+                    20$°C est placée dans un congélateur dont le moteur électrique (celui du 
+                    compresseur) a une puissance mécanique de 50 W. Au bout d’un certain temps 
+                    $\tau$, l’eau est sortie sous forme de glace à la température $\theta_2 = 
+                    -10$°C. On supposera que l’eau évolue à pression constante $p_0 = 1 \; atm$.
+                    Le congélateur est une machine thermique dont le fluide effectue des cycles entre 
+                    le milieu extérieur de température $\theta_e=25$°C et l’eau dont la température lentement variable est notée $T(t)$. <br>
+                    
+                    On donne pour l’eau : $c_{liquide}=4,2 \; kJ.K^{-1}.kg^{-1}$ ; $c_{solide}=2,1 \; kJ.K^{-1}.kg^{-1}$ et $L_f=334 \; kJ.kg^{-1}$.
+                    
+                    <br><br>
+                    
+                    On considère un intervalle de temps de durée $dt$ pendant lequel le fluide frigorifique effectue un cycle entre l’air extérieur 
+                  et le congélateur, réduit à la seule masse d’eau, dont la température varie de $dT$.  <br><br>
+
+                    <em>1.</em> Faire un schéma du congélateur en faisant apparaître les différents termes d'échange d'énergie. <br><br>
+
+                    <em>2.</em> Exprimer $Q$ le transfert thermique reçu par l’eau au cours de la congélation.<br><br>
+
+                   <em>3.</em> On souhaite évaluer le temps minimum $\tau$ de congélation. Justifier que cela revient à supposer 
+                  que les cycles effectués par le fluide sont réversibles.<br><br>
+
+                   <em>4.</em> Calculer $\tau$.<br><br>
+                </p>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p>
+                   2. On applique le premier principe sous forme enthalpique à l’eau qui évolue à pression constante :
+                    \[
+                    \Delta H = m c_\ell (T_f - T_1) - mL + m c_g (T_2 - T_f) = Q
+                    \]
+                    
+                    On obtient numériquement \( Q = -658{,}5~\text{kJ} \).
+                    On note que cette quantité est dominée largement par le terme correspondant à l’énergie à évacuer pour transformer 
+                    l’eau liquide en glace à \(0^\circ\text{C}\).<br><br>
+
+                  3. On sait d’après la théorie générale des machines thermiques dithermes que l’on peut définir une efficacité maximale 
+                      dans le cas réversible.  
+                      À travail \(W\) donné, le transfert thermique prélevé à la source froide est maximum dans le cas réversible.  
+                      Si on travaille à puissance fixée (\(W = \mathcal{P}\tau\)), le temps \(\tau\) mis pour prélever une certaine énergie 
+                      \(Q\) sera donc minimum dans le cas réversible.<br><br>
+
+                  4. On applique le premier et second principes pendant un cycle infinitésimal réversible de durée \(dt\) :
+                  \[
+                  \delta W + \delta Q_e + \delta Q_c = 0
+                  \qquad \text{et} \qquad
+                  \frac{\delta Q_e}{T} + \frac{\delta Q_c}{T_c} = 0
+                  \quad (\text{rév})
+                  \]
+                  
+                  On déduit de ces relations :
+                  \[
+                  \delta Q_c = -\frac{T_c}{T}\,\delta Q_e
+                  \qquad \text{et} \qquad
+                  \delta W = \mathcal{P}\,dt = -\delta Q_e \left(1 - \frac{T_c}{T}\right)
+                  \]
+                  
+                  Considérons un intervalle de temps \(dt\) pendant la première phase de la congélation où l’eau liquide passe de \(T_1\) à \(T_f\).
+                  En appliquant le premier principe sous sa forme enthalpique à l’eau, on a :
+                  \[
+                  dH = m c_\ell\, dT = -\delta Q_e
+                  \]
+                  
+                  On obtient alors :
+                  \[
+                  \mathcal{P}\, dt = m c_\ell \left(1 - \frac{T_c}{T}\right) dT
+                  \]
+                
+
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1260720001.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
