@@ -1,0 +1,16 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Un compresseur adiabatique fonctionnant en régime stationnaire fait passer de l’air de l’état 1 $(p_1 = 1~\text{bar}, \; T_1 = 300~\text{K})$ jusqu’à l’état 2 $(p_2 = 6~\text{bar}, \; T_2).$ La puissance du moteur vaut $\mathcal{P} = 2{,}5~\text{kW}$ et le débit massique d’air comprimé est $D_m = 10~\text{g}\cdot\text{s}^{-1}.$
+On assimile l’air à un gaz parfait de capacité thermique massique à pression constante $c_p = 1{,}0~\text{kJ}\cdot\text{kg}^{-1}\cdot\text{K}^{-1},$
+de masse molaire $M = 29~\text{g}\cdot\text{mol}^{-1}$ et de coefficient adiabatique $\gamma = 1{,}4$.
+
+\medskip
+
+\textbf{1)} Calculer la température $T_2$ après compression.
+
+\medskip
+
+\textbf{2)} Montrer qu’il existe une puissance utile minimale $\mathcal{P}_{\min}$ à fournir pour comprimer un gaz parfait initialement dans l’état $(p_1,T_1)$
+jusqu’à la pression $p_2$ avec un débit massique $D_m$ fixé. Application numérique dans le cas du compresseur étudié dans cet exercice.
