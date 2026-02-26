@@ -1,0 +1,20 @@
+\underline{\textit{Exercice :}}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\linewidth]{1540720002.png}
+\end{figure}
+
+\textbf{1)} Calculer la fonction de transfert $\underline{H}$ du filtre ci-dessus.\\
+
+\textbf{2)} La mettre sous la forme canonique : $\underline{H}=\frac{1}{1-x^2+jx/Q}$ avec $x=\omega/\omega_0$.\\
+
+\textbf{3)} Représenter le diagramme de Bode asymptotique du filtre et en déduire qualitativement le tracé réel pour $Q=0,1$ puis $Q=10$.\\
+
+On considère un signal avec une composante continue égale à $1 \; V$, un fondamental de fréquence $1 \; kHz$ d’amplitude $3 \; V$, et un bruit de fréquence $20 \;kHz$ d’amplitude $100 \; mV$ déphasé de $\pi/2$. \\
+
+\textbf{4)} Calculer la valeur moyenne et la valeur efficace du signal.\\
+
+\textbf{5)} Donner le signal en sortie du filtre, on donne $\omega_0=2\pi\times 10^4 \; rad.s^{-1}$ et $Q=0,1$.\\
+
+\textbf{6)} Proposer un filtre qui permettrait de se débarrasser de la composante continue.
