@@ -1,0 +1,54 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On considère un solide en forme de tore dont les sections ont une aire $S$. On suppose que le rayon des sections de ce tore est négligeable devant le rayon principal du tore et on décrira ce solide par un cercle de rayon $R$. La capacité thermique est notée $c$, la conductivité thermique est notée
+$\lambda$ et la masse volumique $\rho$.
+
+\medskip
+
+\textbf{1)} Établir l’équation du transfert de la chaleur en fonction de $\theta$
+en coordonnées polaires.
+
+\medskip
+
+\textbf{2)} Vérifier que
+\[
+T(\theta,t)=\frac{T_0\ell}{2\sqrt{\pi Dt}}
+e^{-R^2\theta^2/(4Dt)}
+\]
+avec $D=\lambda/\rho c$ est solution de cette équation.
+Pourquoi ne peut-on pas l’utiliser ici ?
+
+\medskip
+
+\textbf{3)}  On cherche une solution sous la forme
+\[
+T(\theta,t)=g(t)f(\theta).
+\]
+Déterminer les fonctions $f$ et $g$.
+
+\medskip
+
+\textbf{4)}  Initialement une moitié de cercle est à la température $T_0$ tandis
+que l’autre moitié est à température nulle.
+Trouver une solution pour l’évolution de la température.
+Quelle est son évolution asymptotique aux temps longs ?
+
+\medskip
+
+\textbf{5)}  On part d’une température nulle dans tout le tore, et on injecte une quantité d’énergie $Q$ en un point donné.
+Quelle est l’évolution de la température et son profil asymptotique ?
+
+\medskip
+
+La fonction $f_a(\theta)$ définie sur $[-\pi,\pi]$ et ayant pour valeur
+$\pi/a$ sur $-a/2 \le \theta \le a/2$ et $0$ ailleurs est égale à la série
+
+\[
+f_a(\theta)
+= \frac{1}{2}
++ \sum_{n=1}^{\infty}
+\frac{\sin(an/2)}{an/2}\cos(n\theta).
+\tag{1}
+\]
