@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[PC] [X] [2018] </h2><br><br>
+            <h3>Dissolution d'un sel</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p> Un grand récipient sphérique de rayon $R = 10 \; m$ est rempli d’eau. A $t = 0$ on introduit au centre 
+                  du récipient un cristal d’un certain sel, faiblement soluble dans l’eau. Pour simplifier,
+                  on supposera ce cristal de forme sphérique, de rayon $a_0 = 1 \; cm$.
+                  
+                  <br><br>
+
+                  <em>Q.</em> Déterminer comment la concentration en sel dans l’eau varie en fonction du temps et de la position.
+                  On établira d’abord les équations, puis on tentera de les résoudra en procédant à des approximations raisonnables.
+
+
+                    <br>
+                </p>
+
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p> L’énoncé est volontairement un peu vague. On ne sait pas de quel sel il s’agit à part
+qu’il est faiblement soluble dans l’eau. En se basant sur une masse volumique de
+l’ordre de $2\,\mathrm{g\,cm^{-3}}$ on a environ $8\,\mathrm{g}$ de sel pour environ
+$4\times10^{6}$ litres d’eau, soit $2\times10^{-6}\,\mathrm{g\,l^{-1}}$.
+La concentration saturante de NaCl est environ $360\,\mathrm{g}$ par litre d’eau !
+Pour un sel très faiblement soluble tel AgCl, la solubilité est de
+$2\times10^{-3}\,\mathrm{g\,l^{-1}}$.
+Donc même pour un sel faiblement soluble, on pourra supposer qu’à la fin tout le sel
+est dissous.
+<br>
+On a une symétrie sphérique. On aura donc des concentrations $n(t,r)$ et des flux
+$\vec{j}(t,\vec{r}) = j(t,r)\,\vec{u}_r$.
+On aura d’une part un processus de diffusion et d’autre part une source au centre
+qui injecte du sel dans l’eau au fur et à mesure que le cristal se dissout.
+Le flux à la surface du cristal (nombre de grammes dissous par unité de temps et de
+surface) dépendra de la différence entre la concentration en sel dissous dans l’eau
+à la surface du cristal $n(t,a)$ et de la concentration saturante $n_{\mathrm{sat}}$ :
+
+$$
+\vec{j}(t,\vec{r})\big|_{r=a}
+=
+\gamma\big(n_{\mathrm{sat}} - n(t,a)\big)\,\vec{u}_r
+$$
+
+où $\gamma$ est une certaine constante dont l’unité est $\mathrm{m\,s^{-1}}$.
+Mais ici $a = a(t) \le a_0$ est le rayon du cristal à l’instant $t$.
+En intégrant sur la surface du cristal on obtient la quantité (masse) de sel
+injecté dans l’eau par unité de temps au centre du récipient :
+
+$$
+\dot{m}(t)
+=
+-
+\int_{r=a(t)}
+d\vec{S}\cdot\vec{j}(t,\vec{r})\big|_{r=a(t)}
+=
+-4\pi a(t)^2 \gamma\big(n_{\mathrm{sat}} - n(t,a(t))\big).
+$$
+                   
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1220120180.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
