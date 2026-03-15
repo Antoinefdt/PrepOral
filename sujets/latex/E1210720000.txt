@@ -1,0 +1,25 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On modélise le problème de la formation d’une couche de glace sur la Seine comme décrit sur la figure ci dessous. La surface d’un volume d’eau de la Seine initialement à la température de fusion $T_F$ est mise en contact à l’instant $t = 0$ avec l’air à la température constante $T_a < T_F$. Une couche de glace apparaît et se développe progressivement au sein du fluide. On note $e(t) $ la position de l’interface entre l’eau et la glace. Soit $T_g(z,t)$ le champ de température dans la glace, supposé unidimensionnel. On note h le coefficient conducto-convectif de l’interface air-glace et on se place dans l’ARQS dans toute la suite.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.3\linewidth]{Lac_gelé.png}
+\end{figure}
+
+On donne la conductivité thermique de la glace : $\lambda_g =
+1 \; W.m^{-1}.K^{-1}$ ; la masse volumique de la glace : $\mu = 900 \; kg.m^{-3}$ ; l’enthalpie massique de fusion de l’eau : $L_f = 334 \; kJ.kg^{-1}$ et $h=40 \; W.m^{-2}.K^{-1}$.
+
+\bigskip
+
+\textbf{1)} Exprimer le flux thermique $\Phi(t)$ qui traverse la couche de glace à l’instant $t$ dans le sens $+\vec{u_z}$ en utilisant les résistances thermiques associées, on donnera une expression en fonction de $T_a$ , $T_F$ , $h$, $\lambda_g$, $S$ et $e(t)$.
+
+\medskip
+
+\textbf{2)} Trouver une l'équation différentielle portant sur $e(t)$.
+
+\medskip
+
+\textbf{3)} On avait coutume de dire : "Pour patiner à Paris, il faut 30° de froid", c’est à dire 5 jours à -6° ou 3 jours à -10°. Interpréter ce dicton.
