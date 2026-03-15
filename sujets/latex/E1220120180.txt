@@ -1,0 +1,6 @@
+Un grand récipient sphérique de rayon $R = 10 \; m$ est rempli d’eau. A $t = 0$ on introduit au centre du récipient un cristal d’un certain sel, faiblement soluble dans l’eau. Pour simplifier,
+on supposera ce cristal de forme sphérique, de rayon $a_0 = 1 \; cm$.
+
+\medskip
+
+\textbf{Q)} Déterminer comment la concentration en sel dans l’eau varie en fonction du temps et de la position. On établira d’abord les équations, puis on tentera de les résoudra en procédant à des approximations raisonnables.
