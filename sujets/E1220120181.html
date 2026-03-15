@@ -98,7 +98,60 @@ f_a(\theta)
             <div id="corrige">
                 <h3>Corrigé</h3><br><br>
                 <div class="subject">
-                <p> 
+                <p> 1) On peut faire une mise en équation par bilan. Il faut juste voir que si on prend une coordonnée $s$ sur le cercle $\partial_s = 1/R \partial_\theta$. Ou alors on connaît le gradient et la divergence en polaire en voyant que l'hypothèse de sections très petites implique un gradient de température orthoradial. On trouve
+$$
+\rho c \partial_t T = \lambda \partial_{ss} T = \frac{\lambda}{R^2} \partial_{\theta\theta} T .
+$$
+On introduit un coefficient de diffusion $D = \lambda / \rho c$.
+<br><br>
+2) On vérifie sans problème que c'est solution de l'équation en dérivant. Mais cela n'est pas compatible avec la topologie du problème. Pourtant on a bien $T(-\pi, t) = T(\pi, t)$ ! Mais c'est au niveau des flux que ça va pas. Ils ne sont pas continus en $-\pi$ et en $\pi$ vu qu'ils s'éloignent tout deux de la valeur $\theta = 0$.
+
+                    <br><br>
+3) Il faut donc passer à autre chose. On passe par une méthode de séparation des variables. Si on cherche $T(\theta, t) = f(\theta)g(t)$, alors
+$$
+\frac{g'(t)}{g(t)} = \frac{D}{R^2} \frac{f''(\theta)}{f(\theta)} .
+$$
+Ces combinaisons doivent être des constantes. On a donc
+$$
+\frac{f''(\theta)}{f(\theta)} = \text{Cte} .
+$$
+Les solutions sont des cos et sin (on élimine les cosh et sinh) mais les conditions périodiques imposent $\cos(n\theta)$ et $\sin(n\theta)$. On a alors
+$$
+\frac{g'(t)}{g(t)} = -\frac{n^2 D}{R^2}
+$$
+donc
+$$
+g(t) \propto e^{-n^2 D t / R^2} .
+$$
+On trouve donc les solutions de type
+$$
+e^{-n^2 D t / R^2} \cos(n\theta) \quad , \quad e^{-n^2 D t / R^2} \sin(n\theta)
+$$
+
+4) Par superposition une somme de telles solutions est une solution. La condition initiale suggérée est la fonction de l'aide évaluée en $a = \pi$ et multipliée par $T_0$ et c'est donc
+\begin{align}
+T(\theta, 0) &= \frac{T_0}{2} + T_0 \sum_{n=1}^{\infty} \frac{\sin(n\pi/2)}{n\pi/2} \cos(n\theta) \\
+&= \frac{T_0}{2} + \frac{2T_0}{\pi} \sum_{p=0}^{\infty} \frac{(-1)^p}{(2p+1)} \cos[(2p+1)\theta]
+\end{align}
+et la solution générale à tous temps est
+$$
+T(\theta, t) = \frac{T_0}{2} + \frac{2T_0}{\pi} \sum_{p=0}^{\infty} \frac{(-1)^p}{(2p+1)} \cos[(2p+1)\theta] e^{-(2p+1)^2 D t / R^2} .
+$$
+C’est le terme $p=1$ qui a la décroissance la moins rapide. C’est logique car ce mode a les gradients les plus petits (et les distances entre les points hauts et bas sont les plus grands).
+<br><br>
+5) On peut refaire le raisonnement précédent mais $a < \pi$ c’est à dire avec une zone chaude plus petite que la zone froide initiale. La fonction donnée dans l’aide à la même intégrale même si on varie $a$. Quand on avait $a = \pi$ on avait injecté $Q = R\pi \rho c S T_0$. Si on injecte cette même énergie sur une longueur $Ra$ au lieu de $R\pi$ on a la condition initiale
+$$
+T(\theta, 0) = \frac{T_0}{2} + T_0 \sum_{n=1}^{\infty} \frac{\sin(an/2)}{an/2} \cos(n\theta)
+$$
+avec
+$$
+T_0 = \frac{Q}{R\pi \rho c S} .
+$$
+Dans la limite d’une injection d’énergie en un seul point du cercle $a \rightarrow 0$ (et on utilise $\text{sinc}(a) \rightarrow 1$) alors la solution générale est (en rajoutant les facteurs d’évolution temporelle)
+$$
+T(\theta, t) = \frac{T_0}{2} + T_0 \sum_{n=1}^{\infty} \cos(n\theta) e^{-n^2 D t / R^2}
+$$
+Pareil c’est le mode le plus bas $n=1$ qui guide la forme asymptotique. Pour $\sqrt{Dt} > R$, donc quand la longueur de diffusion a dépassé le rayon du cercle, alors on entre dans ce régime asymptotique.
     
                    
                 </p>
