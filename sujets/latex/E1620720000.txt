@@ -1,0 +1,15 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+Les deux parois du récipient ci-dessous dessinées en traits épais
+sont rigidement liées et peuvent pivoter sans frottement autour
+de l’axe ($Oz$). Le récipient est parallélépipédique et possède une
+longueur b dans la direction ($Oz$). On note $P_0$ la pression dans l’air
+environnant et $\vec{g}=-g\vec{e_y}$.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Bascule.png}
+\end{figure}
+
+\textbf{Q)} À quelle condition sur la hauteur d’eau y a-t-il basculement ?
