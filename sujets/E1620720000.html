@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[PC] [Maison] </h2><br><br>
+            <h3>Basculement d'une plaque</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                   Les deux parois du récipient ci-dessous dessinées en traits épais
+                    sont rigidement liées et peuvent pivoter sans frottement autour
+                    de l’axe ($Oz$). Le récipient est parallélépipédique et possède une
+                    longueur b dans la direction ($Oz$). On note $P_0$ la pression dans l’air
+                    environnant et $\vec{g}=-g\vec{e_y}$.
+                </p><br><br>
+
+                <img src="../images/1620720000.png" width=30% alt="Schéma illustratif"> <br><br>
+
+                    <p>
+                      <em>Q.</em>  À quelle condition sur la hauteur d’eau y a-t-il basculement ?<br>
+                    </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p> 
+                 On a : $P(y)=P_0 + \rho g (h-y). On calcule les forces de pressions exercées sur chacune des parois, puis leurs moments.
+                
+                $$M_tot=\rho g b (h^3/6-ha^2/2)$$
+                On a ensuite la réaction normale qui possède un moment non nul, la condition de basculement est $N \lt 0$. La condition est :
+                  $$h>a\sqrt{3}$$
+                                                                                                                      
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1620720000.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
