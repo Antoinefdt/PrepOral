@@ -1,0 +1,26 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+On considère un tuyau de pompier de diamètre $d = 70\,\text{mm}$, montant à une hauteur de $30\,\text{m}$, où il se termine par une lance. Une pompe impose un débit volumique $Q = 500\,\text{L}\cdot\text{min}^{-1}$, l’eau étant aspirée à partir d’un bassin à l’air libre. L’eau sort de la lance avec une vitesse d’éjection $v_e = 30\,\text{m}\cdot\text{s}^{-1}$.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.4\linewidth]{Lance_incendie.png}
+\end{figure}
+
+\textbf{1)} Quelle doit être la pression au point $A$ pour obtenir une telle vitesse en sortie de la lance ?
+
+\medskip
+
+On s’intéresse maintenant aux pertes de charge dans le tuyau, exprimées en $\text{Pa}\cdot\text{m}^{-1}$ par :
+\[
+\kappa = f \frac{\mu v^2}{2d}
+\quad \text{avec} \quad f = 2 \times 10^{-2} \ \text{(USI)}.
+\]
+
+\textbf{2)} Quelle est l’unité de $f$ ?
+
+\medskip
+
+\textbf{3)} Quelle puissance doit fournir la pompe, sachant que le tuyau est long de $200\,\text{m}$ au total ?
