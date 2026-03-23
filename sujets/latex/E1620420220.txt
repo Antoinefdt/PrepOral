@@ -1,0 +1,54 @@
+\underline{\textit{Exercice :}}
+
+\bigskip
+
+Le viscosimètre de Couette permet de mesurer la valeur de la viscosité $\eta$ d’un fluide. Un fluide est introduit entre deux cylindres coaxiaux d’axe $(Oz)$ et de longueur $L$. Le cylindre intérieur est de rayon $R_1$ et est entraîné à la vitesse angulaire $\omega_1$, alors que le cylindre extérieur est de rayon $R_2$ et est entraîné à la vitesse angulaire $\omega_2$. Les cylindres sont suffisamment longs dans la direction $(Oz)$ pour négliger les effets de bord et pour qu’il n’y ait pas de composante axiale $v_z$ de la vitesse $\vec{v}$ du fluide. En un point $M$ du fluide on se place en régime stationnaire et en coordonnées cylindriques $(r,\theta,z)$.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{Couette.png}
+\end{figure}
+
+On rappelle l'expression de la divergence dans ces coordonées :
+
+\[
+\mathrm{div}\,\vec{v}
+=
+\frac{1}{r}\frac{\partial (r v_r)}{\partial r}
++
+\frac{1}{r}\frac{\partial v_\theta}{\partial \theta}
++
+\frac{\partial v_z}{\partial z}
+\]
+
+\textbf{1)} Le fluide est supposé incompressible, montrer que la composante radiale $v_r$ de la vitesse $\vec{v}$ est nulle.
+
+\medskip
+
+Pour la suite, on admet que la norme de la vitesse $v$ du fluide peut s’écrire
+\[
+v = \left( Ar + \frac{B}{r} \right)
+\]
+
+\medskip
+
+\textbf{2)} Déterminer les expressions de $A$ et $B$ en fonction de $R_1$, $R_2$, $\omega_1$ et $\omega_2$.
+
+\medskip
+
+Dans la pratique, on prend comme conditions expérimentales $\omega_1 = 0$ et $R_2 - R_1 \ll R_1$, ce qui permet d’assimiler localement l’espace entre les deux cylindres à l’espace entre deux plans.
+
+\medskip
+
+\textbf{3)} Par analogie avec la force de cisaillement entre deux plans, montrer que l’expression de la force élémentaire $\vv{dF}$ de cisaillement s’exerçant sur une surface $\mathrm{d}S$ du cylindre intérieur s’écrit
+\[
+\vv{dF} = 2\eta A \,\mathrm{d}S\, \vec{u}_\theta.
+\]
+
+\medskip
+
+\textbf{4)} Calculer le moment total $\Gamma$ exercé par les forces de cisaillement sur le cylindre intérieur suivant l’axe $(Oz)$.
+
+\medskip
+
+\textbf{5)} Comment mesurer alors la viscosité $\eta$ ?
