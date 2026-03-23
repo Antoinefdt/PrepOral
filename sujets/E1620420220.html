@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[PC] [Centrale] </h2><br><br>
+            <h3>Viscosimètre de couette</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                    Le viscosimètre de Couette permet de mesurer la valeur de la viscosité $\eta$ d’un fluide. Un fluide est introduit
+                  entre deux cylindres coaxiaux d’axe $(Oz)$ et de longueur $L$. Le cylindre intérieur est de rayon $R_1$ et est 
+                  entraîné à la vitesse angulaire $\omega_1$, alors que le cylindre extérieur est de rayon $R_2$ et est entraîné à 
+                  la vitesse angulaire $\omega_2$. Les cylindres sont suffisamment longs dans la direction $(Oz)$ pour négliger les 
+                  effets de bord et pour qu’il n’y ait pas de composante axiale $v_z$ de la vitesse $\vec{v}$ du fluide. En un point 
+                  $M$ du fluide on se place en régime stationnaire et en coordonnées cylindriques $(r,\theta,z)$.
+                </p><br><br>
+
+                    <p>
+                    On rappelle l'expression de la divergence dans ces coordonées :
+
+                    \[
+                    \mathrm{div}\,\vec{v}
+                    =
+                    \frac{1}{r}\frac{\partial (r v_r)}{\partial r}
+                    +
+                    \frac{1}{r}\frac{\partial v_\theta}{\partial \theta}
+                    +
+                    \frac{\partial v_z}{\partial z}
+                    \]
+                    <em>1.</em> Le fluide est supposé incompressible, montrer que la composante radiale $v_r$ de la vitesse 
+                      $\vec{v}$ est nulle.<br><br>
+                    Pour la suite, on admet que la norme de la vitesse $v$ du fluide peut s’écrire
+                    \[
+                    v = \left( Ar + \frac{B}{r} \right)
+                    \]
+                    <em>2.</em> Déterminer les expressions de $A$ et $B$ en fonction de $R_1$, $R_2$, $\omega_1$ et $\omega_2$.<br><br>
+
+                    Dans la pratique, on prend comme conditions expérimentales $\omega_1 = 0$ et $R_2 - R_1 \ll R_1$, ce qui permet 
+                      d’assimiler localement l’espace entre les deux cylindres à l’espace entre deux plans.  <br><br>
+                    <em>3.</em> Par analogie avec la force de cisaillement entre deux plans, montrer que l’expression de la force 
+                      élémentaire $\vv{dF}$ de cisaillement s’exerçant sur une surface $\mathrm{d}S$ du cylindre intérieur s’écrit
+                        \[
+                        \vv{dF} = 2\eta A \,\mathrm{d}S\, \vec{u}_\theta.
+                        \]
+                      <em>4.</em>  Calculer le moment total $\Gamma$ exercé par les forces de cisaillement sur le cylindre intérieur 
+                      suivant l’axe $(Oz)$.<br><br>
+                      <em>5.</em>  Comment mesurer alors la viscosité $\eta$ ?<br>
+                    </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p> 
+                  1. On utilise $div(\vec{v})=0$ :
+                  $$ \frac{\partial (rv_r)}{\partial r}=0 $$ 
+                  Or la vitesse en $R_1$ et $R_2$ est orthoradiale (CL), donc $v_r=0$.<br><br>
+                  2. Les CL donnent : $v(R_1)=R_1\omega_1$ (idem pour 2). D'où :
+                  $$A=\frac{R_2^2\omega_2-R_1^2\omega_1}{R_2^2-R_1^2} \quad B=\frac{R_1^2R_2^2(\omega_1-\omega_2)}{R_2^2-R_1^2}$$
+                  3. Par analogie :
+                  $$\vec{dF}=\eta \frac{\partial v_{\theta}}{\partial r}(r=R_1) dS \vec{e_{\theta}}$$
+                  4. $$ \Gamma = 4 \pi \eta L \frac{R_1^2R_2^2}{R_2^2-R_1^2\omega_2$$
+                  5. Le cylindre intérieur reste fixe il faut donc lui appliquer un couple $-\Gamma \propto \eta$.
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1620420220.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
