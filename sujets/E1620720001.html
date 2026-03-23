@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>PrepOral - accueil</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusion de MathJax pour le rendu LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="sec1">
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="Logo.png" alt="" height="150">
+                </div>
+                <div class="container">
+                    <h1>PrepOral</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <h2>[PC] [Maison] </h2><br><br>
+            <h3>Lance incendie</h3><br><br>
+            <div id="exerciseContent">
+                <h3>Enoncé</h3><br><br>
+                <div class="subject">
+                <p>
+                   On considère un tuyau de pompier de diamètre $d = 70\,\text{mm}$, montant à une hauteur de $30\,\text{m}$, où 
+                  il se termine par une lance. Une pompe impose un débit volumique $Q = 500\,\text{L}\cdot\text{min}^{-1}$, l’eau 
+                  étant aspirée à partir d’un bassin à l’air libre. L’eau sort de la lance avec une vitesse d’éjection $v_e = 30\,
+                  \text{m}\cdot\text{s}^{-1}$.
+                </p><br><br>
+
+                <img src="../images/1620720001.png" width=30% alt="Schéma illustratif"> <br><br>
+
+                    <p>
+                      <em>1.</em>  Quelle doit être la pression au point $A$ pour obtenir une telle vitesse en sortie de la lance ?<br><br>
+
+                      On s’intéresse maintenant aux pertes de charge dans le tuyau, exprimées en $\text{Pa}\cdot\text{m}^{-1}$ par :
+                      \[
+                      \kappa = f \frac{\mu v^2}{2d}
+                      \quad \text{avec} \quad f = 2 \times 10^{-2} \ \text{(USI)}.
+                      \]
+
+                      <em>2.</em>  Quelle est l’unité de $f$ ?<br><br>
+
+                      <em>3.</em>  Quelle puissance doit fournir la pompe, sachant que le tuyau est long de $200\,\text{m}$ au total ?<br>
+                    </p>
+                </div>
+            </div><br><br>
+            <div id="comments">
+                <h3>Commentaires</h3><br><br>
+                <div class="subject">
+                <p>Encore jamais posé !</p>
+            </div><br><br>
+            <div id="corrige">
+                <h3>Corrigé</h3><br><br>
+                <div class="subject">
+                <p> 
+                 1. La vitesse dans le tuyau est : $v=Q/(\pir^2). On applique le théorème de Bernoulli :
+                  $$P_A + \mu v^2/2 = P_{atm} + \mu v_e^2/2 + \mu gh \quad P_A=7,8 \; bar$$
+
+                  2. Sans dimension. <br><br>
+
+                  3.  On applique le théorème de Bernoulli en aprtant du bassin :
+                  
+                  $$Q(P_{atm} + \mu v_e^2/2 + \mu gh - P_{atm} - \mu 0^2/2)= \mathcal{P}-Q\kappa l \quad \mathcal{P}=6,8 \; kW$$
+                                                                                                                      
+                </p>
+                </div>
+            </div><br><br>
+            <button id="downloadBtn" class="button">Sujet Latex</button><br><br>
+            <script>
+                // Redirection vers le PDF lors du clic
+                document.getElementById('downloadBtn').addEventListener('click', function() {
+                window.location.href = 'latex/E1620720001.txt';
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; copyright Antoine FEYDIT - 2025 </p><br>
+        <h6>Tous les droits sont réservés. Aucune partie de ce site web, de son code source, de sa charte graphique ou de son nom ne peut être reproduite, distribuée ou utilisée sous quelque forme que ce soit, sans une autorisation écrite préalable de l'auteur. <br>
+            Cela inclut, mais sans s'y limiter, toute forme de plagiat, de copie, d'adaptation ou de réutilisation à des fins commerciales ou non commerciales.</h6>
+    </div>
+</body>
+</html>
